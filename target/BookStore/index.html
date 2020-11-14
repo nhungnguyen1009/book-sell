@@ -34,22 +34,90 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
+		<!-- SlideShow -->
+		<link type="text/css" rel="stylesheet" href="css/slideShow.css"/>
     </head>
 	<body>
+<<<<<<< HEAD
+=======
+
+<!-- form sign up -->
+<div class="modal" id ="id01" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('id01').style.display='none'">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				
+				<h3 class="modal-title" style="text-align: center;">Đăng ký </h3>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group" >
+						<label for="exampleInputFullname">Họ tên*</label>
+						<input type="name" class="form-control" id="exampleInputFullname1" aria-describedby="nameHelp" placeholder="Họ và tên">
+					</div>
+					<div class="form-group" id = "exampleInputEmail">
+						<label for="exampleInputEmail1">Email</label>
+						<input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Email">
+						
+					</div>
+					<!-- <div class="form-group" >
+						<label for="exampleInputPhone">Số điện thoại</label>
+						<input type="phone" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp" placeholder="Số điện thoại">
+					</div> -->
+					<div class="form-group" >
+						<label for="exampleInputFullname">Tên đăng nhập</label>
+						<input type="name" class="form-control" id="exampleInputFullname" aria-describedby="nameHelp" placeholder="Tên đăng nhập">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Mật khẩu</label>
+						<input type="password" class="form-control" id="exampleInputPassword" placeholder="Mật khẩu">
+						<small id="emailHelp" class="form-text text-muted">Bạn đừng để ai nhìn thấy mật khẩu nhé!</small>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword2">Nhập lại mật khẩu</label>
+						<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Nhập lại mật khẩu">
+					</div>
+					<div class="form-group form-check" style="float: right;">
+						<button onclick="document.getElementById('id01').style.display='none'" ><a href="#" data-toggle ="modal" data-target="#exampleModal">Đăng nhập</a></button>
+					</div>
+					<div style="text-align: center;">
+						<button type="submit" class="btn btn-primary" style="width: 50%; height: 50px; border-radius: 25px; outline: 0px;">Gửi</button><br>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- End form  -->
+
+
+>>>>>>> 61a136c62faec1b9d2261b0e1af6abb2289fc123
 <!--	form login-->
 <div class="modal" id ="exampleModal" tabindex="-1" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
+<<<<<<< HEAD
 				
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 				<h3 class="modal-title" style="text-align: center;">Login </h3>
+=======
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h3 class="modal-title" style="text-align: center;">Đăng nhập</h3>
+>>>>>>> 61a136c62faec1b9d2261b0e1af6abb2289fc123
 			</div>
 			<div class="modal-body">
 				<form>
 					<div class="form-group" id = "example">
+<<<<<<< HEAD
 						<label for="exampleInputEmail1">Email address</label>
 						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -66,6 +134,32 @@
 							data-target="#exampleModal"><b>Sign in</b></a>
 					</div>
 					<button type="submit" class="btn btn-primary">Submit</button>
+=======
+						<label for="exampleInputEmail1">Tên đăng nhập hoặc email</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên đăng nhập hoặc email">
+						<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Mật khẩu</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+					</div>
+					
+					<div class="form-group form-check">
+						<!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+						<div style="text-align: right;margin-top: -5px;font-size: 12px;">
+							<a href="#" data-toggle ="modal" data-target="#exampleModal" >Quên mật khẩu?</a><br>
+						</div>
+						<div style="text-align: center;">
+							<button type="submit" class="btn btn-primary" style="width: 50%; height: 50px; border-radius: 25px; outline: 0px;">Đăng nhập</button><br>
+						</div>
+						<div style="margin-bottom:-10px; margin-top: 15px; text-align: center;">
+							Bạn chưa có tài khoản?
+						<button onclick="document.getElementById('id01').style.display='block'"><a href="#" data-toggle ="modal" data-target="#exampleModal">Đăng ký</a></button>
+						</div>
+						
+					</div>
+					
+>>>>>>> 61a136c62faec1b9d2261b0e1af6abb2289fc123
 				</form>
 			</div>
 
@@ -82,12 +176,22 @@
 					<ul class="header-links pull-left">
 						<li><a href="#"><i class="fa fa-phone"></i> +012.345.678</a></li>
 						<li><a href="#`"><i class="fa fa-envelope-o"></i> japanbanana@gmail.com</a></li>
+<<<<<<< HEAD
 						<li><a href="#"><i class="fa fa-map-marker"></i> Thu Duc District, HCM City</a></li>
 					</ul>
 					<ul class="header-links pull-right">
 						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
 						<li><a href="#" data-toggle ="modal"
 						data-target="#exampleModal"><i class="fa fa-user-o"></i> My Account</a></li>
+=======
+						<li><a href="#"><i class="fa fa-map-marker"></i> Quận Thủ Đức, TPHCM</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#" data-toggle ="modal" data-target="#id01"><i class="fa fa-user-o"></i> Đăng ký</a></li>
+						<li><a href="#" data-toggle ="modal"
+						data-target="#exampleModal"><i class="fa fa-user-o"></i> Đăng nhập</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i>My Account </a></li>
+>>>>>>> 61a136c62faec1b9d2261b0e1af6abb2289fc123
 					</ul>
 				</div>
 			</div>
@@ -115,7 +219,11 @@
 								<form>
 									
 									<input class="input" placeholder="Search here" >
+<<<<<<< HEAD
 									<button class="search-btn">Search</button>
+=======
+									<button class="search-btn">Tìm kiếm</button>
+>>>>>>> 61a136c62faec1b9d2261b0e1af6abb2289fc123
 								</form>
 							</div>
 						</div>
@@ -128,7 +236,7 @@
 								<div>
 									<a href="#">
 										<i class="fa fa-heart-o"></i>
-										<span>Your Wishlist</span>
+										<span>Yêu thích</span>
 										<div class="qty">2</div>
 									</a>
 								</div>
@@ -138,40 +246,40 @@
 								<div class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
-										<span>Your Cart</span>
+										<span>Giỏ hàng</span>
 										<div class="qty">3</div>
 									</a>
 									<div class="cart-dropdown">
 										<div class="cart-list">
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product01.png" alt="">
+													<img src="./img/c01.jpg" alt="">
 												</div>
 												<div class="product-body">
-													<h3 class="product-name"><a href="#">product name goes here</a></h3>
-													<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+													<h3 class="product-name"><a href="#">Viking</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>100.000VNĐ</h4>
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
 											</div>
 
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product02.png" alt="">
+													<img src="./img/c02.jpg" alt="">
 												</div>
 												<div class="product-body">
-													<h3 class="product-name"><a href="#">product name goes here</a></h3>
-													<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+													<h3 class="product-name"><a href="#">Hy Lạp</a></h3>
+													<h4 class="product-price"><span class="qty">2x</span>110.000VNĐ</h4>
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
 											</div>
 										</div>
 										<div class="cart-summary">
-											<small>3 Item(s) selected</small>
-											<h5>SUBTOTAL: $2940.00</h5>
+											<small>3 Sản phẩm</small>
+											<h5>Tổng tiền: 320.000VNĐ</h5>
 										</div>
 										<div class="cart-btns">
-											<a href="#">View Cart</a>
-											<a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+											<a href="#">Xem giỏ hàng</a>
+											<a href="#">Thanh toán<i class="fa fa-arrow-circle-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -222,57 +330,51 @@
 		<!-- /NAVIGATION -->
 
 		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- shop -->
-					<div class="col-md-4 col-xs-6">
-						<div class="shop">
-							<div class="shop-img">
-								<img src="./img/shop01.png" alt="">
-							</div>
-							<div class="shop-body">
-								<h3>Laptop<br>Collection</h3>
-								<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<!-- /shop -->
+		<!-- SlideShow -->
+		<div class="slideshow-container">
 
-					<!-- shop -->
-					<div class="col-md-4 col-xs-6">
-						<div class="shop">
-							<div class="shop-img">
-								<img src="./img/shop03.png" alt="">
-							</div>
-							<div class="shop-body">
-								<h3>Accessories<br>Collection</h3>
-								<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<!-- /shop -->
-
-					<!-- shop -->
-					<div class="col-md-4 col-xs-6">
-						<div class="shop">
-							<div class="shop-img">
-								<img src="./img/shop02.png" alt="">
-							</div>
-							<div class="shop-body">
-								<h3>Cameras<br>Collection</h3>
-								<a href="#" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<!-- /shop -->
-				</div>
-				<!-- /row -->
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width:100%; height: 200px;">
+			  <div class="text">Truyện ngụ ngôn</div>
 			</div>
-			<!-- /container -->
-		</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png">
+			  <div class="text">CHuyện mùa thu</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" >
+			  <div class="text">Chuyện Tây Nguyên</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" >
+				<div class="text">Truyện Tây Tạng</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" >
+				<div class="text">Truyện Tây Tạng</div>
+			  </div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			  <span class="dot" onclick="currentSlide(5)"></span> 
+			</div>
+			<!-- /SlideShow -->
 		<!-- /SECTION -->
 
 		<!-- SECTION -->
@@ -1003,7 +1105,7 @@
 						<div class="newsletter">
 							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
 							<form>
-								<input class="input" type="email" placeholder="Enter Your Email">
+								<input class="input" type="email" placeholder="Enter Your Email" style="width: 250px;">
 								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
 							</form>
 							<ul class="newsletter-follow">
@@ -1125,6 +1227,8 @@
 		</footer>
 		<!-- /FOOTER -->
 
+<!-- /slideShow -->
+
 		<!-- jQuery Plugins -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -1133,5 +1237,36 @@
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
 
+
+		
+<!-- slideShow -->
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active2", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active2";
+	}
+	</script>
 	</body>
 </html>

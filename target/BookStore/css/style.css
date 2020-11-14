@@ -120,7 +120,11 @@ ul, ol {
   padding: 0px 15px;
   border: 1px solid #E4E7ED;
   background-color: #FFF;
-  width: 100%;
+  outline: 0px;
+  width: 300px; 
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px; 
+  margin-left: 90px;
 }
 
 textarea.input {
@@ -413,7 +417,7 @@ textarea.input {
 #top-header {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #1E1F29;
+  background-color: #02ACAC;
 }
 
 .header-links li {
@@ -446,7 +450,7 @@ textarea.input {
 #header {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #15161D;
+  background-color: #00CCCC;
 }
 
 .header-logo {
@@ -873,7 +877,9 @@ textarea.input {
 }
 
 .product .product-img>img {
-  width: 100%;
+  width: 260px;
+  height: 320px;
+  padding: 12px;
 }
 
 .product .product-img .product-label {
@@ -1022,7 +1028,7 @@ textarea.input {
   right: 1px;
   bottom: 1px;
   padding: 15px;
-  background: #1e1f29;
+  background: #00CCCC;
   text-align: center;
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -1460,7 +1466,12 @@ textarea.input {
 }
 
 .product-preview img {
+  height: 430px;
+  margin: 0 auto;
+}
+.product-preview-slide img{
   width: 100%;
+  padding: 20px;
 }
 
 /*----------------------------*\

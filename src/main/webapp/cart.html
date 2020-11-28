@@ -37,7 +37,7 @@
 
 	<!-- SlideShow -->
 	<link type="text/css" rel="stylesheet" href="css/slider.css" />
-
+    <link type="text/css" rel="stylesheet" href="css/cart.css" />
 </head>
 
 <body>
@@ -284,14 +284,14 @@
 					<div id="responsive-nav">
 						<!-- NAV -->
 						<ul class="main-nav nav navbar-nav">
-							<li class="active"><a href="#">Trang chủ</a></li>
-							<li><a href="#">Nổi bật</a></li>
-							<li><a href="#">Bán chạy</a></li>
-							<li><a href="#">Khuyến mãi</a></li>
-							<li><a href="#">Mới</a></li>
-							<li><a href="#">Giới thiệu</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Liên hệ</a></li>
+							<li class="active"><a href="index.html">Trang chủ</a></li>
+							<li><a href="store.html">Nổi bật</a></li>
+							<li><a href="store.html">Bán chạy</a></li>
+							<li><a href="store.html">Khuyến mãi</a></li>
+							<li><a href="store.html">Mới</a></li>
+							<li><a href="introduce.html">Giới thiệu</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Liên hệ</a></li>
 						</ul>
 						<!-- /NAV -->
 					</div>
@@ -308,10 +308,10 @@
 					<!-- row -->
 					<div class="row">
 						<div class="col-md-12">
-							<h3 class="breadcrumb-header">Regular Page</h3>
+							<!-- <h3 class="breadcrumb-header">Trang chủ</h3> -->
 							<ul class="breadcrumb-tree">
-								<li><a href="#">Home</a></li>
-								<li class="active">Blank</li>
+								<li><a href="index.html">Trang chủ</a></li>
+								<li class="active">Giỏ hàng</li>
 							</ul>
 						</div>
 					</div>
@@ -320,7 +320,78 @@
 				<!-- /container -->
 			</div>
 			<!-- /BREADCRUMB -->
-
+            <div class="container"> 
+                <table id="cart" class="table table-hover table-condensed"> 
+                 <thead> 
+                  <tr> 
+                   <th style="width:50%">Tên sản phẩm</th> 
+                   <th style="width:10%">Giá</th> 
+                   <th style="width:8%">Số lượng</th> 
+                   <th style="width:22%" class="text-center">Thành tiền</th> 
+                   <th style="width:10%"> </th> 
+                  </tr> 
+                 </thead> 
+                 <tbody><tr> 
+                  <td data-th="Product"> 
+                   <div class="row"> 
+                    <div class="col-sm-2 hidden-xs"><img src="./img/c01.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
+                    </div> 
+                    <div class="col-sm-10"> 
+                     <h4 class="nomargin">Viking</h4> 
+                     <p>10 huyền thoại Viking hay nhất mọi thời đại</p> 
+                    </div> 
+                   </div> 
+                  </td> 
+                  <td data-th="Price">100,000 đ</td> 
+                  <td data-th="Quantity"><input class="form-control text-center" value="1" type="number" min="1">
+                  </td> 
+                  <td data-th="Subtotal" class="text-center">100,000 đ</td> 
+                  <td class="actions" data-th="">
+                   <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                   </button> 
+                   <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                   </button>
+                  </td> 
+                 </tr> 
+                 <tr> 
+                  <td data-th="Product"> 
+                   <div class="row"> 
+                    <div class="col-sm-2 hidden-xs"><img src="./img/c02.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
+                    </div> 
+                    <div class="col-sm-10"> 
+                     <h4 class="nomargin">Hy Lạp</h4> 
+                     <p>10 huyền thoại Hy Lạp hay nhất mọi thời đại</p> 
+                    </div> 
+                   </div> 
+                  </td> 
+                  <td data-th="Price">110,000 đ</td> 
+                  <td data-th="Quantity"><input class="form-control text-center" value="2" type="number" min="1" > 
+                  </td> 
+                  <td data-th="Subtotal" class="text-center">220,000 đ</td> 
+                  <td class="actions" data-th="">
+                   <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                   </button> 
+                   <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                   </button>
+                  </td> 
+                 </tr> 
+                 </tbody><tfoot> 
+                  <!-- <tr class="visible-xs"> 
+                   <td class="text-center"><strong>Tổng 320,000 đ</strong>
+                   </td> 
+                  </tr>  -->
+                  <tr> 
+                   <td><a href="" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+                   </td> 
+                   <td colspan="2" class="hidden-xs"> </td> 
+                   <td class="hidden-xs text-center"><strong>Tổng tiền 320,000 đ</strong>
+                   </td> 
+                   <td><a href="" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+                   </td> 
+                  </tr> 
+                 </tfoot> 
+                </table>
+               </div>
 			<!-- SECTION -->
 			<div class="section">
 				<!-- container -->
@@ -471,7 +542,8 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/nouislider.min.js"></script>
 	<script src="js/jquery.zoom.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/jquery-1.11.1.min.js"></script> -->
 
 </body>
 

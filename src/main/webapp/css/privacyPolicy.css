@@ -1,6 +1,19 @@
-.content p {
-    font-size: 15px;
-    text-align: justify;
-
-}
-
+    .content p {
+        font-size: 15px;
+        text-align: justify;
+    }
+    /* introduced */
+    
+    .background_content {
+        background-color: #FBFBFC;
+        padding: 20px;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+    
+    .italics {
+        font-style: italic;
+        text-decoration: underline;
+    }

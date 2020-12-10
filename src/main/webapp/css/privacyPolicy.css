@@ -103,3 +103,35 @@
     .div3 button a {
         color: white;
     }
+    /* account */
+    
+    .over {
+        padding: 40px;
+    }
+    
+    .lablClass label {
+        padding-bottom: 25px;
+    }
+    
+    .inputClass input {
+        padding-right: 600px;
+        margin-bottom: 25px;
+    }
+    
+    #inputOther {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .date {
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    
+    .date input {
+        padding-right: 20px;
+    }
+    
+    .over a {
+        color: #D10024;
+    }

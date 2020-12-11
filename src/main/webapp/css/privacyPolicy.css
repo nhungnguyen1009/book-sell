@@ -110,12 +110,14 @@
     }
     
     .lablClass label {
-        padding-bottom: 25px;
+        padding-bottom: 50px;
     }
     
     .inputClass input {
         padding-right: 600px;
         margin-bottom: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     
     #inputOther {
@@ -125,11 +127,15 @@
     
     .date {
         margin-bottom: 20px;
-        margin-top: 25px;
+        margin-top: 40px;
     }
     
     .date input {
         padding-right: 20px;
+    }
+    
+    .radioClass {
+        padding-top: 23px;
     }
     
     .over a {

@@ -8,7 +8,10 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<title> JB Bookstore</title>
-
+	
+	<!-- iconClose -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
@@ -27,6 +30,10 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/quickview.css" />
+
+	<!-- Modernizr -->
+	<script src="js/modernizr.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -132,7 +139,7 @@
 						<div class="form-group form-check">
 							<!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
 							<div style="text-align: right;margin-top: -5px;font-size: 12px;">
-								<a href="#" data-toggle="modal" data-target="#exampleModal">Quên mật khẩu?</a><br>
+								<a href="forgot.html">Quên mật khẩu?</a><br>
 							</div>
 							<div style="text-align: center;">
 								<button type="submit" class="btn btn-primary"
@@ -170,8 +177,8 @@
 					</li>
 					<li><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user-o"></i>Đăng
 							nhập</a></li>
-					<li><a href="#"><i class="fa fa-user-o"></i>Tài khoản</a></li>
-					<li><a href="#"><i class="fa fa-user-o"></i>Admin</a></li>
+					<li><a href="account.html"><i class="fa fa-user-o"></i>Tài khoản</a></li>
+					<li><a href="admin/index.jsp"><i class="fa fa-user-o"></i>Admin</a></li>
 				</ul>
 			</div>
 		</div>
@@ -228,7 +235,7 @@
 									<div class="cart-list">
 										<div class="product-widget">
 											<div class="product-img">
-												<img src="./img/c01.jpg" alt="">
+												<img src="./img/cotichthanthoai/10-huyen-thoai-viking-hay-nhat-moi-thoi-dai.jpg" alt="">
 											</div>
 											<div class="product-body">
 												<h3 class="product-name"><a href="#">Viking</a></h3>
@@ -236,10 +243,10 @@
 											</div>
 											<button class="delete"><i class="fa fa-close"></i></button>
 										</div>
-
+	
 										<div class="product-widget">
 											<div class="product-img">
-												<img src="./img/c02.jpg" alt="">
+												<img src="./img/cotichthanthoai/10-huyen-thoai-hy-lap-hay-nhat-moi-thoi-dai.jpg" alt="">
 											</div>
 											<div class="product-body">
 												<h3 class="product-name"><a href="#">Hy Lạp</a></h3>
@@ -253,8 +260,8 @@
 										<h5>Tổng tiền: 320.000VNĐ</h5>
 									</div>
 									<div class="cart-btns">
-										<a href="#">Xem giỏ hàng</a>
-										<a href="#">Thanh toán<i class="fa fa-arrow-circle-right"></i></a>
+										<a href="cart.html">Xem giỏ hàng</a>
+										<a href="checkout.html">Thanh toán<i class="fa fa-arrow-circle-right"></i></a>
 									</div>
 								</div>
 							</div>
@@ -284,11 +291,10 @@
 						<!-- NAV -->
 						<ul class="main-nav nav navbar-nav">
 							<li class="active"><a href="index.html">Trang chủ</a></li>
-							<li><a href="store.html">Nổi bật</a></li>
-							<li><a href="store.html">Bán chạy</a></li>
-							<li><a href="store.html">Khuyến mãi</a></li>
-							<li><a href="store.html">Mới</a></li>
-							<li><a href="introduce.html">Giới thiệu</a></li>
+							<li><a href="selling.html">Bán chạy</a></li>
+							<li><a href="discount.html">Khuyến mãi</a></li>
+							<li><a href="new.html">Mới</a></li>
+							<li><a href="storeIntroduced.html">Giới thiệu</a></li>
 							<li><a href="blog.html">Blog</a></li>
 							<li><a href="contact.html">Liên hệ</a></li>
 						</ul>
@@ -306,13 +312,13 @@
 			<div id="left-menu" style="float: left;">
 				<div class="vertical-menu">
 					<a href="#" class="active"><i class="fa fa-bars"></i>&nbsp; Thể loại</a>
-					<a href="#">Sách giáo khoa</a>
-					<a href="#">Sách thiếu nhi</a>
-					<a href="#">Sách khoa học</a>
-					<a href="#">Sách nước ngoài</a>
-					<a href="#">Sách kỹ năng sống </a>
-					<a href="#">Truyện tranh</a>
-					<a href="#">Truyện kinh dị</a>
+					<a href="literature.html">Văn học</a>
+					<a href="sachThieuNhi.html">Sách thiếu nhi</a>
+					<a href="kinhte.html">Sách kinh tế</a>
+					<a href="sachNgoaiNgu.html">Sách ngoại ngữ</a>
+					<a href="#">Tâm lý - Kỹ năng sống </a>
+					<a href="giaoKhoa.html">Giáo khoa - Tham khảo</a>
+					<a href="tieuSu.html">Tiểu sử - Hồi kí</a>
 				</div>
 			</div>
 			<div class="section">
@@ -478,7 +484,6 @@
 				<!-- Products tab & slick -->
 				<div class="col-md-12">
 					<div class="row">
-
 						<div class="products-tabs ">
 							<!-- tab -->
 							<div id="tab1" class="tab-pane active">
@@ -486,8 +491,8 @@
 									<!-- product -->
 									<div class="product">
 										<div class="product-img">
-											<img src="./img/index/Moi/10-huyen-thoai-viking-hay-nhat-moi-thoi-dai.jpg"
-												alt="10 huyền thoại Viking hay nhất mọi thời đại">
+											<a href="product.html"><img src="./img/index/Moi/10-huyen-thoai-viking-hay-nhat-moi-thoi-dai.jpg"
+												alt="10 huyền thoại Viking hay nhất mọi thời đại"></a>
 											<div class="product-label">
 												<span class="sale">-30%</span>
 												<span class="new">MỚI</span>
@@ -510,13 +515,15 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
 										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
+											<a href="cart.html"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
+												giỏ</button></a>
 										</div>
 									</div>
 									<!-- /product -->
@@ -524,8 +531,8 @@
 									<!-- product -->
 									<div class="product">
 										<div class="product-img">
-											<img src="./img/index/Moi/100-mau-chuyen-co-dong-tay-nguyen-lan.jpg"
-												alt="100 mẫu chuyện cổ đông tây">
+											<a href="product.html"><img src="./img/index/Moi/100-mau-chuyen-co-dong-tay-nguyen-lan.jpg"
+												alt="100 mẫu chuyện cổ đông tây"></a>
 											<div class="product-label">
 												<span class="new">MỚI</span>
 											</div>
@@ -546,13 +553,15 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
 										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
+											<a href="cart.html"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
+												giỏ</button></a>
 										</div>
 									</div>
 									<!-- /product -->
@@ -560,8 +569,8 @@
 									<!-- product -->
 									<div class="product">
 										<div class="product-img">
-											<img src="./img/index/Moi/108-truyen-ngu-ngon-hay-nhat.jpg"
-												alt="108 truyện ngụ ngôn hay nhất">
+											<a href="product.html"><img src="./img/index/Moi/108-truyen-ngu-ngon-hay-nhat.jpg"
+												alt="108 truyện ngụ ngôn hay nhất"></a>
 											<div class="product-label">
 												<span class="sale">-50%</span>
 												<span class="new">MỚI</span>
@@ -569,7 +578,7 @@
 										</div>
 										<div class="product-body">
 											<p class="product-category">Truyện</p>
-											<h3 class="product-name"><a href="#">108 truyện ngụ ngôn</a></h3>
+											<h3 class="product-name">108 truyện ngụ ngôn</h3>
 											<h4 class="product-price">55,000₫ <del
 													class="product-old-price">110,000₫</del></h4>
 											<div class="product-rating">
@@ -584,13 +593,15 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
 										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
+											<a href="cart.html"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
+												giỏ</button></a>
 										</div>
 									</div>
 									<!-- /product -->
@@ -598,8 +609,8 @@
 									<!-- product -->
 									<div class="product">
 										<div class="product-img">
-											<img src="./img/index/Moi/365-chuyen-ke-hang-dem-mua-thu.jpg"
-												alt="365 chuyện kể hằng đêm mùa thu">
+											<a href="product.html"><img src="./img/index/Moi/365-chuyen-ke-hang-dem-mua-thu.jpg"
+												alt="365 chuyện kể hằng đêm mùa thu"></a>
 											<div class="product-label">
 												<span class="new">MỚI</span>
 											</div>
@@ -620,13 +631,15 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
 										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
+											<a href="cart.html"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
+												giỏ</button></a>
 										</div>
 									</div>
 									<!-- /product -->
@@ -634,8 +647,8 @@
 									<!-- product -->
 									<div class="product">
 										<div class="product-img">
-											<img src="./img/index/Moi/buratino-va-chiec-chia-khoa-vang.jpg"
-												alt="Buratino và chiếc chìa khóa vàng">
+											<a href="product.html"><img src="./img/index/Moi/buratino-va-chiec-chia-khoa-vang.jpg"
+												alt="Buratino và chiếc chìa khóa vàng"></a>
 											<div class="product-label">
 												<span class="new">MỚI</span>
 											</div>
@@ -658,16 +671,19 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
 										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-												giỏ</button>
+											<a href="cart.html"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
+												giỏ</button></a>
 										</div>
 									</div>
 									<!-- /product -->
+
 								</div>
 							</div>
 							<!-- /tab -->
@@ -731,7 +747,9 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -766,7 +784,9 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -802,7 +822,9 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -834,7 +856,9 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -866,7 +890,9 @@
 														class="tooltipp">yêu thích</span></button>
 												<button class="add-to-compare"><i class="fa fa-exchange"></i><span
 														class="tooltipp">đối chiếu</span></button>
-												<button class="quick-view"><i class="fa fa-eye"></i><span
+												<button class="quick-view"><a href="javascript:void(0);"
+														class="quickview" data-handle="quickview"
+														style="color: black;"><i class="fa fa-eye"></a></i><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -1375,6 +1401,103 @@
 	</div>
 	<!-- /SECTION -->
 
+	<!-- QUICK VIEW  -->
+	<div id="quick-view-modal" class="wrapper-quickview" style="display: none;">
+		<div class="quickviewOverlay">
+		</div>
+		<div class="jsQuickview">
+			<div class="modal-header clearfix" style="width: 100%">
+				<a href="product.html" class="quickview-title text-left" title="Đừng lựa chọn an nhàn khi còn trẻ">
+					<h4 style="text-align: center; ">
+						ĐỪNG LỰA CHỌN AN NHÀN KHI CÒN TRẺ</h4>
+				</a>
+
+				<div class="quickview-close iconClose">
+					<a href="javascript:void(0);"><i class="glyphicon glyphicon-remove" style="color: tomato;"></i></a>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="quickview-image image-zoom">
+					<img class="p-product-image-feature" src="./img/quickview/large1.jpg"
+						alt="Đừng lựa chọn an nhàn khi còn trẻ">
+				</div>
+				<div id="quickview-sliderproduct">
+					<div class="quickview-slider">
+						<ul class="owl-carousel owl-theme" style="display: block; opacity: 1;">
+							<div class="owl-wrapper-outer">
+								<div class="owl-wrapper" style="width: 600px; left: 0px; display: block;">
+									<div class="owl-item" style="width: 100px;">
+										<li class="product-thumb active"><a href="javascript:void(0);"
+												data-image="./img/quickview/large1.jpg">
+												<img src="./img/quickview/small1.jpg"
+													style="width: 80px;height: 100px;"></a>
+										</li>
+									</div>
+									<div class="owl-item" style="width: 100px;">
+										<li class="product-thumb"><a href="javascript:void(0);"
+												data-image="./img/quickview/large2.jpg">
+												<img src="./img/quickview/small2.jpg"
+													style="width: 80px;height: 100px;"></a>
+										</li>
+									</div>
+									<div class="owl-item" style="width: 100px;">
+										<li class="product-thumb"><a href="javascript:void(0);"
+												data-image="./img/quickview/large3.jpg">
+												<img src="./img/quickview/small3.jpg"
+													style="width: 80px;height: 100px;"></a>
+										</li>
+									</div>
+								</div>
+							</div>
+							<div class="owl-controls clickable" style="display: none;">
+								<div class="owl-pagination">
+									<div class="owl-page active">
+										<span class=""></span>
+									</div>
+								</div>
+								<div class="owl-buttons">
+									<div class="owl-prev">
+										owl-prev</div>
+									<div class="owl-next">
+										owl-next</div>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<strong>Mô tả:</strong>
+				<div>
+					Trong độ xuân xanh phơi phới ngày ấy, bạn không dám mạo hiểm, không dám nỗ lực
+					để kiếm học bổng, không chịu tìm tòi những thử thách trong công việc, không phấn
+					đấu hướng đến ước mơ của mình. Bạn mơ mộng rằng làm việc xong sẽ vào làm ở một
+					công ty nổi tiếng, làm một thời gian sẽ thăng quan tiến chức. Mơ mộng ....<a href="product.html"
+						style="color: tomato;">xem thêm</a>
+				</div></br>
+				<div><strong>Tác giả:</strong> Cảnh Thiên</div></br>
+				<div><strong>Thể loại:</strong> Văn học</div></br>
+				<div class="add-to-cart">
+					<div class="qty-label">
+						<strong>Số lượng: </strong></br>
+						<div class="input-number" style="float: left;">
+							<input type="number" value="1">
+							<span class="qty-up">+</span>
+							<span class="qty-down">-</span>
+						</div>
+					</div>
+					</br>
+					</br>
+					</br>
+					<div class="product-details" style="text-align: center;">
+						<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /QUICK VIEW  -->
+
 	<!-- NEWSLETTER -->
 	<div id="newsletter" class="section">
 		<!-- container -->
@@ -1436,10 +1559,10 @@
 						<div class="footer">
 							<h3 class="footer-title">Dịch vụ</h3>
 							<ul class="footer-links">
-								<li><a href="#">Điều khoản sử dụng</a></li>
-								<li><a href="#">Chính sách bảo mật</a></li>
-								<li><a href="#">Giới thiệu về JB</a></li>
-								<li><a href="#">Hệ thống trung tâm cửa hàng</a></li>
+								<li><a href="termsOfUse.html">Điều khoản sử dụng</a></li>
+								<li><a href="privacyPolicy.html">Chính sách bảo mật</a></li>
+								<li><a href="storeIntroduced.html">Giới thiệu về JB</a></li>
+								<li><a href="shopCenterSystem.html">Hệ thống trung tâm cửa hàng</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1450,10 +1573,10 @@
 						<div class="footer">
 							<h3 class="footer-title">Hỗ trợ</h3>
 							<ul class="footer-links">
-								<li><a href="#">Chính sách đổi trả</a></li>
-								<li><a href="#">Đối tác khách sỉ</a></li>
-								<li><a href="#">Phương thức vận chuyển</a></li>
-								<li><a href="#">Phương thức thanh toán</a></li>
+								<li><a href="returnPolicy.html">Chính sách đổi trả</a></li>
+								<li><a href="purchasePolicy.html">Đối tác khách sỉ</a></li>
+								<li><a href="shipping.html">Phương thức vận chuyển</a></li>
+								<li><a href="payment.html">Phương thức thanh toán</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1464,8 +1587,8 @@
 							<ul class="footer-links">
 								<li><a href="#" data-toggle="modal" data-target="#id01">Đăng nhập</a></li>
 								<li><a href="#" data-toggle="modal" data-target="#exampleModal">Đăng ký</a></li>
-								<li><a href="#">Chi tiết tài khoản</a></li>
-								<li><a href="#">Lịch sử mua hàng</a></li>
+								<li><a href="account.html">Chi tiết tài khoản</a></li>
+								<li><a href="shoppingHistories.html">Lịch sử mua hàng</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1508,7 +1631,9 @@
 	<script src="js/jquery.zoom.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/slider.js"></script>
-	
+
+	<script src="js/quickview.js"></script>
+
 	<!-- sticky header  -->
 	<!-- <script>
 		window.onscroll = function () { myFunction() };

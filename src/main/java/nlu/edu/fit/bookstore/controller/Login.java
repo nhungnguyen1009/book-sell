@@ -24,7 +24,7 @@ public class Login extends HttpServlet {
         // user or null
         // if null => uername/ pass k đúng
         // có user ok, lưu session, cần usesr ?
-        System.out.println("n");
+        System.out.println("enter");
         req.getRequestDispatcher("about.jsq").forward(req, resp);
     }
 

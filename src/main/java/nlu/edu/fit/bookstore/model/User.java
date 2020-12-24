@@ -7,6 +7,10 @@ public class User {
     String fullname;
     String password;
     String email;
+    int phone;
+    String sex;
+    String dob;
+
 
     public int getId() {
         return id;

@@ -1,27 +1,31 @@
 package nlu.edu.fit.bookstore.controller;
 
-import nlu.edu.fit.bookstore.loginRepo.ProductRepo;
-import nlu.edu.fit.bookstore.model.Product;
+import com.google.gson.Gson;
+import nlu.edu.fit.bookstore.loginRepo.LoginRepo;
+import nlu.edu.fit.bookstore.model.User;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.HashMap;
 
-@WebServlet("/product")
-public class listProduct extends HttpServlet {
+@WebServlet("/logout")
+public class Logout extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ArrayList<Product> list = ProductRepo.getProducts(10);
-        req.setAttribute("listdata", list);
-        System.out.println(list.size());
-        req.getRequestDispatcher("product.jsp").forward(req, resp);
+        HttpSession httpSession = req.getSession();
+        httpSession.invalidate();
+        String currentPath = req.getHeader("referer");
+        resp.sendRedirect(currentPath);
+
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+        this.doGet(req, resp);
     }
 }

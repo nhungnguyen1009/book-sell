@@ -339,7 +339,7 @@
 														class="tooltipp">đối chiếu</span></button>
 												<button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -380,7 +380,7 @@
 														class="tooltipp">đối chiếu</span></button>
 												<button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -421,7 +421,7 @@
 														class="tooltipp">đối chiếu</span></button>
 												<button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -464,7 +464,7 @@
 														class="tooltipp">đối chiếu</span></button>
 												<button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -507,7 +507,7 @@
 														class="tooltipp">đối chiếu</span></button>
 												<button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -548,7 +548,7 @@
 														class="tooltipp">đối chiếu</span></button>
 												<button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -591,7 +591,7 @@
 														class="tooltipp">đối chiếu</span></button>
 												<button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -632,7 +632,7 @@
 														class="tooltipp">đối chiếu</span></button>
 												<button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -675,7 +675,7 @@
 														class="tooltipp">đối chiếu</span></button>
 												<button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
 											</div>
 										</div>
@@ -815,16 +815,7 @@
 		<%@include file="parts/footer.jsp" %>
 	<!-- /FOOTER -->
 
-	<!-- jQuery Plugins -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/nouislider.min.js"></script>
-	<script src="js/jquery.zoom.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/slider.js"></script>
 
-	<script src="js/quickview.js"></script>
 </body>
 
 </html>

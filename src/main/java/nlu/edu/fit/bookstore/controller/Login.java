@@ -1,5 +1,6 @@
 package nlu.edu.fit.bookstore.controller;
 
+import com.google.gson.Gson;
 import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
 import nlu.edu.fit.bookstore.loginRepo.LoginRepo;
 import nlu.edu.fit.bookstore.model.User;
@@ -9,27 +10,56 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.HashMap;
 
 @WebServlet("/login")
 public class Login extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // JSP LOGIN => THIS CONTROLLER
-        req.getParameter("email");
-        req.getParameter("password");
-        // Lấy được ussername, pass
-        LoginRepo.login("nhung", "123");
-        // Gọi method của user repo để check
-        // user or null
-        // if null => uername/ pass k đúng
-        // có user ok, lưu session, cần usesr ?
-        System.out.println("enter");
-        req.getRequestDispatcher("about.jsq").forward(req, resp);
+        resp.setCharacterEncoding("UTF-8");
+        Gson gson = new Gson();
+        HashMap<String, String> errMap = new HashMap<>();
+
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+
+        System.out.println("username" + username);
+        System.out.println("password" + password);
+        //check xem khach hang nhap du thong tin chua
+        if ("".equals(username) || "".equals(password) || username == null || password == null) {
+            if ("".equals(username) || username == null) errMap.put("username", "Bạn chưa nhập username");
+            if ("".equals(password) || password == null) errMap.put("password", "Bạn chưa nhập password");
+            resp.setStatus(HttpServletResponse.SC_PRECONDITION_FAILED);
+            resp.getWriter().print(gson.toJson(errMap));
+        } else {
+            //neu sai tra ve loi
+            // Lấy được username, pass
+            User user = LoginRepo.login(username, password);
+            // Gọi method của user repo để check
+
+            // có user ok, lưu session, tra ve text đúng để ajax reload lại  ?
+            if (user != null) {
+                // Lưu user vô session
+                HttpSession httpSession = req.getSession();
+                httpSession.setAttribute("user", user);
+                // response code 200
+                resp.setStatus(HttpServletResponse.SC_OK);
+            } else {
+                // if null => username/ pass k đúng
+                // Trả về nội dung sai
+                errMap.put("username", "Username hoặc password không đúng");
+
+                resp.setStatus(HttpServletResponse.SC_PRECONDITION_FAILED);
+                resp.getWriter().print(gson.toJson(errMap));
+            }
+        }
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+        this.doGet(req, resp);
     }
 }

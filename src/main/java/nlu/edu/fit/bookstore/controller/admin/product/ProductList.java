@@ -20,11 +20,10 @@ public class ProductList extends HttpServlet {
 
         //  select ds san pham tu DB -> ArrayList<Product> list tạo
         ArrayList<Product>list=new ArrayList<>();
-        list.add(new Product("123","Đợi anh về","a",59000,78000,8,"Nguyễn Đình Văn","Tiểu thuyết"));
-        list.add(new Product("123","Đợi anh về","a",45000,60000,8,"Nguyễn Đình Học","Giáo dục"));
-        list.add(new Product("123","Đợi anh về","a",59000,78000,8,"Âu Đình Bảo","Tiểu thuyết"));
-        list.add(new Product("123","Đợi anh về","a",59000,78000,8,"Nguyễn Đình Văn","Tiểu thuyết"));
-        list.add(new Product("123","Đợi anh về","a",59000,78000,8,"Bùi Bảo Châu","Tiểu thuyết"));
+        list.add(new Product(1,"Đợi anh về","a",45000,60000,8,"Nguyễn Đình Học","Giáo dục","url","content"));
+        list.add(new Product(1,"Đợi anh về","a",45000,60000,8,"Nguyễn Đình Học","Giáo dục","url","content"));
+
+
 //         Đính kèm dữ liệu vào request và gửi trang JSP
         req.setAttribute("listProduct", list);
 

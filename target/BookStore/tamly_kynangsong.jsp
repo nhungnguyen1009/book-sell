@@ -48,7 +48,7 @@
 <body>
 
 	<!-- form sign up -->
-<<<<<<< HEAD:target/BookStore/tamly_kynangsong.html
+<<<<<<< HEAD:src/main/webapp/tamly_kynangsong.html
 	<div class="modal" id="id01" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -306,7 +306,7 @@
 			</nav>
 =======
 	<%@include file="parts/header.jsp" %>
->>>>>>> beb6171e031060683c3e3cdf6db133bf9756d9e2:target/BookStore/tamly_kynangsong.jsp
+>>>>>>> beb6171e031060683c3e3cdf6db133bf9756d9e2:src/main/webapp/tamly_kynangsong.jsp
 			<!-- /NAVIGATION -->
 
 			<!-- BREADCRUMB -->

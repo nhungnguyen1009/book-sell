@@ -1,8 +1,8 @@
 <html>
 
-<head>
+<head><%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
         <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
         <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/libs/css/style.css">

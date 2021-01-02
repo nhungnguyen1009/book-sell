@@ -62,7 +62,7 @@
 					<a href="sachThieuNhi.jsp">Sách thiếu nhi</a>
 					<a href="kinhte.jsp">Sách kinh tế</a>
 					<a href="sachNgoaiNgu.jsp">Sách ngoại ngữ</a>
-					<a href="#">Tâm lý - Kỹ năng sống </a>
+					<a href="tamly_kynangsong.jsp">Tâm lý - Kỹ năng sống </a>
 					<a href="giaoKhoa.jsp">Giáo khoa - Tham khảo</a>
 					<a href="tieuSu.jsp">Tiểu sử - Hồi kí</a>
 				</div>

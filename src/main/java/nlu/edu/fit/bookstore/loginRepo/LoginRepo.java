@@ -2,7 +2,6 @@ package nlu.edu.fit.bookstore.loginRepo;
 
 import nlu.edu.fit.bookstore.connection.DBconnection;
 import nlu.edu.fit.bookstore.model.User;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -27,20 +26,20 @@ public class LoginRepo {
             if (rss.next()) {
                 int id = rss.getInt(1);
                 String name = rss.getString("username");
-                String password = rss.getString("password");
+                String fullname = rss.getString("fullname");
                 user.setId(id);
                 user.setUsername(name);
-                user.setPassword(password);
+                user.setFullname(fullname);
+                return user;
             }
-            return user;
+            return null;
         } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            return null;
         }
-        return null;
     }
 
     // cần user info để lưu session
-    public static void main(String[] args) {
-        System.out.println(LoginRepo.login("nhung", "123"));
-    }
+//    public static void main(String[] args) {
+//        System.out.println(LoginRepo.login("nhung", "123"));
+//    }
 }

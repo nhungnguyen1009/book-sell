@@ -1071,16 +1071,7 @@
 	<%@include file="parts/footer.jsp" %>
 	<!-- /FOOTER -->
 
-	<!-- jQuery Plugins -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/nouislider.min.js"></script>
-	<script src="js/jquery.zoom.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/slider.js"></script>
 
-	<script src="js/quickview.js"></script>
 </body>
 
 </html>

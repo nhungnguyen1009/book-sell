@@ -792,6 +792,7 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <!-- /QUICK VIEW  -->
 
             <!-- NEWSLETTER -->
@@ -811,3 +812,17 @@
     </body>
 
     </html>
+=======
+        </div>
+    </div>
+    <!-- /QUICK VIEW  -->
+
+    <!-- NEWSLETTER -->
+    <%@include file="parts/footer.jsp" %>
+    <!-- /FOOTER -->
+
+
+</body>
+
+</html>
+>>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11

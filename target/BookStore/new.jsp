@@ -911,6 +911,7 @@
                     <div class="add-to-cart">
                         <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
 												giỏ</button>
+<<<<<<< HEAD
                     </div>
                 </div>
             </div>
@@ -1051,3 +1052,140 @@
         </body>
 
         </html>
+=======
+										</div>
+									</div>
+								</div>
+								<!-- /product -->
+							</div>
+							<!-- /store products -->
+
+							<!-- store bottom filter -->
+							<div class="store-filter clearfix">
+								<ul class="store-pagination">
+									<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+									<li class="active">1</li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+							<!-- /store bottom filter -->
+						</div>
+						<!-- /STORE -->
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /SECTION -->
+		</div>
+	</div>
+
+	<!-- QUICK VIEW  -->
+	<div id="quick-view-modal" class="wrapper-quickview" style="display: none;">
+		<div class="quickviewOverlay">
+		</div>
+		<div class="jsQuickview">
+			<div class="modal-header clearfix" style="width: 100%">
+				<a href="product.jsp" class="quickview-title text-left" title="Đừng lựa chọn an nhàn khi còn trẻ">
+					<h4 style="text-align: center; ">
+						ĐỪNG LỰA CHỌN AN NHÀN KHI CÒN TRẺ</h4>
+				</a>
+
+				<div class="quickview-close iconClose">
+					<a href="javascript:void(0);"><i class="glyphicon glyphicon-remove" style="color: tomato;"></i></a>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="quickview-image image-zoom">
+					<img class="p-product-image-feature" src="./img/quickview/large1.jpg"
+						alt="Đừng lựa chọn an nhàn khi còn trẻ">
+				</div>
+				<div id="quickview-sliderproduct">
+					<div class="quickview-slider">
+						<ul class="owl-carousel owl-theme" style="display: block; opacity: 1;">
+							<div class="owl-wrapper-outer">
+								<div class="owl-wrapper" style="width: 600px; left: 0px; display: flex;">
+									<div class="owl-item" style="width: 100px;">
+										<li class="product-thumb active"><a href="javascript:void(0);"
+												data-image="./img/quickview/large1.jpg">
+												<img src="./img/quickview/small1.jpg"
+													style="width: 80px;height: 100px;"></a>
+										</li>
+									</div>
+									<div class="owl-item" style="width: 100px;">
+										<li class="product-thumb"><a href="javascript:void(0);"
+												data-image="./img/quickview/large2.jpg">
+												<img src="./img/quickview/small2.jpg"
+													style="width: 80px;height: 100px;"></a>
+										</li>
+									</div>
+									<div class="owl-item" style="width: 100px;">
+										<li class="product-thumb"><a href="javascript:void(0);"
+												data-image="./img/quickview/large3.jpg">
+												<img src="./img/quickview/small3.jpg"
+													style="width: 80px;height: 100px;"></a>
+										</li>
+									</div>
+								</div>
+							</div>
+							<div class="owl-controls clickable" style="display: none;">
+								<div class="owl-pagination">
+									<div class="owl-page active">
+										<span class=""></span>
+									</div>
+								</div>
+								<div class="owl-buttons">
+									<div class="owl-prev">
+										owl-prev</div>
+									<div class="owl-next">
+										owl-next</div>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<strong>Mô tả:</strong>
+				<div>
+					Trong độ xuân xanh phơi phới ngày ấy, bạn không dám mạo hiểm, không dám nỗ lực
+					để kiếm học bổng, không chịu tìm tòi những thử thách trong công việc, không phấn
+					đấu hướng đến ước mơ của mình. Bạn mơ mộng rằng làm việc xong sẽ vào làm ở một
+					công ty nổi tiếng, làm một thời gian sẽ thăng quan tiến chức. Mơ mộng ....<a href="product.jsp"
+						style="color: tomato;">xem thêm</a>
+				</div></br>
+				<div><strong>Tác giả:</strong> Cảnh Thiên</div></br>
+				<div><strong>Thể loại:</strong> Văn học</div></br>
+				<div class="add-to-cart">
+					<div class="qty-label">
+						<strong>Số lượng: </strong></br>
+						<div class="input-number" style="float: left;">
+							<input type="number" value="1">
+							<span class="qty-up">+</span>
+							<span class="qty-down">-</span>
+						</div>
+					</div>
+					</br>
+					</br>
+					</br>
+					<div class="product-details" style="text-align: center;">
+						<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /QUICK VIEW  -->
+
+	<!-- NEWSLETTER -->
+	<%@include file="parts/footer.jsp" %>
+	<!-- /FOOTER -->
+
+
+</body>
+
+</html>
+>>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11

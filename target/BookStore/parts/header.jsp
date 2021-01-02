@@ -1,5 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="nlu.edu.fit.bookstore.utils.Utils" %>
+<<<<<<< HEAD
+=======
+<%@ page import="nlu.edu.fit.bookstore.model.User" %>
+>>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +19,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
 <!-- Bootstrap -->
+<<<<<<< HEAD
 <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
 <!-- Slick -->
@@ -23,13 +28,28 @@
 
 <!-- nouislider -->
 <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+=======
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+<!-- Slick -->
+<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+<!-- nouislider -->
+<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+>>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11
 
 <!-- Font Awesome Icon -->
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
 <!-- Custom stlylesheet -->
+<<<<<<< HEAD
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <link type="text/css" rel="stylesheet" href="css/quickview.css" />
+=======
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="text/css" rel="stylesheet" href="css/quickview.css"/>
+>>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11
 
 <!-- Modernizr -->
 <script src="js/modernizr.js"></script>
@@ -42,8 +62,18 @@
 <![endif]-->
 
 <!-- SlideShow -->
+<<<<<<< HEAD
 <link type="text/css" rel="stylesheet" href="css/slider.css" />
 <![endif]-->
+=======
+<link type="text/css" rel="stylesheet" href="css/slider.css"/>
+<![endif]-->
+
+<%
+    User user = (User) session.getAttribute("user");
+    if (user != null) System.out.println("user" + user.getUsername());
+%>
+>>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11
 <!-- form sign up -->
 <div class="modal" id="id01" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -121,17 +151,19 @@
                 <h3 class="modal-title" style="text-align: center;">Đăng nhập</h3>
             </div>
             <div class="modal-body">
-                <form action="<%=Utils.fullPath("login")%>">
+                <form id="loginForm">
                     <div class="form-group" id="example1">
                         <label for="exampleInputEmail1">Tên đăng nhập hoặc email</label>
-                        <input  class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+                        <input name="username" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
                                placeholder="Tên đăng nhập hoặc email">
+                        <span id="loginFormUsernameErr" class="error"></span>
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Mật khẩu</label>
-                        <input type="password" class="form-control" id="exampleInputPassword"
+                        <input name="password" type="password" class="form-control" id="exampleInputPassword"
                                placeholder="Mật khẩu">
+                        <span id="loginFormPasswordErr" class="error"></span>
                     </div>
 
                     <div class="form-group form-check">
@@ -140,7 +172,7 @@
                             <a href="forgot.jsp">Quên mật khẩu?</a><br>
                         </div>
                         <div style="text-align: center;">
-                            <button type="submit" class="btn btn-primary"
+                            <button onclick="handleLogin(event)" class="btn btn-primary"
                                     style="width: 50%; height: 50px; border-radius: 25px; outline: 0px;">Đăng
                                 nhập
                             </button>
@@ -174,13 +206,18 @@
                 <li><a href="#`"><i class="fa fa-envelope-o"></i> JB_bookstore@gmail.com</a></li>
                 <li><a href="#"><i class="fa fa-map-marker"></i> Quận Thủ Đức, TPHCM</a></li>
             </ul>
-            <ul class="header-links pull-right">
+            <ul id="topLinks" class="header-links pull-right">
+                <%
+                    if (user == null) {%>
                 <li><a href="#" data-toggle="modal" data-target="#id01"><i class="fa fa-user-o"></i>Đăng ký</a>
                 </li>
                 <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user-o"></i>Đăng
                     nhập</a></li>
-                <li><a href="account.jsp"><i class="fa fa-user-o"></i>Tài khoản</a></li>
-                <li><a href="admin/index.html"><i class="fa fa-user-o"></i>Admin</a></li>
+                <%} else {%>
+                <li><a href=""><i class="fa fa-user-o"></i>Tài khoản <%=user.getFullname()%>
+                <li><a href="<%=Utils.fullPath("logout")%>"><i class="fa fa-user-o"></i>Đăng xuất
+                </a></li>
+                <%}%>
             </ul>
         </div>
     </div>
@@ -311,3 +348,50 @@
         <!-- /NAVIGATION -->
     </div>
 </div>
+
+<script>
+    // LOGIN
+    function handleLogin(e) {
+        // chặn sự kiện submit
+        e.preventDefault();
+        var formData = $('form[id="loginForm"]')
+        var data = formData.serialize();
+        console.log("data", data)
+        const loginForm = $("#loginForm");
+        const username = $(loginForm).find("#loginFormUsernameErr");
+        const pass = $(loginForm).find("#loginFormPasswordErr");
+        username.html("");
+        pass.html("");
+        $.ajax({
+            type: "post",
+            url: 'login',
+            data,
+            // dataType: return
+            // dataType: "application/json",
+            headers: {
+                Accept: "application/json; charset=utf-8"
+            },
+            error: function (err) {
+                if (err.responseText) {
+                    // convert text to JSON
+                    const obj = $.parseJSON(err.responseText);
+                    console.log("username", obj.username)
+                    console.log("password", obj.password)
+
+
+                    username.html(obj.username);
+                    pass.html(obj.password);
+                    // show lỗi trên HTML
+                }
+            },
+            success: function () {
+                // Tắt modal login
+                $('#exampleModal').modal('toggle')
+                // reload page
+                $('#topLinks').load(location.href + " #topLinks");
+                // var obj = $.parseJSON(data);
+            }
+        });
+    }
+
+</script>

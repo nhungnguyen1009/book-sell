@@ -336,7 +336,7 @@
 														class="tooltipp">đối chiếu</span></button>
                                                 <button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
                                             </div>
                                         </div>
@@ -376,7 +376,7 @@
 														class="tooltipp">đối chiếu</span></button>
                                                 <button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
                                             </div>
                                         </div>
@@ -417,7 +417,7 @@
 														class="tooltipp">đối chiếu</span></button>
                                                 <button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
                                             </div>
                                         </div>
@@ -459,7 +459,7 @@
 														class="tooltipp">đối chiếu</span></button>
                                                 <button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
                                             </div>
                                         </div>
@@ -501,7 +501,7 @@
 														class="tooltipp">đối chiếu</span></button>
                                                 <button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
                                             </div>
                                         </div>
@@ -541,7 +541,7 @@
 														class="tooltipp">đối chiếu</span></button>
                                                 <button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
                                             </div>
                                         </div>
@@ -583,7 +583,7 @@
 														class="tooltipp">đối chiếu</span></button>
                                                 <button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
                                             </div>
                                         </div>
@@ -623,7 +623,7 @@
 														class="tooltipp">đối chiếu</span></button>
                                                 <button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
                                             </div>
                                         </div>
@@ -665,7 +665,7 @@
 														class="tooltipp">đối chiếu</span></button>
                                                 <button class="quick-view"><a href="javascript:void(0);"
 														class="quickview" data-handle="quickview"
-														style="color: black;"><i class="fa fa-eye"></a></i><span
+														style="color: black;"><i class="fa fa-eye"></i></a><span
 														class="tooltipp">xem nhanh</span></button>
                                             </div>
                                         </div>
@@ -793,6 +793,7 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <!-- /QUICK VIEW  -->
 
             <!-- NEWSLETTER -->
@@ -812,3 +813,17 @@
     </body>
 
     </html>
+=======
+        </div>
+    </div>
+    <!-- /QUICK VIEW  -->
+
+    <!-- NEWSLETTER -->
+    <%@include file="parts/footer.jsp" %>
+    <!-- /FOOTER -->
+
+
+</body>
+
+</html>
+>>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11

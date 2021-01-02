@@ -1037,6 +1037,7 @@
     <%@include file="parts/footer.jsp" %>
         <!-- /FOOTER -->
 
+<<<<<<< HEAD
         <!-- jQuery Plugins -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -1048,5 +1049,9 @@
 
         <script src="js/quickview.js"></script>
         </body>
+=======
+
+</body>
+>>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11
 
         </html>

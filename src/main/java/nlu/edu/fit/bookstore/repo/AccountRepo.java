@@ -1,6 +1,5 @@
-package nlu.edu.fit.bookstore.loginRepo;
+package nlu.edu.fit.bookstore.repo;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import nlu.edu.fit.bookstore.connection.DBconnection;
 import nlu.edu.fit.bookstore.model.User;
 
@@ -8,7 +7,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 public class AccountRepo {
     // return true/ false

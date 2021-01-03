@@ -1,7 +1,7 @@
 package nlu.edu.fit.bookstore.controller;
 
 import com.google.gson.Gson;
-import nlu.edu.fit.bookstore.loginRepo.AccountRepo;
+import nlu.edu.fit.bookstore.repo.AccountRepo;
 import nlu.edu.fit.bookstore.model.User;
 import nlu.edu.fit.bookstore.utils.MD5;
 

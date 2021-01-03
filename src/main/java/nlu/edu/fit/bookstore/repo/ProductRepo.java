@@ -1,4 +1,4 @@
-package nlu.edu.fit.bookstore.loginRepo;
+package nlu.edu.fit.bookstore.repo;
 import nlu.edu.fit.bookstore.connection.DBconnection;
 import nlu.edu.fit.bookstore.model.Product;
 import java.sql.Connection;
@@ -23,7 +23,7 @@ public class ProductRepo {
             ResultSet rss = pr.executeQuery();
 
             while (rss.next()) {
-                int id = rss.getInt(1);
+                String id = rss.getString(1);
                 String url = rss.getString("url");
                 String name = rss.getString("name");
                 String ct = rss.getString("content");

@@ -1,6 +1,6 @@
 package nlu.edu.fit.bookstore.controller;
 
-import nlu.edu.fit.bookstore.loginRepo.ProductRepo;
+import nlu.edu.fit.bookstore.repo.ProductRepo;
 import nlu.edu.fit.bookstore.model.Product;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

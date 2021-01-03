@@ -1,8 +1,7 @@
 package nlu.edu.fit.bookstore.controller;
 
 import com.google.gson.Gson;
-import nlu.edu.fit.bookstore.loginRepo.AccountRepo;
-import nlu.edu.fit.bookstore.model.User;
+import nlu.edu.fit.bookstore.repo.AccountRepo;
 import nlu.edu.fit.bookstore.utils.MD5;
 import nlu.edu.fit.bookstore.utils.Utils;
 
@@ -11,7 +10,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -30,10 +28,8 @@ public class SignIn extends HttpServlet {
         String password = req.getParameter("password");
         String confirmPass = req.getParameter("confirmpass");
 
-        System.out.println("fullname" + fullname);
-        System.out.println("email" + email);
-        System.out.println("username" + username);
-        System.out.println("password" + password);
+
+
         //check xem khach hang nhap du thong tin chua
         if ("".equals(fullname) || fullname == null || "".equals(email) || email == null || !Utils.isEmail(email) || "".equals(username) || username == null || "".equals(password) || password == null || "".equals(confirmPass) || confirmPass == null || !confirmPass.equals(password)) {
             if ("".equals(fullname) || fullname == null) errMap.put("fullname", "Bạn chưa nhập họ tên");

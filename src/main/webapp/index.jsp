@@ -56,7 +56,7 @@
     <!-- SECTION -->
     <!-- SlideShow -->
     <!-- SECTION -->
-
+    <div>
     <div id="left-menu" style="float: left;">
         <div class="vertical-menu">
             <a href="#" class="active"><i class="fa fa-bars"></i>&nbsp; Thể loại</a>
@@ -207,6 +207,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- /SECTION -->
 

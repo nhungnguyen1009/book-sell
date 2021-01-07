@@ -63,17 +63,18 @@
                 <h3 class="modal-title" style="text-align: center;">Đăng ký </h3>
             </div>
             <div class="modal-body">
-                <form>
+                <form id="formSignIn">
                     <div class="form-group">
                         <label for="exampleInputFullname">Họ tên*</label>
-                        <input type="name" class="form-control" id="exampleInputFullname1"
+                        <input type="name" name="fullname" class="form-control" id="exampleInputFullname1"
                                aria-describedby="nameHelp" placeholder="Họ và tên">
+                        <span id="signInFormFullnameErr" class="error"></span>
                     </div>
                     <div class="form-group" id="example">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1"
                                aria-describedby="emailHelp" placeholder="Email">
-
+                        <span id="signInFormEmailErr" class="error"></span>
                     </div>
                     <!-- <div class="form-group" >
                     <label for="exampleInputPhone">Số điện thoại</label>
@@ -81,29 +82,33 @@
                 </div> -->
                     <div class="form-group">
                         <label for="exampleInputFullname">Tên đăng nhập</label>
-                        <input type="name" class="form-control" id="exampleInputFullname"
+                        <input type="name" name="username" class="form-control" id="exampleInputFullname"
                                aria-describedby="nameHelp" placeholder="Tên đăng nhập">
+                        <span id="signInFormUsernameErr" class="error"></span>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Mật khẩu</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1"
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1"
                                placeholder="Mật khẩu">
                         <small id="emailHelp" class="form-text text-muted">Bạn đừng để ai nhìn thấy mật khẩu
                             nhé!</small>
+                        <span id="signInFormPassErr" class="error"></span>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword2">Nhập lại mật khẩu</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2"
+                        <input type="password" name="confirmpass" class="form-control" id="exampleInputPassword2"
                                placeholder="Nhập lại mật khẩu">
+                        <span id="signInFormConfirmPassErr" class="error"></span>
                     </div>
                     <div class="form-group form-check" style="float: right;">
                         <button onclick="document.getElementById('id01').style.display='none'"><a href="#"
                                                                                                   data-toggle="modal"
                                                                                                   data-target="#exampleModal">Đăng
                             nhập</a></button>
+
                     </div>
                     <div style="text-align: center;">
-                        <button type="submit" class="btn btn-primary"
+                        <button onclick="handleSignIn(event)" class="btn btn-primary"
                                 style="width: 50%; height: 50px; border-radius: 25px; outline: 0px;">Gửi
                         </button>
                         <br>
@@ -190,7 +195,8 @@
                 <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user-o"></i>Đăng
                     nhập</a></li>
                 <%} else {%>
-                <li><a href=""><i class="fa fa-user-o"></i>Tài khoản <%=user.getFullname()%>
+                <li><a href=""><i class="fa fa-user-o"></i>
+                        <%=user.getFullname()%>
                 <li><a href="<%=Utils.fullPath("logout")%>"><i class="fa fa-user-o"></i>Đăng xuất
                 </a></li>
                 <%}%>
@@ -330,8 +336,8 @@
     function handleLogin(e) {
         // chặn sự kiện submit
         e.preventDefault();
-        var formData = $('form[id="loginForm"]')
-        var data = formData.serialize();
+        const formData = $('form[id="loginForm"]');
+        const data = formData.serialize();
         console.log("data", data)
         const loginForm = $("#loginForm");
         const username = $(loginForm).find("#loginFormUsernameErr");
@@ -370,4 +376,58 @@
         });
     }
 
+    //SIGNIN
+
+    function handleSignIn(e) {
+        // chặn sự kiện submit
+        e.preventDefault();
+        const formData = $('form[id="formSignIn"]');
+        const data = formData.serialize();
+        console.log("formData", formData)
+        console.log("data", data)
+        const signInForm = $("#formSignIn");
+        const fullName = $(signInForm).find("#signInFormFullnameErr");
+        const email = $(signInForm).find("#signInFormEmailErr");
+        const username = $(signInForm).find("#signInFormUsernameErr");
+        const password = $(signInForm).find("#signInFormPassErr");
+        const confirmPass = $(signInForm).find("#signInFormConfirmPassErr");
+        fullName.html("");
+        email.html("");
+        username.html("");
+        password.html("");
+        confirmPass.html("");
+        $.ajax({
+            type: "post",
+            url: 'signin',
+            data,
+            // dataType: return
+            // dataType: "application/json",
+            headers: {
+                Accept: "application/json; charset=utf-8"
+            },
+            error: function (err) {
+                if (err.responseText) {
+                    // convert text to JSON
+                    const obj = $.parseJSON(err.responseText);
+                    console.log("fullname", obj.fullname)
+                    console.log("email", obj.email)
+                    console.log("username", obj.username)
+                    console.log("password", obj.password)
+
+                    username.html(obj.username);
+                    fullName.html(obj.fullname);
+                    email.html(obj.email);
+                    password.html(obj.password);
+                    confirmPass.html(obj.confirmpass);
+                    // show lỗi trên HTML
+                }
+            },
+            success: function () {
+                // Tắt modal login
+                $("#id01").modal('toggle')
+                // show prop up
+                // var obj = $.parseJSON(data);
+            }
+        });
+    }
 </script>

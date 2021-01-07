@@ -10,16 +10,18 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class Product {
-    int id;
+    String id;
     String url;
     String name;
     String content;
+    int quantity;
+    double price;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -46,4 +48,25 @@ public class Product {
     public void setContent(String content) {
         this.content = content;
     }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void add() {
+    }
+
+
 }

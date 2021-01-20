@@ -13,7 +13,7 @@ public class Product implements Serializable {
     private String nameAuthor;
     private String category;
     private String url;
-    private String content;
+    private String description;
 
     public Product() {
 
@@ -29,7 +29,7 @@ public class Product implements Serializable {
         this.nameAuthor = nameAuthor;
         this.category = category;
         this.url = url;
-        this.content = content;
+        this.description = content;
     }
 
     public int getId() {
@@ -104,11 +104,11 @@ public class Product implements Serializable {
         this.url = url;
     }
 
-    public String getContent() {
-        return content;
+    public String getDescription() {
+        return description;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

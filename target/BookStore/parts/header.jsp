@@ -1,9 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="nlu.edu.fit.bookstore.utils.Utils" %>
-<<<<<<< HEAD
-=======
 <%@ page import="nlu.edu.fit.bookstore.model.User" %>
->>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,16 +16,6 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
 <!-- Bootstrap -->
-<<<<<<< HEAD
-<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-
-<!-- Slick -->
-<link type="text/css" rel="stylesheet" href="css/slick.css" />
-<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
-
-<!-- nouislider -->
-<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
-=======
 <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
 
 <!-- Slick -->
@@ -37,19 +24,13 @@
 
 <!-- nouislider -->
 <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
->>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11
 
 <!-- Font Awesome Icon -->
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
 <!-- Custom stlylesheet -->
-<<<<<<< HEAD
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<link type="text/css" rel="stylesheet" href="css/quickview.css" />
-=======
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 <link type="text/css" rel="stylesheet" href="css/quickview.css"/>
->>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11
 
 <!-- Modernizr -->
 <script src="js/modernizr.js"></script>
@@ -62,10 +43,6 @@
 <![endif]-->
 
 <!-- SlideShow -->
-<<<<<<< HEAD
-<link type="text/css" rel="stylesheet" href="css/slider.css" />
-<![endif]-->
-=======
 <link type="text/css" rel="stylesheet" href="css/slider.css"/>
 <![endif]-->
 
@@ -73,7 +50,6 @@
     User user = (User) session.getAttribute("user");
     if (user != null) System.out.println("user" + user.getUsername());
 %>
->>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11
 <!-- form sign up -->
 <div class="modal" id="id01" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">

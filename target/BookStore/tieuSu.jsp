@@ -793,37 +793,15 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
+            </div>
+            </div>
             <!-- /QUICK VIEW  -->
 
             <!-- NEWSLETTER -->
             <%@include file="parts/footer.jsp" %>
                 <!-- /FOOTER -->
 
-                <!-- jQuery Plugins -->
-                <script src="js/jquery.min.js"></script>
-                <script src="js/bootstrap.min.js"></script>
-                <script src="js/slick.min.js"></script>
-                <script src="js/nouislider.min.js"></script>
-                <script src="js/jquery.zoom.min.js"></script>
-                <script src="js/main.js"></script>
-                <script src="js/slider.js"></script>
 
-                <script src="js/quickview.js"></script>
     </body>
 
     </html>
-=======
-        </div>
-    </div>
-    <!-- /QUICK VIEW  -->
-
-    <!-- NEWSLETTER -->
-    <%@include file="parts/footer.jsp" %>
-    <!-- /FOOTER -->
-
-
-</body>
-
-</html>
->>>>>>> 68592f0c5568a68b5ab13af61e3f7ac32c57bc11

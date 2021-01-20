@@ -5,4 +5,8 @@ public class Utils {
 
         return "http://localhost:8080/BookStore_war_exploded/"+path;
     }
+    public static  String fullPathAdmin(String path){
+
+        return "http://localhost:8080/BookStore_war_exploded/admin/"+path;
+    }
 }

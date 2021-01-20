@@ -1,11 +1,13 @@
 package nlu.edu.fit.bookstore.model;
 
+import javax.servlet.http.HttpSession;
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Cart implements Serializable {
-    Map<String, Product> data = new HashMap<>();
+    Map<Integer, Product> data = new HashMap<>();
 
     public Cart(){
 
@@ -33,5 +35,21 @@ public class Cart implements Serializable {
             sum += p.getPrice()+ p.getQuantity();
         }
         return sum;
+    } public int quantity(){
+        int sum =0;
+        for(Product p :data.values()){
+            sum += p.getQuantity();
+        }
+        return sum;
+    }
+    public static Cart getCart(HttpSession session){
+        return session.getAttribute("cart") == null ? new Cart() : (Cart) session.getAttribute("cart");
+    }
+
+    public Collection<Product> getData(){
+        return data.values();
+    }
+    public void commit(HttpSession session){
+        session.setAttribute("cart", this);
     }
 }

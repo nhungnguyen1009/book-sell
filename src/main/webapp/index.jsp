@@ -1,5 +1,9 @@
 <%@ page import="sun.rmi.runtime.Log" %>
 <%@ page import="nlu.edu.fit.bookstore.model.User" %>
+<%@ page import="nlu.edu.fit.bookstore.model.Cart" %>
+<%@ page import="nlu.edu.fit.bookstore.controller.AddCart" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="nlu.edu.fit.bookstore.model.Product" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,6 +54,13 @@
 
 </head>
 <body>
+<%
+    ArrayList<Product> list = (ArrayList<Product>) request.getAttribute("listdata");
+%>
+<%--<%--%>
+<%--    ArrayList<Product> listData = (ArrayList<Product>) request.getAttribute("list");--%>
+<%--%>--%>
+
 <div>
     <%@include file="parts/header.jsp" %>
 
@@ -236,11 +247,11 @@
                         <!-- tab -->
                         <div id="tab1" class="tab-pane active">
                             <div class="products-slick" data-nav="#slick-nav-1">
+                                <% for(Product p : list){%>
                                 <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <a href="product.jsp"><img
-                                                src="./img/index/Moi/10-huyen-thoai-viking-hay-nhat-moi-thoi-dai.jpg"
+                                        <a href="product.jsp"><img src="<%= p.getUrl()%>"
                                                 alt="10 huyền thoại Viking hay nhất mọi thời đại"></a>
                                         <div class="product-label">
                                             <span class="sale">-30%</span>
@@ -249,7 +260,7 @@
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Sách</p>
-                                        <h3 class="product-name"><a href="#">huyền thoại viking</a></h3>
+                                        <h3 class="product-name"><a href="#"><%=p.getName()%></a></h3>
                                         <h4 class="product-price">70,000₫
                                             <del
                                                     class="product-old-price">100,000₫
@@ -275,7 +286,7 @@
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <a href="cart.jsp">
+                                        <a href="<%=Utils.fullPath("cart/add?id="+ p.getId())%>">
                                             <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
                                                 giỏ
                                             </button>
@@ -283,186 +294,7 @@
                                     </div>
                                 </div>
                                 <!-- /product -->
-
-                                <!-- product -->
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="product.jsp"><img
-                                                src="./img/index/Moi/100-mau-chuyen-co-dong-tay-nguyen-lan.jpg"
-                                                alt="100 mẫu chuyện cổ đông tây"></a>
-                                        <div class="product-label">
-                                            <span class="new">MỚI</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-body">
-                                        <p class="product-category">Truyện</p>
-                                        <h3 class="product-name"><a href="#">truyện cổ đông tây</a></h3>
-                                        <h4 class="product-price">65,000₫ </h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                    class="tooltipp">yêu thích</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                    class="tooltipp">đối chiếu</span></button>
-                                            <button class="quick-view"><a href="javascript:void(0);"
-                                                                          class="quickview" data-handle="quickview"
-                                                                          style="color: black;"><i
-                                                    class="fa fa-eye"></a></i><span
-                                                    class="tooltipp">xem nhanh</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart">
-                                        <a href="cart.jsp">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                                giỏ
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- /product -->
-
-                                <!-- product -->
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="product.jsp"><img
-                                                src="./img/index/Moi/108-truyen-ngu-ngon-hay-nhat.jpg"
-                                                alt="108 truyện ngụ ngôn hay nhất"></a>
-                                        <div class="product-label">
-                                            <span class="sale">-50%</span>
-                                            <span class="new">MỚI</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-body">
-                                        <p class="product-category">Truyện</p>
-                                        <h3 class="product-name">108 truyện ngụ ngôn</h3>
-                                        <h4 class="product-price">55,000₫
-                                            <del
-                                                    class="product-old-price">110,000₫
-                                            </del>
-                                        </h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                    class="tooltipp">yêu thích</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                    class="tooltipp">đối chiếu</span></button>
-                                            <button class="quick-view"><a href="javascript:void(0);"
-                                                                          class="quickview" data-handle="quickview"
-                                                                          style="color: black;"><i
-                                                    class="fa fa-eye"></a></i><span
-                                                    class="tooltipp">xem nhanh</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart">
-                                        <a href="cart.jsp">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                                giỏ
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- /product -->
-
-                                <!-- product -->
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="product.jsp"><img
-                                                src="./img/index/Moi/365-chuyen-ke-hang-dem-mua-thu.jpg"
-                                                alt="365 chuyện kể hằng đêm mùa thu"></a>
-                                        <div class="product-label">
-                                            <span class="new">MỚI</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-body">
-                                        <p class="product-category">Truyện</p>
-                                        <h3 class="product-name"><a href="#">Truyện kể mùa thu</a></h3>
-                                        <h4 class="product-price">75,000₫ </h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                    class="tooltipp">yêu thích</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                    class="tooltipp">đối chiếu</span></button>
-                                            <button class="quick-view"><a href="javascript:void(0);"
-                                                                          class="quickview" data-handle="quickview"
-                                                                          style="color: black;"><i
-                                                    class="fa fa-eye"></a></i><span
-                                                    class="tooltipp">xem nhanh</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart">
-                                        <a href="cart.jsp">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                                giỏ
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- /product -->
-
-                                <!-- product -->
-                                <div class="product">
-                                    <div class="product-img">
-                                        <a href="product.jsp"><img
-                                                src="./img/index/Moi/buratino-va-chiec-chia-khoa-vang.jpg"
-                                                alt="Buratino và chiếc chìa khóa vàng"></a>
-                                        <div class="product-label">
-                                            <span class="new">MỚI</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-body">
-                                        <p class="product-category">Truyện</p>
-                                        <h3 class="product-name"><a href="product.jsp">Buratino & chìa khóa
-                                            vàng</a>
-                                        </h3>
-                                        <h4 class="product-price">80,000₫</h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                    class="tooltipp">yêu thích</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                    class="tooltipp">đối chiếu</span></button>
-                                            <button class="quick-view"><a href="javascript:void(0);"
-                                                                          class="quickview" data-handle="quickview"
-                                                                          style="color: black;"><i
-                                                    class="fa fa-eye"></a></i><span
-                                                    class="tooltipp">xem nhanh</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart">
-                                        <a href="cart.jsp">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                                giỏ
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- /product -->
-
+                                <%}%>
                             </div>
                         </div>
                         <!-- /tab -->
@@ -500,21 +332,24 @@
                         <!-- tab -->
                         <div id="tab2" class="tab-pane fade in active">
                             <div class="products-slick" data-nav="#slick-nav-2">
+
+                                <% for(Product p : list){%>
                                 <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="./img/index/BanChay/dam-bi-ghet.jpg" alt="Dám bị ghét">
+                                        <a href="product.jsp"><img src="<%= p.getUrl()%>"
+                                                                   alt="10 huyền thoại Viking hay nhất mọi thời đại"></a>
                                         <div class="product-label">
                                             <span class="sale">-30%</span>
-                                            <span class="new">NEW</span>
+                                            <span class="new">MỚI</span>
                                         </div>
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Sách</p>
-                                        <h3 class="product-name"><a href="#">dám bị ghét</a></h3>
-                                        <h4 class="product-price">115,000₫
+                                        <h3 class="product-name"><a href="#"><%=p.getName()%></a></h3>
+                                        <h4 class="product-price">70,000₫
                                             <del
-                                                    class="product-old-price">150,000₫
+                                                    class="product-old-price">100,000₫
                                             </del>
                                         </h4>
                                         <div class="product-rating">
@@ -537,165 +372,16 @@
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                            giỏ
-                                        </button>
+                                        <a href="<%=Utils.fullPath("cart/add?id="+ p.getId())%>">
+                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
+                                                giỏ
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- /product -->
-
-                                <!-- product -->
-                                <div class="product">
-                                    <div class="product-img">
-                                        <img src="./img/index/BanChay/3-Doi anh ve.jpg" alt="Đợi anh về">
-                                        <div class="product-label">
-                                            <span class="new">NEW</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-body">
-                                        <p class="product-category">Văn học</p>
-                                        <h3 class="product-name"><a href="#">đợi anh về</a></h3>
-                                        <h4 class="product-price">62,000₫</h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                    class="tooltipp">yêu thích</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                    class="tooltipp">đối chiếu</span></button>
-                                            <button class="quick-view"><a href="javascript:void(0);"
-                                                                          class="quickview" data-handle="quickview"
-                                                                          style="color: black;"><i
-                                                    class="fa fa-eye"></a></i><span
-                                                    class="tooltipp">xem nhanh</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                            giỏ
-                                        </button>
-                                    </div>
-                                </div>
+                                <%}%>
                                 <!-- /product -->
-
-                                <!-- product -->
-                                <div class="product">
-                                    <div class="product-img">
-                                        <img src="./img/index/BanChay/mu-phu-thuy.jpg" alt="Mụ phù thủy">
-                                        <div class="product-label">
-                                            <span class="sale">-30%</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-body">
-                                        <p class="product-category">Truyện</p>
-                                        <h3 class="product-name"><a href="#">mụ phù thủy</a></h3>
-                                        <h4 class="product-price">90,000₫
-                                            <del
-                                                    class="product-old-price">129,000₫
-                                            </del>
-                                        </h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                    class="tooltipp">yêu thích</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                    class="tooltipp">đối chiếu</span></button>
-                                            <button class="quick-view"><a href="javascript:void(0);"
-                                                                          class="quickview" data-handle="quickview"
-                                                                          style="color: black;"><i
-                                                    class="fa fa-eye"></a></i><span
-                                                    class="tooltipp">xem nhanh</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                            giỏ
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- /product -->
-
-                                <!-- product -->
-                                <div class="product">
-                                    <div class="product-img">
-                                        <img src="./img/index/BanChay/blackmoore.jpg" alt="Blackmoore">
-                                    </div>
-                                    <div class="product-body">
-                                        <p class="product-category">Sách</p>
-                                        <h3 class="product-name"><a href="#">Blackmoore</a></h3>
-                                        <h4 class="product-price">78,000₫ </h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                    class="tooltipp">yêu thích</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                    class="tooltipp">đối chiếu</span></button>
-                                            <button class="quick-view"><a href="javascript:void(0);"
-                                                                          class="quickview" data-handle="quickview"
-                                                                          style="color: black;"><i
-                                                    class="fa fa-eye"></a></i><span
-                                                    class="tooltipp">xem nhanh</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                            giỏ
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- /product -->
-
-                                <!-- product -->
-                                <div class="product">
-                                    <div class="product-img">
-                                        <img src="./img/index/BanChay/pr-la-song.jpg" alt="Pr là sống">
-                                    </div>
-                                    <div class="product-body">
-                                        <p class="product-category">Sách</p>
-                                        <h3 class="product-name"><a href="#">pr là sống</a></h3>
-                                        <h4 class="product-price">83,000₫</h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                    class="tooltipp">yêu thích</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                    class="tooltipp">đối chiếu</span></button>
-                                            <button class="quick-view"><a href="javascript:void(0);"
-                                                                          class="quickview" data-handle="quickview"
-                                                                          style="color: black;"><i
-                                                    class="fa fa-eye"></a></i><span
-                                                    class="tooltipp">xem nhanh</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                            giỏ
-                                        </button>
-                                    </div>
-                                </div>
                                 <!-- /product -->
                             </div>
                         </div>

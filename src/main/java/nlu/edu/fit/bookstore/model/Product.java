@@ -1,27 +1,19 @@
 package nlu.edu.fit.bookstore.model;
 
 
-import nlu.edu.fit.bookstore.connection.DBconnection;
-import nlu.edu.fit.bookstore.model.Product;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-
 public class Product {
-    String id;
+    int id;
     String url;
     String name;
     String content;
     int quantity;
     double price;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -66,7 +58,6 @@ public class Product {
     }
 
     public void add() {
+
     }
-
-
 }

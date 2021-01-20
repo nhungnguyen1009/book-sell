@@ -15,11 +15,8 @@ public class Product implements Serializable {
     private String url;
     private String description;
 
-    public Product() {
+    public Product(int id, String name, String img, long price, long priceSale, int quantity, String nameAuthor, String category, String url, String description) {
 
-    }
-
-    public Product(int id, String name, String img, long price, long priceSale, int quantity, String nameAuthor, String category, String url, String content) {
         this.id = id;
         this.name = name;
         this.img = img;
@@ -29,7 +26,10 @@ public class Product implements Serializable {
         this.nameAuthor = nameAuthor;
         this.category = category;
         this.url = url;
-        this.description = content;
+        this.description = description;
+    }
+
+    public Product() {
     }
 
     public int getId() {
@@ -110,5 +110,8 @@ public class Product implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void add() {
     }
 }

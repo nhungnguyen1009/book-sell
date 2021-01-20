@@ -1,6 +1,5 @@
 package nlu.edu.fit.bookstore.controller.admin.product;
 
-import nlu.edu.fit.bookstore.loginRepo.LoginRepo;
 import nlu.edu.fit.bookstore.loginRepo.ProductRepo;
 import nlu.edu.fit.bookstore.model.Product;
 

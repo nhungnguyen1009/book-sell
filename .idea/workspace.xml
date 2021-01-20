@@ -10,60 +10,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7cf3ed8-9188-4b2e-8e8e-c4d57bb87526" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/OrderList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/PublisherList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/StaffList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/UserList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/product/AddProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/product/ProccessAddProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/product/ProccessDelProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/OrderRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/StaffRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/UserRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/MyConnectDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Publisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/css.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/suaSanPham.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/ProductList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/SignIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/repo/AccountRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/repo/ProductRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/utils/MD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/AddCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/AddCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/ListProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/Logout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/LoginRepo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/ProductRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/ProductRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/utils/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlydondoitra.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlydondoitra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlydonhang.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlydonhang.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlykhachhang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhanvien.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhasanxuat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhasanxuat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlysanpham.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlysanpham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlysanpham.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themkhachhang.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themkhachhang.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themnhanvien.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themnhanvien.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themnhasanxuat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themnhasanxuat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themsanpham.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/changePass.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/changePass.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/parts/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/parts/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/connection/DBconnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/AddCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/ListProduct.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/Login.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/Logout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/addCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/OrderList.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/ProductList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/listProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/PublisherList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/StaffList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/UserList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/product/AddProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/product/ProccessAddProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/product/ProccessDelProduct.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/filter/Data.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/LoginRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/OrderRepo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/ProductRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/UserRepo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/MyConnectDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/Order.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/Publisher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/Staff.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/User.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/utils/Utils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/lib/gson-2.8.5.jar" beforeDir="false" />
@@ -316,6 +309,7 @@
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/images/vanhoc/tải xuống (2).png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/images/vanhoc/tải xuống.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/libs/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/libs/css/sua.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/libs/js/dashboard-ecommerce.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/libs/js/dashboard-finance.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/libs/js/dashboard-influencer.js" beforeDir="false" />
@@ -706,6 +700,7 @@
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/vendor/timeline/img/cd-icon-picture.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/vendor/timeline/js/main.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/assets/vendor/vector-map/jqvmap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/css.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/dashboard-finance.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/dashboard-influencer.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/dashboard-sales.html" beforeDir="false" />
@@ -722,16 +717,16 @@
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/documentation/js/jquery-3.1.0.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/documentation/js/jstree.active.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/documentation/js/jstree.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/dsd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/menuLeft.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/dsd.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/ecommerce-product-checkout.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/ecommerce-product-single.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/ecommerce-product.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/footer.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/index.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/influencer-finder.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/influencer-profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/menuLeft.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/pages/404-page.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/pages/accordions.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/pages/blank-page-header.html" beforeDir="false" />
@@ -784,18 +779,18 @@
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/pages/typography.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/pages/user-profile.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/pages/widgets.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlydanhgia.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/assets/libs/css/sua.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlydanhgia.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlydondoitra.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlydonhang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlykhachhang.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlykhachhang.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlynhanvien.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhanvien.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlynhasanxuat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlysanpham.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlydonhang.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlykhachhang.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlynhanvien.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlynhasanxuat.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlysanpham.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themkhachhang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themnhanvien.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themnhasanxuat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themsanpham.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themsanpham.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/suaSanPham.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themkhachhang.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themnhanvien.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themnhasanxuat.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themsanpham.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/blog.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/cart.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/changePass.jsp" beforeDir="false" />
@@ -1082,16 +1077,31 @@
       <change beforePath="$PROJECT_DIR$/target/BookStore/termsOfUse.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/tieuSu.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/connection/DBconnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/AddCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/ListProduct.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/Login.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/Logout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/addCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/OrderList.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/ProductList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/listProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/PublisherList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/StaffList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/UserList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/product/AddProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/product/ProccessAddProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/product/ProccessDelProduct.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/filter/Data.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/LoginRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/OrderRepo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/ProductRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/UserRepo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/MyConnectDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/Order.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/Publisher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/Staff.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/User.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/utils/Utils.class" beforeDir="false" />
     </list>
@@ -1160,6 +1170,7 @@
       <recent name="nlu.edu.fit.bookstore.controller.admin.product" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="nlu.edu.fit.bookstore.controller.admin.product.product" />
       <recent name="nlu.edu.fit.bookstore.controller.admin.product" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -1390,7 +1401,7 @@
       <workItem from="1611060867089" duration="219000" />
       <workItem from="1611076138477" duration="2168000" />
       <workItem from="1611146078074" duration="1607000" />
-      <workItem from="1611147726370" duration="5543000" />
+      <workItem from="1611147726370" duration="6373000" />
     </task>
     <servers />
   </component>
@@ -1419,11 +1430,11 @@
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1604720295811" />
     <state x="102" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1611153040874" />
-    <state x="476" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1609870837376">
+    <state x="476" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1611154088520">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604731239261" />
-    <state x="476" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1609870837376" />
+    <state x="476" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1611154088520" />
     <state x="375" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1611148053390">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -1453,66 +1464,66 @@
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604724846470" />
     <state x="449" y="102" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611148267106" />
-    <state width="1120" height="392" key="GridCell.Tab.0.bottom" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.0.bottom" timestamp="1611153352162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="392" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.0.center" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611153352162" />
+    <state width="1120" height="392" key="GridCell.Tab.0.center" timestamp="1611153352162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="392" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.0.left" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611153352162" />
+    <state width="1120" height="392" key="GridCell.Tab.0.left" timestamp="1611153352162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="392" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.0.right" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611153352162" />
+    <state width="1120" height="392" key="GridCell.Tab.0.right" timestamp="1611153352162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="392" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.1.bottom" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611153352162" />
+    <state width="1120" height="392" key="GridCell.Tab.1.bottom" timestamp="1611153352177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="392" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.1.center" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611153352177" />
+    <state width="1120" height="392" key="GridCell.Tab.1.center" timestamp="1611153352177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="392" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.1.left" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1611153352177" />
+    <state width="1120" height="392" key="GridCell.Tab.1.left" timestamp="1611153352162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="392" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.1.right" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1611153352162" />
+    <state width="1120" height="392" key="GridCell.Tab.1.right" timestamp="1611153352177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="392" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.2.bottom" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1611153352177" />
+    <state width="1120" height="392" key="GridCell.Tab.2.bottom" timestamp="1611153352177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="392" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.2.center" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611153352177" />
+    <state width="1120" height="392" key="GridCell.Tab.2.center" timestamp="1611153352177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="392" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.2.left" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1611153352177" />
+    <state width="1120" height="392" key="GridCell.Tab.2.left" timestamp="1611153352177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="392" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
-    <state width="1120" height="392" key="GridCell.Tab.2.right" timestamp="1611153275257">
+    <state width="1120" height="392" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1611153352177" />
+    <state width="1120" height="392" key="GridCell.Tab.2.right" timestamp="1611153352177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="392" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1611153275257" />
+    <state width="1120" height="392" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1611153352177" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1611148217833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -1561,9 +1572,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1611148662387" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611001908847">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611154067382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1611001908847" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1611154067382" />
   </component>
 </project>

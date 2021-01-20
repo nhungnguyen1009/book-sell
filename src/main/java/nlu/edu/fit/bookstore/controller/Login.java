@@ -1,9 +1,9 @@
 package nlu.edu.fit.bookstore.controller;
 
 import com.google.gson.Gson;
-import com.sun.xml.internal.bind.v2.runtime.output.StAXExStreamWriterOutput;
-import nlu.edu.fit.bookstore.loginRepo.LoginRepo;
+import nlu.edu.fit.bookstore.repo.AccountRepo;
 import nlu.edu.fit.bookstore.model.User;
+import nlu.edu.fit.bookstore.utils.MD5;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
         } else {
             //neu sai tra ve loi
             // Lấy được username, pass
-            User user = LoginRepo.login(username, password);
+            User user = AccountRepo.login(username, MD5.encryption(password));
             // Gọi method của user repo để check
 
             // có user ok, lưu session, tra ve text đúng để ajax reload lại  ?

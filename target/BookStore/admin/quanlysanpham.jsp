@@ -135,7 +135,7 @@
                                                             <%=p.getCategory()%>
                                                         </td>
                                                         <td>
-                                                            <a href="<%=Utils.fullPathAdmin("product/ProccessEditProduct")%>?id=<%=p.getId()%>">Sửa</a>
+                                                            <a href="<%=Utils.fullPathAdmin("product/EditProduct")%>?id=<%=p.getId()%>">Sửa</a>
                                                             <a href="<%=Utils.fullPathAdmin("product/ProccessDelProduct")%>?id=<%=p.getId()%>">Xóa</a>
                                                         </td>
                                                     </tr>

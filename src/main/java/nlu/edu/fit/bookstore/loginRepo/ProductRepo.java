@@ -25,8 +25,8 @@ public class ProductRepo {
             pr.setString(4, product.getDescription());
             pr.setDouble(5, product.getPrice());
             pr.setInt(6, product.getQuantity());
-            pr.setInt(7, product.getQuantity());
-            pr.setInt(8, product.getQuantity());
+            pr.setString(7, product.getCategory());
+            pr.setInt(8, product.getIdAuthor());
 
             int rs = pr.executeUpdate();
             System.out.println(rs);
@@ -51,15 +51,28 @@ public class ProductRepo {
         }
     }
 
-    public boolean edit(Product product, String id) {
+    public static void editProduct(Product p) {
         try {
-            new MyConnectDB().thucThiCauLenh("update Product set Ten='" + product.getName() + "'Ten='" + product.getName() + "',GiaGoc='" + product.getPrice() + "'GiaBan='" + product.getPriceSale() + "'SoLuong='" + product.getQuantity() + "'TacGia='" + product.getNameAuthor() + "'Loai='" + product.getCategory() + "'DuongDan='" + product.getUrl() + "'Mota='" + product.getDescription() + "'where id='" + id + "");
-            return true;
-        } catch (Exception e) {
-            e.printStackTrace();
+            Connection conn = DBconnection.getMySQLConnection();
+            String sql = "update products set name=?,url_picture=?, description=?, price=? ,quantity=?, review=?, publisher_id=? where id=?";
+            PreparedStatement pr = conn.prepareStatement(sql);
+
+//            pr.setInt(1, p.getId());
+            pr.setString(1, p.getName());
+            pr.setString(2, p.getImg());
+            pr.setString(3, p.getDescription());
+            pr.setDouble(4, p.getPrice());
+            pr.setInt(5, p.getQuantity());
+            pr.setString(6, p.getCategory());
+            pr.setInt(7, p.getIdAuthor());
+
+            int rs = pr.executeUpdate();
+            System.out.println(rs);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
-        return false;
     }
+
 
     public boolean del(String id) {
         try {

@@ -94,9 +94,9 @@
                                 </div>
                             </div>
                             <div class="form-group ">
-                                <label>Tác giả</label>
+                                <label>Mã tác giả</label>
                                 <div class="input-group ">
-                                    <input type="text" name="author" class="form-control "  placeholder="Tác giả " required>
+                                    <input type="number" name="idAuthor" class="form-control "  placeholder="Mã tác giả " required>
                                 </div>
 
                             </div>

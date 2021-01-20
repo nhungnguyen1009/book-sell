@@ -94,7 +94,7 @@
                                                     <th>Giá gốc</th>
                                                     <th>Giá bán</th>
                                                     <th>Số lượng</th>
-                                                    <th>Tên tác giả</th>
+                                                    <th>Mã tác giả</th>
                                                     <th>Thể loại</th>
                                                     <th>Mô tả</th>
                                                     <th>Thao tác</th>
@@ -126,7 +126,7 @@
                                                             <%=p.getQuantity()%>
                                                         </td>
                                                         <td>
-                                                            <%=p.getNameAuthor()%>
+                                                            <%=p.getIdAuthor()%>
                                                         </td>
                                                         <td>
                                                             <%=p.getDescription()%>
@@ -135,7 +135,7 @@
                                                             <%=p.getCategory()%>
                                                         </td>
                                                         <td>
-                                                            <a href="<%=Utils.fullPathAdmin("product/EditProduct")%>?id=<%=p.getId()%>">Sửa</a>
+                                                            <a href="<%=Utils.fullPathAdmin("product/edit")%>?id=<%=p.getId()%>">Sửa</a>
                                                             <a href="<%=Utils.fullPathAdmin("product/ProccessDelProduct")%>?id=<%=p.getId()%>">Xóa</a>
                                                         </td>
                                                     </tr>

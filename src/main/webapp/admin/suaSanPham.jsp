@@ -1,61 +1,161 @@
-<%@ page import="nlu.edu.fit.bookstore.utils.Utils" %><%--
-  Created by IntelliJ IDEA.
-  User: PHUONG ANH
-  Date: 1/19/2021
-  Time: 2:15 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="nlu.edu.fit.bookstore.model.Product" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+
+<html lang="en">
+
+
 <head>
-    <link rel="stylesheet" href=<%=Utils.fullPathAdmin("assets/libs/css/sua.css")%>>
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <%@include file="css.jsp"%>
+    <title>Trang quản lý Admin</title>
 </head>
-<div class="flex">
 
- <div>
-     <div class="label"><label>Tên</label></div>
-     <div class="label"><label>Hình ảnh</label></div>
-     <div class="label"><label>Giá gốc</label></div>
-     <div class="label"><label>Giá bán</label></div>
-     <div class="label"><label>Số lượng</label></div>
-     <div class="label"><label>Tên tác giả</label></div>
-     <div class="label"><label>Thể loại</label></div>
+<body>
+<%
+    Product p= (Product) request.getAttribute("product");
+%>
+<!-- ============================================================== -->
+<!-- main wrapper -->
+<!-- ============================================================== -->
+<div class="dashboard-main-wrapper">
+    <!-- ============================================================== -->
+    <!-- navbar -->
+    <!-- ============================================================== -->
+    <%@include file="header.jsp"%>
+    <!-- ============================================================== -->
+    <!-- end navbar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- left sidebar -->
+    <!-- ============================================================== -->
+    <%@include file="menuLeft.jsp"%>
+    <!-- ============================================================== -->
+    <!-- end left sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- wrapper  -->
+    <!-- ============================================================== -->
+    <div class="dashboard-wrapper">
+        <div class="container-fluid  dashboard-content">
+            <!-- ============================================================== -->
+            <!-- pagehader  -->
+            <!-- ============================================================== -->
+
+
+
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h3 class="card-title">Sửa sản phẩm</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form action=<%=Utils.fullPath("admin/product/edit")%> method="POST" >
+                    <!-- $csrf -->
+                    <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
+                    <div class="card-body">
+
+                        <div class="form-group ">
+                            <label for="exampleInputPassword1 ">Tên sản phẩm</label>
+                            <input value="<%=p.getName()%>" type="text" name="name" class="form-control " placeholder="Tên " required>
+                        </div>
+                        <div class="form-group ">
+                            <label>Giá gốc</label>
+                            <div class="input-group ">
+                                <input value="<%=p.getPrice()%>" type="number" name="originPrice" class="form-control " placeholder="Giá gốc" required>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label>Giá bán</label>
+                            <div class="input-group ">
+                                <input value="<%=p.getPriceSale()%>" type="number" name="price" class="form-control " id="exampleInputPassword1 " placeholder="Giá bán" required>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label>Số lượng</label>
+                            <div class="input-group ">
+                                <input value="<%=p.getQuantity()%>" type="number" name="quantity" class="form-control " placeholder="Số lượng " required>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label>Mã tác giả</label>
+                            <div class="input-group ">
+                                <input value="<%=p.getIdAuthor()%>"  type="number" name="idAuthor" class="form-control "  placeholder="Mã tác giả " required>
+                            </div>
+
+                        </div>
+                        <div class="form-group ">
+                            <label>Thể loại</label>
+                            <div class="input-group ">
+                                <input value="<%=p.getCategory()%>" type="text" name="category" class="form-control" placeholder="Thể loại " required>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label>Mô tả</label>
+                            <div class="input-group ">
+                                <input value="<%=p.getDescription()%>" type="text" name="desciption" class="form-control " placeholder="Mô tả" required>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label>Hinh ảnh</label>
+                            <div class="input-group ">
+                                <input value="<%=p.getImg()%>" type="text" name="img" class="form-control " placeholder="Hình ảnh " required>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+
+                    <div class="card-footer ">
+                        <button type="submit" class="btn btn-primary ">Sửa</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <%@include file="footer.jsp"%>
+        <!-- ============================================================== -->
+        <!-- end footer -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end wrapper  -->
+    <!-- ============================================================== -->
 </div>
- <div>
+<!-- ============================================================== -->
+<!-- end main wrapper  -->
+<!-- ============================================================== -->
+<!-- Optional JavaScript -->
+<!-- jquery 3.3.1 js-->
+<script src="assets/vendor/jquery/jquery-3.3.1.min.js "></script>
+<!-- bootstrap bundle js-->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js "></script>
+<!-- slimscroll js-->
+<script src="assets/vendor/slimscroll/jquery.slimscroll.js "></script>
+<!-- chartjs js-->
+<script src="assets/vendor/charts/charts-bundle/Chart.bundle.js "></script>
+<script src="assets/vendor/charts/charts-bundle/chartjs.js "></script>
 
-     <div><input type="text" id="1" name="name" placeholder="nhập vào tên" value="<%
-     ServletContext context2= request.getServletContext();
-     System.out.println(context2.getAttribute("name"));
-     %>"></div>
-     <div><input type="text" name="img"placeholder="nhập url hình ảnh" value="<%
-     ServletContext context3= request.getServletContext();
-     System.out.println(context3.getAttribute("url"));
-     %>"></div>
-     <div><input type="text" name="price" placeholder="nhập giá gốc" value="<%
-     ServletContext context4= request.getServletContext();
-     System.out.println(context4.getAttribute("price"));
-     %>"></div>
-     <div><input type="text" name="priceSale" placeholder="nhập giá bán" value="<%
-     ServletContext context5= request.getServletContext();
-     System.out.println(context5.getAttribute("priceSale"));
-     %>"></div>
-     <div><input type="text" name="quantity" placeholder="nhập số lượng" value="<%
-     ServletContext context6= request.getServletContext();
-     System.out.println(context6.getAttribute("quantity"));
-     %>"></div>
-     <div><input type="text" name="author" placeholder="nhập tên tác giả" value="<%
-     ServletContext context7= request.getServletContext();
-     System.out.println(context7.getAttribute("author"));
-     %>"></div>
-     <div><input type="text" name="category" placeholder="nhập thể loại" value="<%
-     ServletContext context8= request.getServletContext();
-     System.out.println(context8.getAttribute("category"));
-     %>"></div>
-     <div><button type="submit">Sửa</button></div>
- </div>
-
-</div>
-
+<!-- main js-->
+<script src="assets/libs/js/main-js.js "></script>
+<!-- jvactormap js-->
+<script src="assets/vendor/jvectormap/jquery-jvectormap-2.0.2.min.js "></script>
+<script src="assets/vendor/jvectormap/jquery-jvectormap-world-mill-en.js "></script>
+<!-- sparkline js-->
+<script src="assets/vendor/charts/sparkline/jquery.sparkline.js "></script>
+<script src="assets/vendor/charts/sparkline/spark-js.js "></script>
+<!-- dashboard sales js-->
+<script src="assets/libs/js/dashboard-sales.js "></script>
 </body>
+
 </html>

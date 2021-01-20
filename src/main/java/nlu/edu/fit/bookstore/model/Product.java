@@ -14,9 +14,9 @@ public class Product implements Serializable {
     private String category;
     private String url;
     private String description;
+    private int idAuthor;
 
-    public Product(int id, String name, String img, long price, long priceSale, int quantity, String nameAuthor, String category, String url, String description) {
-
+    public Product(int id, String name, String img, long price, long priceSale, int quantity, String nameAuthor, String category, String url, String description, int idAuthor) {
         this.id = id;
         this.name = name;
         this.img = img;
@@ -27,6 +27,7 @@ public class Product implements Serializable {
         this.category = category;
         this.url = url;
         this.description = description;
+        this.idAuthor = idAuthor;
     }
 
     public Product() {
@@ -110,6 +111,14 @@ public class Product implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getIdAuthor() {
+        return idAuthor;
+    }
+
+    public void setIdAuthor(int idAuthor) {
+        this.idAuthor = idAuthor;
     }
 
     public void add() {

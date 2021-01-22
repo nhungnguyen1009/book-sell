@@ -46,33 +46,37 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form role="form" action="" method="POST" enctype="multipart/form-data">
+                    <form action=<%=Utils.fullPath("admin/publisher/edit")%> method="POST" >
 
                         <!-- $csrf -->
                         <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Tên nhà sản xuất</label>
-                                <input type="text" name="name_producer" class="form-control"  placeholder="Tên" required>
+                                <label>Mã nhà sản xuất</label>
+                                <input type="number" name="password" class="form-control"  placeholder="Mã" required>
                             </div>
                             <div class="form-group">
-                                <label>Tác phẩm</label>
-                                <div class="input-group">
-                                    <input type="text" name="writing" class="form-control"  placeholder="Tác phẩm" required>
-                                </div>
+                                <label>Tên nhà sản xuất</label>
+                                <input type="text" name="name" class="form-control"  placeholder="Tên" required>
                             </div>
-                            <div class="form-group">
-                                <label>Số lượng</label>
-                                <div class="input-group">
-                                    <input type="number" name="quantity" class="form-control"  placeholder="Số lượng" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Tổng tiền</label>
-                                <div class="input-group">
-                                    <input type="number" name="total" class="form-control" id="exampleInputPassword1" placeholder="Tổng tiền" required>
-                                </div>
-                            </div>
+<%--                            <div class="form-group">--%>
+<%--                                <label>Tác phẩm</label>--%>
+<%--                                <div class="input-group">--%>
+<%--                                    <input type="text" name="writing" class="form-control"  placeholder="Tác phẩm" required>--%>
+<%--                                </div>--%>
+<%--                            </div>--%>
+<%--                            <div class="form-group">--%>
+<%--                                <label>Số lượng</label>--%>
+<%--                                <div class="input-group">--%>
+<%--                                    <input type="number" name="quantity" class="form-control"  placeholder="Số lượng" required>--%>
+<%--                                </div>--%>
+<%--                            </div>--%>
+<%--                            <div class="form-group">--%>
+<%--                                <label>Tổng tiền</label>--%>
+<%--                                <div class="input-group">--%>
+<%--                                    <input type="number" name="total" class="form-control" id="exampleInputPassword1" placeholder="Tổng tiền" required>--%>
+<%--                                </div>--%>
+<%--                            </div>--%>
                         </div>
                         <!-- /.card-body -->
 

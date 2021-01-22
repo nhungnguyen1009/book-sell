@@ -83,9 +83,9 @@
                                     <table id="example3" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th>Tên</th>
-                                                <th>Tác phẩm</th>
-                                                <th>Số lượng</th>
+                                                <th>Mã nhà sản xuất</th>
+                                                <th>Tên nhà sản xuất</th>
+<%--                                                <th>Số lượng</th>--%>
                                                 <th>Thao tác</th>
 
 
@@ -98,12 +98,12 @@
                                             <tr>
                                                 <td><%=publisher.getId()%> </td>
                                                 <td><%=publisher.getName()%></td>
-                                                <td><%=publisher.getId_product()%> </td>
-                                                <td><%=publisher.getName_product()%></td>
-                                                <td><%=publisher.getQuantity()%></td>
+<%--                                                <td><%=publisher.getId_product()%> </td>--%>
+<%--                                                <td><%=publisher.getName_product()%></td>--%>
+<%--                                                <td><%=publisher.getQuantity()%></td>--%>
                                                 <td>
-                                                    <a href="#">Sửa</a><br>
-                                                    <a href="#">Xóa</a>
+                                                    <a href="<%=Utils.fullPathAdmin("staff/editPublisher")%>?id=<%=publisher.getId()%>">Sửa</a>
+                                                    <a href="<%=Utils.fullPathAdmin("staff/DelPublisher")%>?id=<%=publisher.getId()%>">Xóa</a>
                                                 </td>
 
 

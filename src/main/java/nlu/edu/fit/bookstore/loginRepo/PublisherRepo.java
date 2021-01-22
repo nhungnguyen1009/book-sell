@@ -42,5 +42,39 @@ public class PublisherRepo {
         }
         return list;
     }
+    public static void deletePublisher(int id) {
+        try {
+            Connection conn = DBconnection.getMySQLConnection();
+            String sql = "delete from publisher where id=?";
+            PreparedStatement pr = conn.prepareStatement(sql);
+
+            pr.setInt(1, id);
+
+            int rs = pr.executeUpdate();
+            System.out.println(rs);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
+    public static void addPublisher(Publisher p) {
+
+            try {
+                Connection conn = DBconnection.getMySQLConnection();
+                String sql = "insert into publisher(id, name" +
+                        " VALUES (?,?)";
+                PreparedStatement pr = conn.prepareStatement(sql);
+
+                pr.setInt(1, p.getId());
+                pr.setString(2, p.getName());
+
+
+                int rs = pr.executeUpdate();
+                System.out.println(rs);
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+
+    }
 
 }

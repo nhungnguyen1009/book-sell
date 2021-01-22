@@ -1,4 +1,6 @@
 package nlu.edu.fit.bookstore.controller.admin.product.user;
 
-public class EditUser {
+import javax.servlet.http.HttpServlet;
+
+public class EditUser extends HttpServlet {
 }

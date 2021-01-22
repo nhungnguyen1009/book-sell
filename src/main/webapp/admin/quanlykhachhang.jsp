@@ -89,7 +89,6 @@
                                                 <th>SĐT_Email</th>
                                                 <th>Mật khẩu</th>
                                                 <th>Địa chỉ</th>
-                                                <th>Phone</th>
                                                 <th>Giới tính</th>
                                                 <th>Thao tác</th>
 
@@ -105,11 +104,9 @@
                                                 <td><%=u.getEmail()%></td>
                                                 <td><%=u.getPassword()%></td>
                                                 <td><%=u.getAddress()%></td>
-                                                <td><%=u.getPhone()%></td>
                                                 <td><%=u.getSex()%></td>
                                                 <td>
-                                                    <a href="#">Sửa</a><br>
-                                                    <a href="#">Xóa</a>
+                                                    <a href="<%=Utils.fullPathAdmin("user/DelUser")%>?id=<%=u.getId()%>">Xóa</a>
                                                 </td>
 
                                             </tr>

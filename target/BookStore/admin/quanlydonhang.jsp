@@ -104,7 +104,7 @@
                                             <td>Chờ xử lý</td>
                                             <td>
                                                 <a href="#">Sẵn sàng giao</a><br/>
-                                                <a href="#">Hủy</a>
+                                                <a href="<%=Utils.fullPathAdmin("order/DelOrder")%>?id=<%=o.getId()%>">Hủy</a>
                                             </td>
 
 

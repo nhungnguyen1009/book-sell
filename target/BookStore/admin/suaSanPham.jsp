@@ -58,7 +58,7 @@
                     <div class="card-body">
 
                         <div class="form-group ">
-                            <label for="exampleInputPassword1 ">Tên sản phẩm</label>
+                            <label>Tên sản phẩm</label>
                             <input value="<%=p.getName()%>" type="text" name="name" class="form-control " placeholder="Tên " required>
                         </div>
                         <div class="form-group ">

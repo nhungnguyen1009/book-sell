@@ -103,8 +103,8 @@
                                                 <td><%=s.getPhone()  %></td>
                                                 <td><%=s.getSalary()%></td>
                                                 <td>
-                                                    <a href="#">Sửa</a>
-                                                    <a href="#">Xóa</a>
+                                                    <a href="<%=Utils.fullPathAdmin("staff/editStaff")%>?id=<%=s.getId()%>">Sửa</a>
+                                                    <a href="<%=Utils.fullPathAdmin("staff/DelStaff")%>?id=<%=s.getId()%>">Xóa</a>
                                                 </td>
                                             </tr>
                                            <%

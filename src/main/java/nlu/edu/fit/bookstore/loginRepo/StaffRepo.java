@@ -67,5 +67,19 @@ public class StaffRepo {
     }
 
 
+    public static void deleteStaff(int id) {
+        try {
+            Connection conn = DBconnection.getMySQLConnection();
+            String sql = "delete from staff where id=?";
+            PreparedStatement pr = conn.prepareStatement(sql);
+
+            pr.setInt(1, id);
+
+            int rs = pr.executeUpdate();
+            System.out.println(rs);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
 }
 

@@ -10,36 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7cf3ed8-9188-4b2e-8e8e-c4d57bb87526" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/DelStaff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/EditStaff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/AddUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/DelUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/EditUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/suakhachhang.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/suanhanvien.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/suanhasanxuat.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/order/DelOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/publisher/AddPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/publisher/DelPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/publisher/EditPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/DelStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/DelStaff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/EditStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/EditStaff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/AddUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/DelUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/DelUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/EditUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/EditUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/OrderRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/ProductRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/ProductRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/StaffRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/StaffRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/menuLeft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/menuLeft.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlydonhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlydonhang.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlykhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlykhachhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhanvien.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhasanxuat.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/suaSanPham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/suaSanPham.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/suakhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/suakhachhang.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/suanhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/suanhanvien.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/suanhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/suanhasanxuat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themkhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themkhachhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themnhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themnhanvien.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themnhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themnhasanxuat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themsanpham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themsanpham.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/Staff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/menuLeft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/menuLeft.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlydonhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/quanlydonhang.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlykhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/quanlykhachhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlynhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/quanlynhanvien.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlynhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/quanlynhasanxuat.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/suakhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/suakhachhang.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/suanhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/suanhanvien.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/suanhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/suanhasanxuat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themkhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/themkhachhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themnhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/themnhanvien.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themnhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/themnhasanxuat.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themsanpham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/themsanpham.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/Staff.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +148,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -331,6 +353,7 @@
       <workItem from="1611165595540" duration="6284000" />
       <workItem from="1611249653395" duration="5762000" />
       <workItem from="1611304418254" duration="586000" />
+      <workItem from="1611338932716" duration="8232000" />
     </task>
     <servers />
   </component>
@@ -368,11 +391,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="375" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.728@0.0.1366.728" timestamp="1611148053390" />
-    <state x="452" y="252" width="498" height="233" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1611155745043">
+    <state x="452" y="252" width="524" height="233" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1611343431274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="424" y="235" width="432" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1604730546248" />
-    <state x="452" y="252" width="498" height="233" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1611155745043" />
+    <state x="452" y="252" width="524" height="233" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1611343431274" />
     <state x="4" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609577281525">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -398,66 +421,66 @@
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604724846470" />
     <state x="449" y="102" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611148267106" />
-    <state width="1120" height="34" key="GridCell.Tab.0.bottom" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.0.bottom" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="34" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.0.center" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.0.center" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="34" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.0.left" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.0.left" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="34" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.0.right" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.0.right" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="34" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.1.bottom" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.1.bottom" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="34" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.1.center" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.1.center" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="34" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.1.left" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.1.left" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="34" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.1.right" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.1.right" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="34" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.2.bottom" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.2.bottom" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="34" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.2.center" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.2.center" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="34" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.2.left" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.2.left" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="34" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
-    <state width="1120" height="34" key="GridCell.Tab.2.right" timestamp="1611262133567">
+    <state width="1120" height="251" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="1120" height="251" key="GridCell.Tab.2.right" timestamp="1611346575606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="34" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1611262133567" />
+    <state width="1120" height="251" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1611166583464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -514,5 +537,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1611154067382" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/admin/quanlynhasanxuat.jsp</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

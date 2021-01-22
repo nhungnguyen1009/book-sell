@@ -74,15 +74,7 @@ public class ProductRepo {
     }
 
 
-    public boolean del(String id) {
-        try {
-            new MyConnectDB().thucThiCauLenh("delete from Product where id=" + id + "");
-            return true;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
+
 
     public static ArrayList<Product> getProducts(int limit) {
         ArrayList<Product> list = new ArrayList();

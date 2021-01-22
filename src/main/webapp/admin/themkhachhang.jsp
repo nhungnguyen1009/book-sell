@@ -60,11 +60,15 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form role="form" action="" method="POST" enctype="multipart/form-data">
+                    <form action=<%=Utils.fullPath("admin/user/add")%> method="POST">
 
                         <!-- $csrf -->
                         <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
                         <div class="card-body">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Mã</label>
+                                <input type="number" name="id" class="form-control" placeholder="Mã" required>
+                            </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Họ và tên khách hàng</label>
                                 <input type="text" name="name_user" class="form-control" placeholder="Họ tên" required>
@@ -80,9 +84,9 @@
                                 <input type="text" name="pass" class="form-control" placeholder="Mật khẩu" required>
                             </div>
                             <div class="form-group">
-                                <label>Năm sinh</label>
+                                <label>Địa chỉ</label>
                                 <div class="input-group">
-                                    <input type="number" name="birthday" class="form-control" placeholder="Năm sinh" required>
+                                    <input type="text" name="address" class="form-control" placeholder="Địa chỉ" required>
                                 </div>
                             </div>
                             <div class="form-group">

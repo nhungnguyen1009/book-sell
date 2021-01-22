@@ -20,7 +20,7 @@ import java.util.Date;
 public class AddStaff extends HttpServlet {
     int id;
     String name;
-    Date dayToWork;
+//    Date dayToWork;
     int phone;
     double salary;
 
@@ -52,7 +52,6 @@ public class AddStaff extends HttpServlet {
         s.setSalary(salary);
 //        s.setDayToWork(date);
         StaffRepo.addStaff(s);
-
         resp.sendRedirect(Utils.fullPathAdmin("staff"));
 
     }

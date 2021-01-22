@@ -1,4 +1,6 @@
 package nlu.edu.fit.bookstore.controller.admin.product.staff;
 
-public class EditStaff {
+import javax.servlet.http.HttpServlet;
+
+public class EditStaff extends HttpServlet {
 }

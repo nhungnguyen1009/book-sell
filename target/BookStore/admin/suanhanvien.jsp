@@ -45,7 +45,7 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form role="form" action="" method="POST" enctype="multipart/form-data">
+                    <form action=<%=Utils.fullPath("admin/staff/edit")%> method="POST" >
 
                         <!-- $csrf -->
                         <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->

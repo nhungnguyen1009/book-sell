@@ -68,31 +68,31 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Tên nhà sản xuất</label>
-                                <input type="text" name="name_product" class="form-control"  placeholder="Tên" required>
+                                <input type="text" name="name_producer" class="form-control"  placeholder="Tên" required>
                             </div>
                             <div class="form-group">
                                 <label>Tác phẩm</label>
                                 <div class="input-group">
-                                    <input type="text" name="price" class="form-control"  placeholder="Tác phẩm" required>
+                                    <input type="text" name="writing" class="form-control"  placeholder="Tác phẩm" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Số lượng</label>
                                 <div class="input-group">
-                                    <input type="text" name="image" class="form-control"  placeholder="Số lượng" required>
+                                    <input type="text" name="quantity" class="form-control"  placeholder="Số lượng" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Tổng tiền</label>
                                 <div class="input-group">
-                                    <input type="text" name="image" class="form-control" id="exampleInputPassword1" placeholder="Tổng tiền" required>
+                                    <input type="text" name="total" class="form-control" id="exampleInputPassword1" placeholder="Tổng tiền" required>
                                 </div>
                             </div>
                         </div>
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Thêm</button>
                         </div>
                     </form>
                 </div>

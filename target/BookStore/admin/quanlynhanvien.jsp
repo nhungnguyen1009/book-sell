@@ -83,8 +83,8 @@
                                     <table id="example3" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
                                             <tr>
+                                                <th>Mã</th>
                                                 <th>Tên</th>
-                                                <th>Năm sinh</th>
                                                 <th>Ngày vào làm</th>
                                                 <th>Sđt</th>
                                                 <th>Lương</th>

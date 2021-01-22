@@ -41,7 +41,7 @@
                         <div id="submenu-2" class="collapse submenu">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="order">Quản lý đơn hàng <span
+                                    <a class="nav-link" href="<%=Utils.fullPathAdmin("order")%>">Quản lý đơn hàng <span
                                             class="badge badge-secondary">New</span></a>
                                 </li>
 
@@ -55,10 +55,10 @@
                         <div id="submenu-3" class="collapse submenu">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="staff">Quản lý nhân viên</a>
+                                    <a class="nav-link" href="<%=Utils.fullPathAdmin("staff")%>">Quản lý nhân viên</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/staff/add">Thêm nhân viên</a>
+                                    <a class="nav-link" href="<%=Utils.fullPathAdmin("staff/add")%>">Thêm nhân viên</a>
                                 </li>
 
                             </ul>
@@ -70,10 +70,10 @@
                         <div id="submenu-0" class="collapse submenu">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="user">Quản lý Tài khoản</a>
+                                    <a class="nav-link" href="<%=Utils.fullPathAdmin("user")%>">Quản lý Tài khoản</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="themkhachhang.jsp">Thêm Tài khoản</a>
+                                    <a class="nav-link" href="<%=Utils.fullPathAdmin("user/add")%>">Thêm Tài khoản</a>
                                 </li>
 
                             </ul>
@@ -85,10 +85,10 @@
                         <div id="submenu-4" class="collapse submenu">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="publisher">Quản lý nhà sản xuất</a>
+                                    <a class="nav-link" href="<%=Utils.fullPathAdmin("publisher")%>">Quản lý nhà sản xuất</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="themnhasanxuat.jsp">Thêm nhà sản xuất</a>
+                                    <a class="nav-link" href="<%=Utils.fullPathAdmin("publisher/add")%>">Thêm nhà sản xuất</a>
                                 </li>
 
                             </ul>

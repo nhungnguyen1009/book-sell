@@ -66,29 +66,29 @@
                         <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Họ và tên nhân viên</label>
-                                <input type="text" name="" class="form-control" id="exampleInputPassword1" placeholder="Họ tên" required>
+                                <label for="exampleInputPassword1">Họ và tên khách hàng</label>
+                                <input type="text" name="name_user" class="form-control" placeholder="Họ tên" required>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputFile">SĐT hoặc Email</label>
+                                <label>SĐT hoặc Email</label>
                                 <div class="input-group">
-                                    <input type="text" name="" class="form-control" id="exampleInputPassword1" placeholder="SĐT hoặc Email" required>
+                                    <input type="text" name="email" class="form-control" placeholder="SĐT hoặc Email" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Mật khẩu</label>
-                                <input type="text" name="" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu" required>
+                                <input type="text" name="pass" class="form-control" placeholder="Mật khẩu" required>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputFile">Năm sinh</label>
+                                <label>Năm sinh</label>
                                 <div class="input-group">
-                                    <input type="text" name="" class="form-control" id="exampleInputPassword1" placeholder="Năm sinh" required>
+                                    <input type="number" name="birthday" class="form-control" placeholder="Năm sinh" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputFile">Giới tính</label>
+                                <label >Giới tính</label>
                                 <div class="input-group">
-                                    <input type="text" name="" class="form-control" id="exampleInputPassword1" placeholder="Giới tính" required>
+                                    <input type="text" name="sex" class="form-control" id="exampleInputPassword1" placeholder="Giới tính" required>
                                 </div>
                             </div>
 
@@ -96,7 +96,7 @@
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Gửi</button>
+                            <button type="submit" class="btn btn-primary">Thêm</button>
                         </div>
                     </form>
                 </div>

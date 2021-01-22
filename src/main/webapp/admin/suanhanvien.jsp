@@ -38,25 +38,10 @@
                 <!-- ============================================================== -->
                 <!-- pagehader  -->
                 <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="page-header">
-                            <h3 class="mb-2">Tổng quan khách hàng </h3>
-                            <p class="pageheader-text">Lorem ipsum dolor sit ametllam fermentum ipsum eu porta consectetur adipiscing elit.Nullam vehicula nulla ut egestas rhoncus.</p>
-                            <div class="page-breadcrumb">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Khách hàng</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Thêm khách hàng</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title">Thêm khách hàng</h3>
+                        <h3 class="card-title">Sửa nhân viên</h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
@@ -66,37 +51,42 @@
                         <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Họ và tên khách hàng</label>
-                                <input type="text" name="name_user" class="form-control" placeholder="Họ tên" required>
+                                <label for="exampleInputPassword1">Mã nhân viên</label>
+                                <input type="number" name="id" class="form-control" placeholder="Mã nhân viên" required>
                             </div>
                             <div class="form-group">
-                                <label>SĐT hoặc Email</label>
-                                <div class="input-group">
-                                    <input type="text" name="email" class="form-control" placeholder="SĐT hoặc Email" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Mật khẩu</label>
-                                <input type="text" name="pass" class="form-control" placeholder="Mật khẩu" required>
+                                <label for="exampleInputPassword1">Họ và tên nhân viên</label>
+                                <input type="text" name="name_staff" class="form-control" placeholder="Họ tên" required>
                             </div>
                             <div class="form-group">
                                 <label>Năm sinh</label>
                                 <div class="input-group">
-                                    <input type="number" name="birthday" class="form-control" placeholder="Năm sinh" required>
+                                    <input type="number" name="birthday" class="form-control"  placeholder="Năm sinh" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label >Giới tính</label>
+                                <label>Sdt</label>
                                 <div class="input-group">
-                                    <input type="text" name="sex" class="form-control" id="exampleInputPassword1" placeholder="Giới tính" required>
+                                    <input type="number" name="phone" class="form-control" placeholder="Sdt" required>
                                 </div>
                             </div>
-
+                            <div class="form-group">
+                                <label>Ngày vào làm</label>
+                                <div class="input-group">
+                                    <input type="number" name="dateToWork" class="form-control" id="exampleInputPassword1" placeholder="Ngày vào làm" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Lương</label>
+                                <div class="input-group">
+                                    <input type="number" name="salary" class="form-control"  placeholder="Lương" required>
+                                </div>
+                            </div>
                         </div>
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Thêm</button>
+                            <button type="submit" class="btn btn-primary">Sửa</button>
                         </div>
                     </form>
                 </div>

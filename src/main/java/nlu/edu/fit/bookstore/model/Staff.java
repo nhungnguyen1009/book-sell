@@ -6,13 +6,13 @@ public class Staff {
     private int id;
     private String name;
     private Date dayToWork;
-    private String phone;
+    private int phone;
     private double salary;
 
     public Staff() {
     }
 
-    public Staff(int id, String name, Date dayToWork, String phone, double salary) {
+    public Staff(int id, String name, Date dayToWork, int phone, double salary) {
         this.id = id;
         this.name = name;
         this.dayToWork = dayToWork;
@@ -44,11 +44,11 @@ public class Staff {
         this.dayToWork = dayToWork;
     }
 
-    public String getPhone() {
+    public int getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(int phone) {
         this.phone = phone;
     }
 

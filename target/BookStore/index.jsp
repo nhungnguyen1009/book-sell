@@ -1,7 +1,7 @@
 <%@ page import="sun.rmi.runtime.Log" %>
 <%@ page import="nlu.edu.fit.bookstore.model.User" %>
 <%@ page import="nlu.edu.fit.bookstore.model.Cart" %>
-<%@ page import="nlu.edu.fit.bookstore.controller.AddCart" %>
+<%@ page import="nlu.edu.fit.bookstore.controller.AddCartItem" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="nlu.edu.fit.bookstore.model.Product" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -251,7 +251,8 @@
                                 <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <a href="product.jsp"><img src="<%= p.getUrl()%>"
+                                        <a href="<%=Utils.fullPath("product?id="+ p.getId())%>">
+                                       <img src="<%= p.getUrl()%>"
                                                 alt="10 huyền thoại Viking hay nhất mọi thời đại"></a>
                                         <div class="product-label">
                                             <span class="sale">-30%</span>
@@ -261,7 +262,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Sách</p>
                                         <h3 class="product-name"><a href="#"><%=p.getName()%></a></h3>
-                                        <h4 class="product-price">70,000₫
+                                        <h4 class="product-price"><%= p.getPrice()%>
                                             <del
                                                     class="product-old-price">100,000₫
                                             </del>
@@ -337,7 +338,8 @@
                                 <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <a href="product.jsp"><img src="<%= p.getUrl()%>"
+                                        <a href="<%=Utils.fullPath("product?id="+ p.getId())%>">
+                                            <img src="<%= p.getUrl()%>"
                                                                    alt="10 huyền thoại Viking hay nhất mọi thời đại"></a>
                                         <div class="product-label">
                                             <span class="sale">-30%</span>
@@ -347,7 +349,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Sách</p>
                                         <h3 class="product-name"><a href="#"><%=p.getName()%></a></h3>
-                                        <h4 class="product-price">70,000₫
+                                        <h4 class="product-price"><%=p.getPrice()%>
                                             <del
                                                     class="product-old-price">100,000₫
                                             </del>

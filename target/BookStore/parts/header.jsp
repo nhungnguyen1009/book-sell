@@ -1,6 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="nlu.edu.fit.bookstore.utils.Utils" %>
 <%@ page import="nlu.edu.fit.bookstore.model.User" %>
+<%@ page import="nlu.edu.fit.bookstore.model.Cart" %>
+<%@ page import="nlu.edu.fit.bookstore.controller.AddCartItem" %>
+<%@ page import="nlu.edu.fit.bookstore.model.CartItem" %>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,6 +52,9 @@
 <%
     User user = (User) session.getAttribute("user");
     if (user != null) System.out.println("user" + user.getUsername());
+%>
+<%
+    Cart cartItems = Cart.getCart(session);
 %>
 <!-- form sign up -->
 <div class="modal" id="id01" tabindex="-1" role="dialog">
@@ -214,7 +220,7 @@
                 <!-- LOGO -->
                 <div class="col-md-3">
                     <div class="header-logo">
-                        <a href="index.jsp" class="logo">
+                        <a href="<%=Utils.fullPath("")%>" class="logo">
                             <img src="<%=Utils.fullPath("img/logo.png")%>" alt="">
                         </a>
                     </div>
@@ -246,47 +252,18 @@
                         <!-- /Wishlist -->
 
                         <!-- Cart -->
+                        <div>
+                        <a href="cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>Giỏ hàng</span>
+                            <div class="qty"><%=cartItems.quantity()%></div>
+                        </a>
+                        </div>
                         <div class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                <i class="fa fa-shopping-cart"></i>
-                                <span>Giỏ hàng</span>
-                                <div class="qty">0</div>
-                            </a>
-<%--                            <div class="cart-dropdown">--%>
-<%--                                <div class="cart-list">--%>
-<%--                                    <div class="product-widget">--%>
-<%--                                        <div class="product-img">--%>
-<%--                                            <img src="./img/cotichthanthoai/10-huyen-thoai-viking-hay-nhat-moi-thoi-dai.jpg"--%>
-<%--                                                 alt="">--%>
-<%--                                        </div>--%>
-<%--                                        <div class="product-body">--%>
-<%--                                            <h3 class="product-name"><a href="#">Viking</a></h3>--%>
-<%--                                            <h4 class="product-price"><span class="qty">1x</span>100.000VNĐ</h4>--%>
-<%--                                        </div>--%>
-<%--                                        <button class="delete"><i class="fa fa-close"></i></button>--%>
-<%--                                    </div>--%>
 
-<%--                                    <div class="product-widget">--%>
-<%--                                        <div class="product-img">--%>
-<%--                                            <img src="./img/cotichthanthoai/10-huyen-thoai-hy-lap-hay-nhat-moi-thoi-dai.jpg"--%>
-<%--                                                 alt="">--%>
-<%--                                        </div>--%>
-<%--                                        <div class="product-body">--%>
-<%--                                            <h3 class="product-name"><a href="#">Hy Lạp</a></h3>--%>
-<%--                                            <h4 class="product-price"><span class="qty">2x</span>110.000VNĐ</h4>--%>
-<%--                                        </div>--%>
-<%--                                        <button class="delete"><i class="fa fa-close"></i></button>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                                <div class="cart-summary">--%>
-<%--                                    <small>3 Sản phẩm</small>--%>
-<%--                                    <h5>Tổng tiền: 320.000VNĐ</h5>--%>
-<%--                                </div>--%>
-<%--                                <div class="cart-btns">--%>
-<%--                                    <a href="cart.jsp">Xem giỏ hàng</a>--%>
-<%--                                    <a href="checkout.jsp">Thanh toán<i class="fa fa-arrow-circle-right"></i></a>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
+
+                            <div class="cart-dropdown">
+                            </div>
                         </div>
                         <!-- /Cart -->
                     </div>
@@ -313,9 +290,9 @@
                 <div id="responsive-nav">
                     <!-- NAV -->
                     <ul class="main-nav nav navbar-nav">
-                        <li><a href="index.jsp">Trang chủ</a></li>
-                        <li><a href="selling.jsp">Bán chạy</a></li>
-                        <li><a href="discount.jsp">Khuyến mãi</a></li>
+                        <li><a href="<%=Utils.fullPath("")%>">Trang chủ</a></li>
+                        <li><a href="<%=Utils.fullPath("selling.jsp")%>">Bán chạy</a></li>
+                        <li><a href="<%=Utils.fullPath("discount.jsp")%>">Khuyến mãi</a></li>
                         <li><a href="new.jsp">Mới</a></li>
                         <li><a href="storeIntroduced.jsp">Giới thiệu</a></li>
                         <li><a href="blog.jsp">Blog</a></li>

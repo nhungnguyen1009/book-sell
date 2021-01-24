@@ -1,6 +1,7 @@
-<%@ page import="nlu.edu.fit.bookstore.model.Cart" %>
 <%@ page import="java.util.Collection" %>
-<%@ page import="nlu.edu.fit.bookstore.model.Product" %>
+<%@ page import="nlu.edu.fit.bookstore.model.*" %>
+<%@ page import="nlu.edu.fit.bookstore.controller.AddCartItem" %>
+<%@ page import="nlu.edu.fit.bookstore.controller.RemoveCartItem" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,31 +81,33 @@
                  </thead> 
                  <tbody>
                  <% Cart cart = Cart.getCart(session);
-                 Collection<Product> data = cart.getData();
-
+                 Collection<nlu.edu.fit.bookstore.model.CartItem> data = cart.getData();
                   %>
 
-                 <% for (Product item : cart.getData()){%>
+                 <% for (CartItem item :data){%>
                  <tr> 
                   <td data-th="Product"> 
                    <div class="row"> 
-                    <div class="col-sm-2 hidden-xs"><img src="<%= item.getUrl()%>" alt="Sản phẩm 1" class="img-responsive" width="100">
+                    <div class="col-sm-2 hidden-xs"><img src="<%= item.getP().getUrl()%>" alt="Sản phẩm 1" class="img-responsive" width="100">
                     </div> 
                     <div class="col-sm-10"> 
-                     <h4 class="nomargin"><%= item.getName()%></h4>
+                     <h4 class="nomargin"><%= item.getP().getName()%></h4>
 <%--                     <p>10 huyền thoại Hy Lạp hay nhất mọi thời đại</p> --%>
                     </div> 
                    </div> 
                   </td> 
-                  <td data-th="Price"><%= item.getPrice()%></td>
-                  <td data-th="Quantity"><input class="form-control text-center" value="1" type="number" min="1" >
+                  <td data-th="Price"><%= item.getP().getPrice()%></td>
+                  <td data-th="Quantity"><input class="form-control text-center" value="<%= item.getQuantity()%>" type="number" min="1" >
                   </td> 
-                  <td data-th="Subtotal" class="text-center"><%= cart.total()%></td>
+                  <td data-th="Subtotal" class="text-center"><%= item.price()%></td>
                   <td class="actions" data-th="">
-                   <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
-                   </button> 
+<%--                   <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>--%>
+<%--                   </button> --%>
+                     <a href="<%=Utils.fullPath("remove")%>?id=<%=item.getP().getId()%>">
                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
                    </button>
+    </a>
+
                   </td> 
                  </tr>
                  <%}%>
@@ -116,8 +119,8 @@
                   <tr> 
                    <td><a href="index.jsp" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
                    </td> 
-                   <td colspan="2" class="hidden-xs"> </td> 
-                   <td class="hidden-xs text-center"><strong>Tổng tiền 320,000 đ</strong>
+                   <td colspan="2" class="hidden-xs"> </td>
+                   <td class="hidden-xs text-center"><strong>Tổng tiền <%= cart.total()%></strong>
                    </td> 
                    <td><a href="checkout.jsp" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
                    </td> 

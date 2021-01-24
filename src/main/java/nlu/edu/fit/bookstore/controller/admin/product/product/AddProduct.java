@@ -25,7 +25,7 @@ public class AddProduct extends HttpServlet {
     String category;
     String url;
     String description;
-
+    int idAuthor;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("enter");
@@ -39,6 +39,7 @@ public class AddProduct extends HttpServlet {
         long originPrice = Long.parseLong(req.getParameter("originPrice"));
         long price = Long.parseLong(req.getParameter("price"));
         int quantity = Integer.parseInt(req.getParameter("quantity"));
+        int idAuthor = Integer.parseInt(req.getParameter("idAuthor"));
 
         Product p = new Product();
         p.setId(i);
@@ -50,7 +51,7 @@ public class AddProduct extends HttpServlet {
         p.setCategory(req.getParameter("category"));
         p.setImg(req.getParameter("img"));
         p.setDescription(req.getParameter("desciption"));
-
+        p.setIdAuthor(idAuthor);
         // dùng class product repo -> insert p xuông db
         ProductRepo.addProduct(p);
 

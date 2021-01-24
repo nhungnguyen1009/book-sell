@@ -39,4 +39,20 @@ public class OrderRepo {
 
         return list;
     }
+    public static void deleteOrder(int id) {
+        try {
+            Connection conn = DBconnection.getMySQLConnection();
+            String sql = "delete from order where id=?";
+            PreparedStatement pr = conn.prepareStatement(sql);
+
+            pr.setInt(1, id);
+
+            int rs = pr.executeUpdate();
+            System.out.println(rs);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
+
 }

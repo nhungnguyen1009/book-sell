@@ -23,23 +23,26 @@ public class EditProduct extends HttpServlet {
     String category;
     String url;
     String description;
-
+    int idAuthor;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("enter");
-
+        int id = Integer.parseInt(req.getParameter("id"));
+        //select product by id
+        Product product = nlu.edu.fit.bookstore.repo.ProductRepo.getProduct(id);
+        req.setAttribute("product",product);
         req.getRequestDispatcher("../suaSanPham.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int i = Integer.parseInt(req.getParameter("id"));
+
         long originPrice = Long.parseLong(req.getParameter("originPrice"));
         long price = Long.parseLong(req.getParameter("price"));
         int quantity = Integer.parseInt(req.getParameter("quantity"));
-
+        int idAuthor=Integer.parseInt(req.getParameter("idAuthor"));
         Product p = new Product();
-        p.setId(i);
+
         p.setName(req.getParameter("name"));
         p.setPrice(originPrice);
         p.setPriceSale(price);
@@ -48,9 +51,10 @@ public class EditProduct extends HttpServlet {
         p.setCategory(req.getParameter("category"));
         p.setImg(req.getParameter("img"));
         p.setDescription(req.getParameter("desciption"));
+        p.setIdAuthor(idAuthor);
 
         // dùng class product repo -> insert p xuông db
-        ProductRepo.addProduct(p);
+        ProductRepo.editProduct(p);
 
         resp.sendRedirect(Utils.fullPathAdmin("product"));
 

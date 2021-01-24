@@ -60,38 +60,48 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form role="form" action="" method="POST" enctype="multipart/form-data">
+                    <form action=<%=Utils.fullPath("admin/staff/add")%> method="POST">
 
                         <!-- $csrf -->
                         <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
                         <div class="card-body">
                             <div class="form-group">
+                                <label for="exampleInputPassword1">Mã nhân viên</label>
+                                <input type="number" name="id" class="form-control" placeholder="Mã nhân viên" required>
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputPassword1">Họ và tên nhân viên</label>
-                                <input type="text" name="name_product" class="form-control" placeholder="Họ tên" required>
+                                <input type="text" name="name_staff" class="form-control" placeholder="Họ tên" required>
                             </div>
                             <div class="form-group">
                                 <label>Năm sinh</label>
                                 <div class="input-group">
-                                    <input type="text" name="price" class="form-control"  placeholder="Năm sinh" required>
+                                    <input type="number" name="birthday" class="form-control"  placeholder="Năm sinh" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Quê quán</label>
+                                <label>Sdt</label>
                                 <div class="input-group">
-                                    <input type="text" name="image" class="form-control" placeholder="Quê quán" required>
+                                    <input type="number" name="phone" class="form-control" placeholder="Sdt" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Ngày vào làm</label>
                                 <div class="input-group">
-                                    <input type="text" name="image" class="form-control" id="exampleInputPassword1" placeholder="Ngày vào làm" required>
+                                    <input type="number" name="dateToWork" class="form-control" id="exampleInputPassword1" placeholder="Ngày vào làm" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Lương</label>
+                                <div class="input-group">
+                                    <input type="number" name="salary" class="form-control"  placeholder="Lương" required>
                                 </div>
                             </div>
                         </div>
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Gửi</button>
+                            <button type="submit" class="btn btn-primary">Thêm</button>
                         </div>
                     </form>
                 </div>

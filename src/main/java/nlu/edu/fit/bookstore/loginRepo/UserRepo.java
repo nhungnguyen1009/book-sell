@@ -1,6 +1,7 @@
 package nlu.edu.fit.bookstore.loginRepo;
 
 import nlu.edu.fit.bookstore.connection.DBconnection;
+import nlu.edu.fit.bookstore.model.Publisher;
 import nlu.edu.fit.bookstore.model.User;
 
 import java.sql.Connection;
@@ -47,5 +48,43 @@ public class UserRepo {
             throwables.printStackTrace();
         }
         return list;
+    }
+    public static void deleteUser(int id) {
+        try {
+            Connection conn = DBconnection.getMySQLConnection();
+            String sql = "delete from user where id=?";
+            PreparedStatement pr = conn.prepareStatement(sql);
+
+            pr.setInt(1, id);
+
+            int rs = pr.executeUpdate();
+            System.out.println(rs);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+    public static void addUser(User u) {
+
+        try {
+            Connection conn = DBconnection.getMySQLConnection();
+            String sql = "insert into user(id, username, password,address, email,sex" +
+                    " VALUES (?,?,?,?,?,?)";
+            PreparedStatement pr = conn.prepareStatement(sql);
+
+            pr.setInt(1, u.getId());
+            pr.setString(2, u.getUsername());
+            pr.setString(3,u.getPassword());
+            pr.setString(4,u.getAddress());
+            pr.setString(5,u.getEmail());
+            pr.setString(6,u.getSex());
+
+
+
+            int rs = pr.executeUpdate();
+            System.out.println(rs);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
     }
 }

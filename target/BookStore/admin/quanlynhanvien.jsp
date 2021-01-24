@@ -83,8 +83,8 @@
                                     <table id="example3" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
                                             <tr>
+                                                <th>Mã</th>
                                                 <th>Tên</th>
-                                                <th>Năm sinh</th>
                                                 <th>Ngày vào làm</th>
                                                 <th>Sđt</th>
                                                 <th>Lương</th>
@@ -103,8 +103,8 @@
                                                 <td><%=s.getPhone()  %></td>
                                                 <td><%=s.getSalary()%></td>
                                                 <td>
-                                                    <a href="#">Sửa</a>
-                                                    <a href="#">Xóa</a>
+                                                    <a href="<%=Utils.fullPathAdmin("staff/editStaff")%>?id=<%=s.getId()%>">Sửa</a>
+                                                    <a href="<%=Utils.fullPathAdmin("staff/DelStaff")%>?id=<%=s.getId()%>">Xóa</a>
                                                 </td>
                                             </tr>
                                            <%

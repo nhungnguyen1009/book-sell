@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <<%@include file="css.jsp"%>
+    <%@include file="css.jsp"%>
     <title>Trang quản lý Admin</title>
 </head>
 
@@ -104,7 +104,7 @@
                                             <td>Chờ xử lý</td>
                                             <td>
                                                 <a href="#">Sẵn sàng giao</a><br/>
-                                                <a href="#">Hủy</a>
+                                                <a href="<%=Utils.fullPathAdmin("order/DelOrder")%>?id=<%=o.getId()%>">Hủy</a>
                                             </td>
 
 

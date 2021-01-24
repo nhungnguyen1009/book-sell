@@ -1,3 +1,4 @@
+<%@ page import="java.util.Collection" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,6 +63,11 @@
 </head>
 
 <body>
+
+<%--<% Cart cart = Cart.getCart(session);--%>
+<%--//	Collection<CartItem> data = cart.getData();--%>
+<%--%>--%>
+
 
 <%@include file="parts/header.jsp" %>
 
@@ -197,7 +203,7 @@
 								</div>
 								<div class="order-products">
 									<div class="order-col">
-										<div>1x Viking hay nhất mọi thời đại</div>
+										<div>teen</div>
 										<div>100.000VNĐ</div>
 									</div>
 									<div class="order-col">

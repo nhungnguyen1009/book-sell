@@ -117,12 +117,12 @@
                    </td> 
                   </tr>  -->
                   <tr> 
-                   <td><a href="index.jsp" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+                   <td><a href="<%=Utils.fullPath("")%>>" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
                    </td> 
                    <td colspan="2" class="hidden-xs"> </td>
                    <td class="hidden-xs text-center"><strong>Tổng tiền <%= cart.total()%></strong>
                    </td> 
-                   <td><a href="checkout.jsp" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+                   <td><a href="checkout" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
                    </td> 
                   </tr>
 

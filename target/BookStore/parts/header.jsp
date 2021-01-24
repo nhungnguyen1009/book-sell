@@ -51,7 +51,7 @@
 
 <%
     User user = (User) session.getAttribute("user");
-    if (user != null) System.out.println("user" + user.getUsername());
+    if (user != null) System.out.println("userInfo" + user.getUsername());
 %>
 <%
     Cart cartItems = Cart.getCart(session);
@@ -201,7 +201,7 @@
                 <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user-o"></i>Đăng
                     nhập</a></li>
                 <%} else {%>
-                <li><a href=""><i class="fa fa-user-o"></i>
+                <li><a href="<%=Utils.fullPath("account")%>"><i class="fa fa-user-o"></i>
                         <%=user.getFullname()%>
                 <li><a href="<%=Utils.fullPath("logout")%>"><i class="fa fa-user-o"></i>Đăng xuất
                 </a></li>

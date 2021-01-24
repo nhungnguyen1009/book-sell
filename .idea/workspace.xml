@@ -10,47 +10,249 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7cf3ed8-9188-4b2e-8e8e-c4d57bb87526" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/order/DelOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/publisher/AddPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/publisher/DelPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/publisher/EditPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/order/AddOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/dialog/styles/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/img/github-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/img/header-separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/img/navigation-tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/js/sf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Libraries/ckeditor/vendor/promise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/indexCK.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/themdonhang.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BookStore.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/order/AddOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/lib/annotations-java5-20.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BookStore/admin/themdonhang.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/order/AddOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/14f9c1dc-d296-4353-bdea-6d028b087c0c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/14f9c1dc-d296-4353-bdea-6d028b087c0c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/StaffList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/StaffList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/product/EditProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/product/EditProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/publisher/EditPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/publisher/EditPublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/DelStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/DelStaff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/EditStaff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/staff/EditStaff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/AddUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/DelUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/DelUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/EditUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/controller/admin/product/user/EditUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/OrderRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/ProductRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/ProductRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/StaffRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/StaffRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/model/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/menuLeft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/menuLeft.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlydonhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlydonhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlykhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlykhachhang.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhanvien.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlynhasanxuat.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/quanlysanpham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/quanlysanpham.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/suaSanPham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/suaSanPham.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/suakhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/suakhachhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/suanhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/suanhanvien.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/suanhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/suanhasanxuat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themkhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themkhachhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themnhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themnhanvien.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themnhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themnhasanxuat.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/themsanpham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/themsanpham.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/StaffList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/StaffList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/product/EditProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/product/EditProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/publisher/EditPublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/publisher/EditPublisher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/EditStaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/EditStaff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/user/AddUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/controller/admin/product/user/AddUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/OrderRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/OrderRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/ProductRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/ProductRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/loginRepo/UserRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/WEB-INF/classes/nlu/edu/fit/bookstore/model/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/menuLeft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/menuLeft.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlydonhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/quanlydonhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlykhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/quanlykhachhang.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlynhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/quanlynhanvien.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/quanlynhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/quanlynhasanxuat.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/suaSanPham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/suaSanPham.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/suakhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/suakhachhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/suanhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/suanhanvien.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/suanhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/suanhasanxuat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themkhachhang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/themkhachhang.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themnhanvien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/themnhanvien.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themnhasanxuat.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/themnhasanxuat.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BookStore/admin/themsanpham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/BookStore/admin/themsanpham.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/StaffList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/StaffList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/product/EditProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/product/EditProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/publisher/EditPublisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/publisher/EditPublisher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/AddStaff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/EditStaff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/staff/EditStaff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/user/AddUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/controller/admin/product/user/AddUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/OrderRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/OrderRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/ProductRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/ProductRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/StaffRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/loginRepo/UserRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nlu/edu/fit/bookstore/model/Staff.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +264,9 @@
       <list>
         <option value="package.json" />
         <option value="FxmlFile" />
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -104,7 +306,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.data.extractors.current.export.id" value="CSV-Groovy.csv.groovy" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/Libraries" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -116,13 +318,22 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="nlu.edu.fit.bookstore.controller.admin.product" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PHUONG ANH\Desktop\Group project\BookStore\src\main\Libraries" />
+      <recent name="C:\Users\PHUONG ANH\Desktop\Group project\BookStore" />
+      <recent name="C:\Users\PHUONG ANH\Desktop\Group project\BookStore\src\main\webapp\admin" />
+      <recent name="D:\LTWeb\Code\BookStore\src\main\webapp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="nlu.edu.fit.bookstore.controller.admin.product.order" />
       <recent name="nlu.edu.fit.bookstore.controller.admin.product.product" />
       <recent name="nlu.edu.fit.bookstore.controller.admin.product" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PHUONG ANH\Desktop\Group project\BookStore\src\main\webapp" />
       <recent name="C:\Users\PHUONG ANH\Desktop\Group project\BookStore\src\main\webapp\admin" />
-      <recent name="D:\LTWeb\Code\BookStore\src\main\webapp" />
+      <recent name="C:\Users\PHUONG ANH\Desktop\Group project\BookStore\src\main\webapp\admin\pages" />
+      <recent name="C:\Users\PHUONG ANH\Desktop\Group project\BookStore\src\main" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.59">
@@ -152,18 +363,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 8.5.59" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.591" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\Program Files\Java\jdk1.8.0_251\jre">
+    <configuration name="Tomcat 8.5.59" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.59" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="BookStore:war exploded">
@@ -173,7 +386,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_BookStore_3" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_BookStore" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -181,7 +394,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51295" />
+        <option name="DEBUG_PORT" value="51304" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -235,11 +448,10 @@
         </option>
       </method>
     </configuration>
-    <configuration name="Tomcat 8.5.591" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.591" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_BookStore" />
+        <option name="BASE_DIRECTORY_NAME" value="_BookStore" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -247,7 +459,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51269" />
+        <option name="DEBUG_PORT" value="51356" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -294,12 +506,13 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method v="2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Application.LoginRepo" />
       <item itemvalue="Application.DBconnection" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.591" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.59" />
     </list>
     <recent_temporary>
@@ -353,7 +566,11 @@
       <workItem from="1611165595540" duration="6284000" />
       <workItem from="1611249653395" duration="5762000" />
       <workItem from="1611304418254" duration="586000" />
-      <workItem from="1611338932716" duration="8232000" />
+      <workItem from="1611338932716" duration="8330000" />
+      <workItem from="1611389323476" duration="9721000" />
+      <workItem from="1611399175608" duration="7032000" />
+      <workItem from="1611413506639" duration="11267000" />
+      <workItem from="1611472897290" duration="4767000" />
     </task>
     <servers />
   </component>
@@ -373,24 +590,32 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1604720232201" />
+    <state x="72" y="205" key="#SQL_Dialects" timestamp="1611420753176">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="72" y="205" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1611420753176" />
     <state x="184" y="197" key="#Template_Data_Languages" timestamp="1611043008081">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="197" key="#Template_Data_Languages/0.0.1366.728@0.0.1366.728" timestamp="1611043008081" />
-    <state x="102" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611153040874">
+    <state x="426" y="242" key="#Tomcat_Server" timestamp="1611398750337">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="426" y="242" key="#Tomcat_Server/0.0.1366.728@0.0.1366.728" timestamp="1611398750337" />
+    <state x="102" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611399427191">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1604720295811" />
-    <state x="102" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1611153040874" />
+    <state x="102" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1611399427191" />
     <state x="476" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1611169815667">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604731239261" />
     <state x="476" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1611169815667" />
-    <state x="375" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1611148053390">
+    <state x="375" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1611399256709">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.728@0.0.1366.728" timestamp="1611148053390" />
+    <state x="375" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.728@0.0.1366.728" timestamp="1611399256709" />
     <state x="452" y="252" width="524" height="233" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1611343431274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -416,75 +641,79 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" maximized="true" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1609569230751" />
-    <state x="449" y="102" key="FileChooserDialogImpl" timestamp="1611148267106">
+    <state x="449" y="102" key="FileChooserDialogImpl" timestamp="1611398734009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604724846470" />
-    <state x="449" y="102" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611148267106" />
-    <state width="1120" height="251" key="GridCell.Tab.0.bottom" timestamp="1611346575606">
+    <state x="449" y="102" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611398734009" />
+    <state width="1120" height="202" key="GridCell.Tab.0.bottom" timestamp="1611477466550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="251" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.0.center" timestamp="1611346575606">
+    <state width="1120" height="202" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611477466550" />
+    <state width="1120" height="202" key="GridCell.Tab.0.center" timestamp="1611477466550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="251" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.0.left" timestamp="1611346575606">
+    <state width="1120" height="202" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611477466550" />
+    <state width="1120" height="202" key="GridCell.Tab.0.left" timestamp="1611477466550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="251" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.0.right" timestamp="1611346575606">
+    <state width="1120" height="202" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611477466550" />
+    <state width="1120" height="202" key="GridCell.Tab.0.right" timestamp="1611477466550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="251" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.1.bottom" timestamp="1611346575606">
+    <state width="1120" height="202" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611477466550" />
+    <state width="905" height="202" key="GridCell.Tab.1.bottom" timestamp="1611477354817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="251" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.1.center" timestamp="1611346575606">
+    <state width="905" height="202" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611477354817" />
+    <state width="905" height="202" key="GridCell.Tab.1.center" timestamp="1611477354817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="251" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.1.left" timestamp="1611346575606">
+    <state width="905" height="202" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1611477354817" />
+    <state width="905" height="202" key="GridCell.Tab.1.left" timestamp="1611477354817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="251" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.1.right" timestamp="1611346575606">
+    <state width="905" height="202" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1611477354817" />
+    <state width="905" height="202" key="GridCell.Tab.1.right" timestamp="1611477354817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1604984414125" />
-    <state width="1120" height="251" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.2.bottom" timestamp="1611346575606">
+    <state width="905" height="202" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1611477354817" />
+    <state width="905" height="202" key="GridCell.Tab.2.bottom" timestamp="1611477354817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="251" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.2.center" timestamp="1611346575606">
+    <state width="905" height="202" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611477354817" />
+    <state width="905" height="202" key="GridCell.Tab.2.center" timestamp="1611477354817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="251" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.2.left" timestamp="1611346575606">
+    <state width="905" height="202" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1611477354817" />
+    <state width="905" height="202" key="GridCell.Tab.2.left" timestamp="1611477354817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="251" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
-    <state width="1120" height="251" key="GridCell.Tab.2.right" timestamp="1611346575606">
+    <state width="905" height="202" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1611477354817" />
+    <state width="905" height="202" key="GridCell.Tab.2.right" timestamp="1611477354817">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1604984414129" />
-    <state width="1120" height="251" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1611346575606" />
+    <state width="905" height="202" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1611477354817" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1611166583464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1611166583464" />
+    <state x="213" y="18" key="Maven.ArtifactSearchDialog" timestamp="1611419247356">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="18" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1611419247356" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1611148217833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -493,10 +722,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="582" y="240" width="202" height="203" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.728@0.0.1366.728" timestamp="1611260798350" />
-    <state x="577" y="251" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1609576823499">
+    <state x="577" y="251" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1611415936339">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="577" y="251" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1609576823499" />
+    <state x="577" y="251" width="316" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.728@0.0.1366.728" timestamp="1611415936339" />
     <state x="263" y="18" key="com.intellij.database.dbimport.ImportDialog" timestamp="1611258352362">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -509,10 +738,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1611148277237" />
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611148681323">
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611474357380">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1611148681323" />
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1611474357380" />
     <state x="235" y="0" width="841" height="716" key="dock-window-1" timestamp="1610974575549">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -525,10 +754,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="91" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1604724835761" />
-    <state x="383" y="121" key="refactoring.ChangeSignatureDialog" timestamp="1611260655212">
+    <state x="383" y="121" key="refactoring.ChangeSignatureDialog" timestamp="1611393785158">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="383" y="121" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1611260655212" />
+    <state x="383" y="121" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1611393785158" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1611257194339">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -545,6 +774,19 @@
           <url>file://$PROJECT_DIR$/src/main/webapp/admin/quanlynhasanxuat.jsp</url>
           <line>12</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/OrderRepo.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/nlu/edu/fit/bookstore/loginRepo/PublisherRepo.java</url>
+          <line>43</line>
+          <properties class="nlu.edu.fit.bookstore.loginRepo.PublisherRepo" method="deletePublisher">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

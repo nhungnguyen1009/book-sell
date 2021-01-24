@@ -129,10 +129,10 @@
                                                             <%=p.getIdAuthor()%>
                                                         </td>
                                                         <td>
-                                                            <%=p.getDescription()%>
+                                                            <%=p.getCategory()%>
                                                         </td>
                                                         <td>
-                                                            <%=p.getCategory()%>
+                                                            <%=p.getDescription()%>
                                                         </td>
                                                         <td>
                                                             <a href="<%=Utils.fullPathAdmin("product/edit")%>?id=<%=p.getId()%>">Sửa</a>

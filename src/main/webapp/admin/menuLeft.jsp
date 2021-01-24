@@ -44,6 +44,9 @@
                                     <a class="nav-link" href="<%=Utils.fullPathAdmin("order")%>">Quản lý đơn hàng <span
                                             class="badge badge-secondary">New</span></a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<%=Utils.fullPathAdmin("order/add")%>">Thêm đơn hàng</a>
+                                </li>
 
 
                             </ul>

@@ -55,8 +55,12 @@
                                 <input type="number" name="id" class="form-control" placeholder="Mã" required>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Họ và tên nhân viên</label>
-                                <input type="text" name="name_user" class="form-control" placeholder="Họ tên" required>
+                                <label for="exampleInputPassword1">Tên user</label>
+                                <input type="text" name="username" class="form-control" placeholder="Tên tài khoản" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Họ và tên</label>
+                                <input type="text" name="fullname" class="form-control" placeholder="Họ tên" required>
                             </div>
                             <div class="form-group">
                                 <label >SĐT hoặc Email</label>

@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <%@include file="css.jsp"%>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/Libraries/ckeditor/ckeditor.js"></script>
     <title>Trang quản lý Admin</title>
 </head>
 
@@ -52,11 +53,15 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form action=<%=Utils.fullPath("admin/product/edit")%> method="POST" >
+                <form action=<%=Utils.fullPath("admin/product/edit?id="+p.getId())%> method="POST" >
+
                     <!-- $csrf -->
                     <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
                     <div class="card-body">
-
+                        <div class="form-group ">
+                            <label>Mã sản phẩm</label>
+                            <input value="<%=p.getId()%>" type="text" name="productID" class="form-control " placeholder="Mã " disabled>
+                        </div>
                         <div class="form-group ">
                             <label>Tên sản phẩm</label>
                             <input value="<%=p.getName()%>" type="text" name="name" class="form-control " placeholder="Tên " required>
@@ -95,7 +100,8 @@
                         <div class="form-group ">
                             <label>Mô tả</label>
                             <div class="input-group ">
-                                <input value="<%=p.getDescription()%>" type="text" name="desciption" class="form-control " placeholder="Mô tả" required>
+                                <textarea name="desciption" rows="20" cols="20" id="editor"><%=p.getDescription()%></textarea>
+<%--                                <input value="<%=p.getDescription()%>" type="text" name="desciption" class="form-control " placeholder="Mô tả" required>--%>
                             </div>
                         </div>
                         <div class="form-group ">
@@ -156,6 +162,10 @@
 <script src="assets/vendor/charts/sparkline/spark-js.js "></script>
 <!-- dashboard sales js-->
 <script src="assets/libs/js/dashboard-sales.js "></script>
+
+<script>
+    CKEDITOR.replace('editor');
+</script>
 </body>
 
 </html>

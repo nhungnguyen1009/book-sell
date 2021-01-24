@@ -36,8 +36,8 @@ public class Staff {
         this.name = name;
     }
 
-    public Date getDayToWork() {
-        return dayToWork;
+    public java.sql.Date getDayToWork() {
+        return (java.sql.Date) dayToWork;
     }
 
     public void setDayToWork(Date dayToWork) {
@@ -59,4 +59,6 @@ public class Staff {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+
 }

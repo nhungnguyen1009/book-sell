@@ -84,10 +84,12 @@
                                             <tr>
                                                 <th>Mã đơn hàng</th>
                                                 <th>Ngày tạo</th>
-                                                <th>Hình thức thanh toán</th>
+<%--                                                <th>Hình thức thanh toán</th>--%>
                                                 <th>Giá bán lẻ</th>
-                                                <th>Số lượng </th>
-                                                <th>Tình trạng </th>
+<%--                                                <th>Số lượng </th>--%>
+<%--                                                <th>Tình trạng </th>--%>
+                                                <th>Mã khách hàng</th>
+                                                <th>Mã nhân viên</th>
                                                 <th>Thao tác</th>
 
                                             </tr>
@@ -98,12 +100,14 @@
                                         <tr>
                                             <td><%=o.getId()%></td>
                                             <td><%=o.getDate()%></td>
-                                            <td>Thanh toán khi nhận hàng</td>
+<%--                                            <td>Thanh toán khi nhận hàng</td>--%>
                                             <td><%=o.getPrice()%></td>
-                                            <td><%=o.getQuantity()%></td>
-                                            <td>Chờ xử lý</td>
+<%--                                            <td><%=o.getQuantity()%></td>--%>
+<%--                                            <td>Chờ xử lý</td>--%>
+                                            <td><%=o.getUser_id()%></td>
+                                            <td><%=o.getStaff_id()%></td>
                                             <td>
-                                                <a href="#">Sẵn sàng giao</a><br/>
+<%--                                                <a href="#">Sẵn sàng giao</a><br/>--%>
                                                 <a href="<%=Utils.fullPathAdmin("order/DelOrder")%>?id=<%=o.getId()%>">Hủy</a>
                                             </td>
 

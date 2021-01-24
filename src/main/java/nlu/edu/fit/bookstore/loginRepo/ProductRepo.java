@@ -57,7 +57,7 @@ public class ProductRepo {
             String sql = "update products set name=?,url_picture=?, description=?, price=? ,quantity=?, review=?, publisher_id=? where id=?";
             PreparedStatement pr = conn.prepareStatement(sql);
 
-//            pr.setInt(1, p.getId());
+
             pr.setString(1, p.getName());
             pr.setString(2, p.getImg());
             pr.setString(3, p.getDescription());
@@ -65,7 +65,8 @@ public class ProductRepo {
             pr.setInt(5, p.getQuantity());
             pr.setString(6, p.getCategory());
             pr.setInt(7, p.getIdAuthor());
-
+            pr.setInt(8, p.getId());
+//            System.out.println("p.getId()"+ p.getId());
             int rs = pr.executeUpdate();
             System.out.println(rs);
         } catch (SQLException throwables) {

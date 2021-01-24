@@ -1,3 +1,4 @@
+<%@ page import="nlu.edu.fit.bookstore.model.Publisher" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 
@@ -12,6 +13,9 @@
 </head>
 
 <body>
+<%
+    Publisher p= (Publisher) request.getAttribute("publisher");
+%>
     <!-- ============================================================== -->
     <!-- main wrapper -->
     <!-- ============================================================== -->
@@ -46,18 +50,18 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form action=<%=Utils.fullPath("admin/publisher/edit")%> method="POST" >
+                    <form action=<%=Utils.fullPath("admin/publisher/editPublisher?id="+p.getId())%> method="POST" >
 
                         <!-- $csrf -->
                         <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
                         <div class="card-body">
                             <div class="form-group">
                                 <label>Mã nhà sản xuất</label>
-                                <input type="number" name="password" class="form-control"  placeholder="Mã" required>
+                                <input value="<%=p.getId()%>" type="number" name="id" class="form-control"  placeholder="Mã" disabled>
                             </div>
                             <div class="form-group">
                                 <label>Tên nhà sản xuất</label>
-                                <input type="text" name="name" class="form-control"  placeholder="Tên" required>
+                                <input value="<%=p.getName()%>" type="text" name="name" class="form-control"  placeholder="Tên" required>
                             </div>
 <%--                            <div class="form-group">--%>
 <%--                                <label>Tác phẩm</label>--%>

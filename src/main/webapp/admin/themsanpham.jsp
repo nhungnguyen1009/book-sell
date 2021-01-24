@@ -10,7 +10,10 @@
     <!-- Bootstrap CSS -->
     <%@include file="css.jsp"%>
     <title>Trang quản lý Admin</title>
+
+    <%--ckfinder--%>
     <script type="text/javascript" src="<%=request.getContextPath()%>/Libraries/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/ckfinder/ckfinder.js"></script>
 </head>
 
 <body>
@@ -111,7 +114,7 @@
                             <div class="form-group ">
                                 <label>Mô tả</label>
                                 <div class="input-group ">
-                                    <textarea type="text" name="desciption" rows="20" cols="20" id="editor" class="form-control " placeholder="Mô tả"></textarea>
+                                    <textarea name="desciption" rows="20" cols="30" id="editor" placeholder="Mô tả"></textarea>
 <%--                                    <input type="text" name="desciption" class="form-control " placeholder="Mô tả" required>--%>
                                 </div>
                             </div>
@@ -173,8 +176,12 @@
     <script src="assets/vendor/charts/sparkline/spark-js.js "></script>
     <!-- dashboard sales js-->
     <script src="assets/libs/js/dashboard-sales.js "></script>
-    <script>
-        CKEDITOR.replace('editor');
+<%--    <script>--%>
+<%--        CKEDITOR.replace('editor');--%>
+<%--    </script>--%>
+    <script type="text/javascript">
+        var editor1 = CKEDITOR.replace('editor');
+        CKFinder.setupCKEditor(editor1, '../../ckfinder');
     </script>
 </body>
 

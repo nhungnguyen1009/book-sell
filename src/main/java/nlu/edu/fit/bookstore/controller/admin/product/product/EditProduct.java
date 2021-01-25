@@ -36,6 +36,10 @@ public class EditProduct extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("productID"+req.getParameter("productID"));
+        System.out.println(req.getParameter("originPrice"));
+        System.out.println(req.getParameter("price"));
+        int id=Integer.parseInt(req.getParameter("id"));
 
         long originPrice = Long.parseLong(req.getParameter("originPrice"));
         long price = Long.parseLong(req.getParameter("price"));
@@ -43,6 +47,7 @@ public class EditProduct extends HttpServlet {
         int idAuthor=Integer.parseInt(req.getParameter("idAuthor"));
         Product p = new Product();
 
+        p.setId(id);
         p.setName(req.getParameter("name"));
         p.setPrice(originPrice);
         p.setPriceSale(price);
@@ -52,7 +57,7 @@ public class EditProduct extends HttpServlet {
         p.setImg(req.getParameter("img"));
         p.setDescription(req.getParameter("desciption"));
         p.setIdAuthor(idAuthor);
-
+        System.out.println("?");
         // dùng class product repo -> insert p xuông db
         ProductRepo.editProduct(p);
 

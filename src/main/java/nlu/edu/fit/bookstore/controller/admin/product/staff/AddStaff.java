@@ -11,16 +11,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.security.Timestamp;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 @WebServlet("/admin/staff/add")
 public class AddStaff extends HttpServlet {
     int id;
     String name;
-//    Date dayToWork;
+    Date dayToWork;
     int phone;
     double salary;
 
@@ -33,24 +36,22 @@ public class AddStaff extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        DateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-//        try {
-//            Date date=sdf.parse("dateToWork");
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-        int id=Integer.parseInt(req.getParameter("id"));
+
+//        Timestamp now = new Timestamp(new Date().getTime());
+
+        System.out.println(req.getParameter("dayToWork"));
+        int id=Integer.parseInt(req.getParameter("staff_id"));
         int phone=Integer.parseInt(req.getParameter("phone"));
-        double salary=Double.parseDouble("salary");
+        double salary=Double.parseDouble(req.getParameter("salary"));
 
         Staff s=new Staff();
-//
+
 //        // dùng class product repo -> insert p xuông db
         s.setId(id);
         s.setName(req.getParameter("name_staff"));
         s.setPhone(phone);
         s.setSalary(salary);
-//        s.setDayToWork(date);
+//        s.setDayToWork(now);
         StaffRepo.addStaff(s);
         resp.sendRedirect(Utils.fullPathAdmin("staff"));
 

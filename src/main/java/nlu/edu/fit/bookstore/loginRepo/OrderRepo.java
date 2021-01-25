@@ -3,10 +3,7 @@ package nlu.edu.fit.bookstore.loginRepo;
 import nlu.edu.fit.bookstore.connection.DBconnection;
 import nlu.edu.fit.bookstore.model.Order;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -46,6 +43,28 @@ public class OrderRepo {
             PreparedStatement pr = conn.prepareStatement(sql);
 
             pr.setInt(1, id);
+
+            int rs = pr.executeUpdate();
+            System.out.println(rs);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+    public static void addOrder(Order order){
+        try {
+            Connection conn = DBconnection.getMySQLConnection();
+            String sql ="insert into order(id, date, price, user_id, staff_id)" +
+                    " VALUES (?,?,?,?,?)";
+
+            PreparedStatement pr = conn.prepareStatement(sql);
+
+            pr.setInt(1, order.getId());
+            Timestamp now = new Timestamp(new Date().getTime());
+            pr.setTimestamp(2, (now));
+            pr.setDouble(3, order.getPrice());
+            pr.setInt(4, order.getUser_id());
+            pr.setInt(5, order.getStaff_id());
+
 
             int rs = pr.executeUpdate();
             System.out.println(rs);

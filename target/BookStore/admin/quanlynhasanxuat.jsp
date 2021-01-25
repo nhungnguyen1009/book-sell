@@ -102,8 +102,8 @@
 <%--                                                <td><%=publisher.getName_product()%></td>--%>
 <%--                                                <td><%=publisher.getQuantity()%></td>--%>
                                                 <td>
-                                                    <a href="<%=Utils.fullPathAdmin("staff/editPublisher")%>?id=<%=publisher.getId()%>">Sửa</a>
-                                                    <a href="<%=Utils.fullPathAdmin("staff/DelPublisher")%>?id=<%=publisher.getId()%>">Xóa</a>
+                                                    <a href="<%=Utils.fullPathAdmin("publisher/editPublisher")%>?id=<%=publisher.getId()%>">Sửa</a>
+                                                    <a href="<%=Utils.fullPathAdmin("publisher/DelPublisher")%>?id=<%=publisher.getId()%>">Xóa</a>
                                                 </td>
 
 

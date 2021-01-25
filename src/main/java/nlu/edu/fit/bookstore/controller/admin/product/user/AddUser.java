@@ -28,7 +28,8 @@ public class AddUser extends HttpServlet {
 
         User u = new User();
         u.setId(i);
-        u.setUsername(req.getParameter("name_user"));
+        u.setUsername(req.getParameter("username"));
+        u.setFullname(req.getParameter("fullname"));
         u.setPassword(req.getParameter("pass"));
         u.setEmail(req.getParameter("email"));
         u.setAddress(req.getParameter("address"));

@@ -29,6 +29,7 @@ public class UserRepo {
                 int id = rss.getInt(1);
                 String name = rss.getString("username");
                 String pass = rss.getString("password");
+                String fullname=rss.getString("fullname");
                 String address = rss.getString("address");
                 String email=rss.getString("email");
                 String sex=rss.getString("sex");
@@ -36,6 +37,7 @@ public class UserRepo {
                 User u = new User();
                 u.setId(id);
                 u.setUsername(name);
+                u.setFullname(fullname);
                 u.setEmail(email);
                 u.setPassword(pass);
                 u.setAddress(address);
@@ -67,16 +69,17 @@ public class UserRepo {
 
         try {
             Connection conn = DBconnection.getMySQLConnection();
-            String sql = "insert into user(id, username, password,address, email,sex" +
-                    " VALUES (?,?,?,?,?,?)";
+            String sql = "insert into user(id, username,fullname, password,address, email,sex)" +
+                    " VALUES (?,?,?,?,?,?,?)";
             PreparedStatement pr = conn.prepareStatement(sql);
 
             pr.setInt(1, u.getId());
             pr.setString(2, u.getUsername());
-            pr.setString(3,u.getPassword());
-            pr.setString(4,u.getAddress());
-            pr.setString(5,u.getEmail());
-            pr.setString(6,u.getSex());
+            pr.setString(3, u.getFullname());
+            pr.setString(4,u.getPassword());
+            pr.setString(5,u.getAddress());
+            pr.setString(6,u.getEmail());
+            pr.setString(7,u.getSex());
 
 
 

@@ -67,18 +67,13 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Mã nhân viên</label>
-                                <input type="number" name="id" class="form-control" placeholder="Mã nhân viên" required>
+                                <input type="number" name="staff_id" class="form-control" placeholder="Mã nhân viên" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Họ và tên nhân viên</label>
                                 <input type="text" name="name_staff" class="form-control" placeholder="Họ tên" required>
                             </div>
-                            <div class="form-group">
-                                <label>Năm sinh</label>
-                                <div class="input-group">
-                                    <input type="number" name="birthday" class="form-control"  placeholder="Năm sinh" required>
-                                </div>
-                            </div>
+
                             <div class="form-group">
                                 <label>Sdt</label>
                                 <div class="input-group">
@@ -88,7 +83,7 @@
                             <div class="form-group">
                                 <label>Ngày vào làm</label>
                                 <div class="input-group">
-                                    <input type="number" name="dateToWork" class="form-control" id="exampleInputPassword1" placeholder="Ngày vào làm" required>
+                                    <input type="date" name="dayToWork" class="form-control" id="exampleInputPassword1" placeholder="Ngày vào làm" required>
                                 </div>
                             </div>
                             <div class="form-group">

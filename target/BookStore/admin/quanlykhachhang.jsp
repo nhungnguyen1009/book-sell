@@ -85,6 +85,7 @@
                                         <thead>
                                             <tr>
                                                 <th>Mã khách hàng</th>
+                                                <th>Tên tài khoản</th>
                                                 <th>Họ tên</th>
                                                 <th>SĐT_Email</th>
                                                 <th>Mật khẩu</th>
@@ -101,6 +102,7 @@
                                             <tr>
                                                 <td><%=u.getId()%></td>
                                                 <td><%=u.getUsername()%></td>
+                                                <td><%=u.getFullname()%></td>
                                                 <td><%=u.getEmail()%></td>
                                                 <td><%=u.getPassword()%></td>
                                                 <td><%=u.getAddress()%></td>

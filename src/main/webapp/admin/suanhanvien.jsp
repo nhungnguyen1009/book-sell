@@ -1,3 +1,4 @@
+<%@ page import="nlu.edu.fit.bookstore.model.Staff" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 
@@ -12,6 +13,9 @@
 </head>
 
 <body>
+<%
+   Staff s= (Staff) request.getAttribute("staff");
+%>
     <!-- ============================================================== -->
     <!-- main wrapper -->
     <!-- ============================================================== -->
@@ -45,41 +49,35 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form action=<%=Utils.fullPath("admin/staff/edit")%> method="POST" >
+                    <form action=<%=Utils.fullPath("admin/staff/editStaff?id="+s.getId())%> method="POST" >
 
                         <!-- $csrf -->
                         <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Mã nhân viên</label>
-                                <input type="number" name="id" class="form-control" placeholder="Mã nhân viên" required>
+                                <label>Mã nhân viên</label>
+                                <input value="<%=s.getId()%>" type="number" name="staff_id" class="form-control" placeholder="Mã nhân viên" disabled>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Họ và tên nhân viên</label>
-                                <input type="text" name="name_staff" class="form-control" placeholder="Họ tên" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Năm sinh</label>
-                                <div class="input-group">
-                                    <input type="number" name="birthday" class="form-control"  placeholder="Năm sinh" required>
-                                </div>
+                                <label>Họ và tên nhân viên</label>
+                                <input value="<%=s.getName()%>" type="text" name="name_staff" class="form-control" placeholder="Họ tên" required>
                             </div>
                             <div class="form-group">
                                 <label>Sdt</label>
                                 <div class="input-group">
-                                    <input type="number" name="phone" class="form-control" placeholder="Sdt" required>
+                                    <input value="<%=s.getPhone()%>" type="number" name="phone" class="form-control" placeholder="Sdt" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Ngày vào làm</label>
                                 <div class="input-group">
-                                    <input type="number" name="dateToWork" class="form-control" id="exampleInputPassword1" placeholder="Ngày vào làm" required>
+                                    <input value="<%=s.getDayToWork()%>" type="date" name="dateToWork" class="form-control" id="exampleInputPassword1" placeholder="Ngày vào làm" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Lương</label>
                                 <div class="input-group">
-                                    <input type="number" name="salary" class="form-control"  placeholder="Lương" required>
+                                    <input value="<%=s.getSalary()%>" type="number" name="salary" class="form-control"  placeholder="Lương" required>
                                 </div>
                             </div>
                         </div>

@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <%@include file="css.jsp"%>
     <title>Trang quản lý Admin</title>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/Libraries/ckeditor/ckeditor.js"></script>
 </head>
 
 <body>
@@ -64,12 +65,13 @@
                     <!-- /.card-header -->
                     <!-- form start -->
                     <form action=<%=Utils.fullPath("admin/product/add")%> method="POST" >
+
                         <!-- $csrf -->
                         <!-- remember form needs enctype="multipart/form-data" and {{ csrf_field() }} -->
                         <div class="card-body">
                             <div class="form-group">
                                 <label>Mã sản phẩm</label>
-                                <input type="number" name="id" class=" form-control"placeholder="Mã " required>
+                                <input type="number" name="id" class="form-control"placeholder="Mã" required>
                             </div>
                             <div class="form-group ">
                                 <label for="exampleInputPassword1 ">Tên sản phẩm</label>
@@ -109,7 +111,8 @@
                             <div class="form-group ">
                                 <label>Mô tả</label>
                                 <div class="input-group ">
-                                    <input type="text" name="desciption" class="form-control " placeholder="Mô tả" required>
+                                    <textarea type="text" name="desciption" rows="20" cols="20" id="editor" class="form-control " placeholder="Mô tả"></textarea>
+<%--                                    <input type="text" name="desciption" class="form-control " placeholder="Mô tả" required>--%>
                                 </div>
                             </div>
                             <div class="form-group ">
@@ -170,6 +173,9 @@
     <script src="assets/vendor/charts/sparkline/spark-js.js "></script>
     <!-- dashboard sales js-->
     <script src="assets/libs/js/dashboard-sales.js "></script>
+    <script>
+        CKEDITOR.replace('editor');
+    </script>
 </body>
 
 </html>

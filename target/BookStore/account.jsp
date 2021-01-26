@@ -74,7 +74,6 @@
                     <div><label for="">Tên*</label></div>
                     <div><label for="">Số điện thoại</label></div>
                     <div><label for="">Username</label></div>
-                    <div><label for="">Password</label></div>
                     <div><label for="">Email</label></div>
                     <div><label for="">Giới tính</label></div>
                     <div><label for="">Ngày sinh</label></div>
@@ -84,7 +83,6 @@
                     <div><input type="text"  value="<%=userInfo.getFullname()%>" disabled></div>
                     <div><input type="text" value="<%=userInfo.getPhone()%>" disabled></div>
                     <div><input type="text" value="<%=userInfo.getUsername()%>" disabled></div>
-                    <div><input type="text" value="<%=userInfo.getPassword()%>" disabled ></div>
                     <div><input type="email" value="<%=userInfo.getEmail()%>" disabled></div>
 <%--                    <div class="radioClass" disabled><input type="radio">Nam<input type="radio">Nữ--%>
 <%--                    </div>--%>

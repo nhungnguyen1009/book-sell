@@ -190,7 +190,7 @@
         <div class="container">
             <ul class="header-links pull-left">
                 <li><a href="#"><i class="fa fa-phone"></i> +963-49-46-74</a></li>
-                <li><a href="#`"><i class="fa fa-envelope-o"></i> JB_bookstore@gmail.com</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> JB_bookstore@gmail.com</a></li>
                 <li><a href="#"><i class="fa fa-map-marker"></i> Quận Thủ Đức, TPHCM</a></li>
             </ul>
             <ul id="topLinks" class="header-links pull-right">

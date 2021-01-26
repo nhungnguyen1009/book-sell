@@ -1,11 +1,19 @@
 package nlu.edu.fit.bookstore.utils;
 
+import com.google.common.hash.Hashing;
+
+import java.nio.charset.StandardCharsets;
 import java.sql.SQLOutput;
 
 public class Utils {
-    public static  String fullPath(String path){
+    public static String fullPath(String path) {
 
-        return "http://localhost:8080/BookStore_war_exploded/"+path;
+        return "http://localhost:8080/BookStore_war_exploded/" + path;
+    }
+
+    public static String fullPathAdmin(String path) {
+
+        return "http://localhost:8080/BookStore_war_exploded/admin/" + path;
     }
 
     public static boolean isEmail(String email) {
@@ -15,9 +23,17 @@ public class Utils {
         return m.matches();
     }
 
+    public static String hashToken(String originalString) {
+        String sha256hex = Hashing.sha256()
+                .hashString(originalString, StandardCharsets.UTF_8)
+                .toString();
+        return sha256hex;
+    }
 
     public static void main(String[] args) {
-        System.out.println(isEmail("sdfsdf@fsdf.ds"));
+
+        System.out.println(Utils.hashToken(Math.random() + ""));
+
     }
 
 

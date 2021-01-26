@@ -94,15 +94,14 @@
 				<div class="bg-white text-center p-5 mt-3 center">
 					<h3>Quên mật khẩu</h3>
 					<p>Bạn vui lòng nhập lại tên đăng nhập hoặc Email để lấy lại mật khẩu nhé!</p>
-					<form class="pb-3" action="#">
+					<form class="pb-3" action="EmailSendingServlet" method="post">
 						<div class="form-group" style="margin: 20px 80px;">
-							<input style="padding: 10px;" class="form-control" placeholder="Tên đăng nhập hoặc email*"
+							<input style="padding: 10px;" name="recipient" class="form-control" placeholder="Tên đăng nhập hoặc email*"
 								required style="width: 50%; ">
 						</div>
+						<input type="submit" value="Đặt lại mật khẩu" class="btn" style="background-color:  #D10024; width: 150px; border-radius: 50px; color: white; outline: 0px;"/>
 					</form>
-					<button type="button" class="btn"
-						style="background-color:  #D10024; width: 150px; border-radius: 50px; color: white; outline: 0px;">Đặt
-						lại mật khẩu</button>
+
 				</div>
 			</div>
 		</div>

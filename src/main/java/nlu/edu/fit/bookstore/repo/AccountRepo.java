@@ -2,6 +2,7 @@ package nlu.edu.fit.bookstore.repo;
 
 import nlu.edu.fit.bookstore.connection.DBconnection;
 import nlu.edu.fit.bookstore.model.User;
+import nlu.edu.fit.bookstore.utils.MD5;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -76,8 +77,63 @@ public class AccountRepo {
             return false;
         }
     }
+
+    public static boolean updateToken(String token, String email) {
+        try {
+            Connection connection = new DBconnection().getMySQLConnection();
+            String query = "UPDATE `user` SET token = ?" +
+                    "WHERE email = ?";
+
+            PreparedStatement pr = connection.prepareStatement(query);
+            pr.setString(1, token);
+            pr.setString(2, email);
+            int rss = pr.executeUpdate();
+            System.out.println(rss);
+            System.out.println("mmmm");
+            return true;
+        } catch (SQLException throwables) {
+            return false;
+        }
+    }
+
+    public static String getToken(String email) {
+        User user = new User();
+        try {
+            Connection connection = new DBconnection().getMySQLConnection();
+            String query = "SELECT * FROM user " +
+                    "WHERE email = ?";
+
+            PreparedStatement pr = connection.prepareStatement(query);
+            pr.setString(1, email);
+            ResultSet rss = pr.executeQuery();
+            if (rss.next()) {
+
+                return rss.getString("token");
+            }
+            return null;
+        } catch (SQLException throwables) {
+            return null;
+        }
+    }
+
+    public static boolean updatePass(String pass, String email) {
+        try {
+            Connection connection = new DBconnection().getMySQLConnection();
+            String query = "UPDATE `user` SET password = ?" +
+                    "WHERE email = ?";
+
+            PreparedStatement pr = connection.prepareStatement(query);
+            pr.setString(1, MD5.encryption(pass));
+            pr.setString(2, email);
+            int rss = pr.executeUpdate();
+            return true;
+        } catch (SQLException throwables) {
+            return false;
+        }
+    }
+
     // cần user info để lưu session
 //    public static void main(String[] args) {
-//        System.out.println(LoginRepo.login("nhung", "123"));
+//        System.out.println(getToken("quochuynh1305@gmail.com"));
 //    }
 }

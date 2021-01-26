@@ -1,54 +1,54 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>JB BookStore</title>
+        <title>JB BookStore</title>
 
-    <!-- iconClose -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- iconClose -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Bootstrap -->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <!-- Slick -->
-    <link type="text/css" rel="stylesheet" href="css/slick.css" />
-    <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+        <!-- Slick -->
+        <link type="text/css" rel="stylesheet" href="css/slick.css" />
+        <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
 
-    <!-- nouislider -->
-    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+        <!-- nouislider -->
+        <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
 
-    <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Font Awesome Icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link type="text/css" rel="stylesheet" href="css/quickview.css" />
+        <!-- Custom stlylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/quickview.css" />
 
-    <!-- Modernizr -->
-    <script src="js/modernizr.js"></script>
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <!-- form sign up -->
-    <%@include file="parts/header.jsp" %>
+        <!-- form sign up -->
+        <%@include file="parts/header.jsp" %>
             <!-- /NAVIGATION -->
 
             <!-- BREADCRUMB -->
@@ -699,107 +699,109 @@
                 <!-- /container -->
             </div>
             <!-- /SECTION -->
-        </div>
-    </div>
-
-    <!-- QUICK VIEW  -->
-    <div id="quick-view-modal" class="wrapper-quickview" style="display: none;">
-        <div class="quickviewOverlay">
-        </div>
-        <div class="jsQuickview">
-            <div class="modal-header clearfix" style="width: 100%">
-                <a href="product.jsp" class="quickview-title text-left" title="Đừng lựa chọn an nhàn khi còn trẻ">
-                    <h4 style="text-align: center; ">
-                        ĐỪNG LỰA CHỌN AN NHÀN KHI CÒN TRẺ</h4>
-                </a>
-
-                <div class="quickview-close iconClose">
-                    <a href="javascript:void(0);"><i class="glyphicon glyphicon-remove" style="color: tomato;"></i></a>
-                </div>
             </div>
-            <div class="col-md-5">
-                <div class="quickview-image image-zoom">
-                    <img class="p-product-image-feature" src="./img/quickview/large1.jpg" alt="Đừng lựa chọn an nhàn khi còn trẻ">
-                </div>
-                <div id="quickview-sliderproduct">
-                    <div class="quickview-slider">
-                        <ul class="owl-carousel owl-theme" style="display: block; opacity: 1;">
-                            <div class="owl-wrapper-outer">
-                                <div class="owl-wrapper" style="width: 600px; left: 0px; display: flex;">
-                                    <div class="owl-item" style="width: 100px;">
-                                        <li class="product-thumb active">
-                                            <a href="javascript:void(0);" data-image="./img/quickview/large1.jpg">
-                                                <img src="./img/quickview/small1.jpg" style="width: 80px;height: 100px;"></a>
-                                        </li>
-                                    </div>
-                                    <div class="owl-item" style="width: 100px;">
-                                        <li class="product-thumb">
-                                            <a href="javascript:void(0);" data-image="./img/quickview/large2.jpg">
-                                                <img src="./img/quickview/small2.jpg" style="width: 80px;height: 100px;"></a>
-                                        </li>
-                                    </div>
-                                    <div class="owl-item" style="width: 100px;">
-                                        <li class="product-thumb">
-                                            <a href="javascript:void(0);" data-image="./img/quickview/large3.jpg">
-                                                <img src="./img/quickview/small3.jpg" style="width: 80px;height: 100px;"></a>
-                                        </li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-controls clickable" style="display: none;">
-                                <div class="owl-pagination">
-                                    <div class="owl-page active">
-                                        <span class=""></span>
-                                    </div>
-                                </div>
-                                <div class="owl-buttons">
-                                    <div class="owl-prev">
-                                        owl-prev</div>
-                                    <div class="owl-next">
-                                        owl-next</div>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
             </div>
-            <div class="col-md-7">
-                <strong>Mô tả:</strong>
-                <div>
-                    Trong độ xuân xanh phơi phới ngày ấy, bạn không dám mạo hiểm, không dám nỗ lực để kiếm học bổng, không chịu tìm tòi những thử thách trong công việc, không phấn đấu hướng đến ước mơ của mình. Bạn mơ mộng rằng làm việc xong sẽ vào làm ở một công ty nổi
-                    tiếng, làm một thời gian sẽ thăng quan tiến chức. Mơ mộng ....<a href="product.jsp" style="color: tomato;">xem thêm</a>
+
+            <!-- QUICK VIEW  -->
+            <div id="quick-view-modal" class="wrapper-quickview" style="display: none;">
+                <div class="quickviewOverlay">
                 </div>
-                </br>
-                <div><strong>Tác giả:</strong> Cảnh Thiên</div>
-                </br>
-                <div><strong>Thể loại:</strong> Văn học</div>
-                </br>
-                <div class="add-to-cart">
-                    <div class="qty-label">
-                        <strong>Số lượng: </strong></br>
-                        <div class="input-number" style="float: left;">
-                            <input type="number" value="1">
-                            <span class="qty-up">+</span>
-                            <span class="qty-down">-</span>
+                <div class="jsQuickview">
+                    <div class="modal-header clearfix" style="width: 100%">
+                        <a href="product.jsp" class="quickview-title text-left" title="Đừng lựa chọn an nhàn khi còn trẻ">
+                            <h4 style="text-align: center; ">
+                                ĐỪNG LỰA CHỌN AN NHÀN KHI CÒN TRẺ</h4>
+                        </a>
+
+                        <div class="quickview-close iconClose">
+                            <a href="javascript:void(0);"><i class="glyphicon glyphicon-remove" style="color: tomato;"></i></a>
                         </div>
                     </div>
-                    </br>
-                    </br>
-                    </br>
-                    <div class="product-details" style="text-align: center;">
-                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                    <div class="col-md-5">
+                        <div class="quickview-image image-zoom">
+                            <img class="p-product-image-feature" src="./img/quickview/large1.jpg" alt="Đừng lựa chọn an nhàn khi còn trẻ">
+                        </div>
+                        <div id="quickview-sliderproduct">
+                            <div class="quickview-slider">
+                                <ul class="owl-carousel owl-theme" style="display: block; opacity: 1;">
+                                    <div class="owl-wrapper-outer">
+                                        <div class="owl-wrapper" style="width: 600px; left: 0px; display: flex;">
+                                            <div class="owl-item" style="width: 100px;">
+                                                <li class="product-thumb active">
+                                                    <a href="javascript:void(0);" data-image="./img/quickview/large1.jpg">
+                                                        <img src="./img/quickview/small1.jpg" style="width: 80px;height: 100px;"></a>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item" style="width: 100px;">
+                                                <li class="product-thumb">
+                                                    <a href="javascript:void(0);" data-image="./img/quickview/large2.jpg">
+                                                        <img src="./img/quickview/small2.jpg" style="width: 80px;height: 100px;"></a>
+                                                </li>
+                                            </div>
+                                            <div class="owl-item" style="width: 100px;">
+                                                <li class="product-thumb">
+                                                    <a href="javascript:void(0);" data-image="./img/quickview/large3.jpg">
+                                                        <img src="./img/quickview/small3.jpg" style="width: 80px;height: 100px;"></a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-controls clickable" style="display: none;">
+                                        <div class="owl-pagination">
+                                            <div class="owl-page active">
+                                                <span class=""></span>
+                                            </div>
+                                        </div>
+                                        <div class="owl-buttons">
+                                            <div class="owl-prev">
+                                                owl-prev</div>
+                                            <div class="owl-next">
+                                                owl-next</div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <strong>Mô tả:</strong>
+                        <div>
+                            Trong độ xuân xanh phơi phới ngày ấy, bạn không dám mạo hiểm, không dám nỗ lực để kiếm học bổng, không chịu tìm tòi những thử thách trong công việc, không phấn đấu hướng đến ước mơ của mình. Bạn mơ mộng rằng làm việc xong sẽ vào làm ở một công ty nổi
+                            tiếng, làm một thời gian sẽ thăng quan tiến chức. Mơ mộng ....<a href="product.jsp" style="color: tomato;">xem thêm</a>
+                        </div>
+                        </br>
+                        <div><strong>Tác giả:</strong> Cảnh Thiên</div>
+                        </br>
+                        <div><strong>Thể loại:</strong> Văn học</div>
+                        </br>
+                        <div class="add-to-cart">
+                            <div class="qty-label">
+                                <strong>Số lượng: </strong></br>
+                                <div class="input-number" style="float: left;">
+                                    <input type="number" value="1">
+                                    <span class="qty-up">+</span>
+                                    <span class="qty-down">-</span>
+                                </div>
+                            </div>
+                            </br>
+                            </br>
+                            </br>
+                            <div class="product-details" style="text-align: center;">
+                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- /QUICK VIEW  -->
+            </div>
+            </div>
+            <!-- /QUICK VIEW  -->
 
-    <!-- NEWSLETTER -->
-    <%@include file="parts/footer.jsp" %>
-    <!-- /FOOTER -->
+            <!-- NEWSLETTER -->
+            <%@include file="parts/footer.jsp" %>
+                <!-- /FOOTER -->
 
 
-</body>
+    </body>
 
-</html>
+    </html>

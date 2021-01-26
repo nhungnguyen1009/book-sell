@@ -1,3 +1,4 @@
+<%@ page import="java.util.Collection" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +63,9 @@
 </head>
 
 <body>
-
+<% Cart cart = Cart.getCart(session);
+	Collection<nlu.edu.fit.bookstore.model.CartItem> data = cart.getData();
+%>
 <%@include file="parts/header.jsp" %>
 
 			<!-- BREADCRUMB -->
@@ -196,14 +199,12 @@
 									<div><strong>Giá</strong></div>
 								</div>
 								<div class="order-products">
+									<% for (CartItem item :data){%>
 									<div class="order-col">
-										<div>1x Viking hay nhất mọi thời đại</div>
-										<div>100.000VNĐ</div>
+										<div><%= item.getQuantity()%>x <%= item.getP().getName()%></div>
+										<div><%= item.getP().getPrice()%>VNĐ</div>
 									</div>
-									<div class="order-col">
-										<div>2x Hy Lạp hay nhất mọi thời đại</div>
-										<div>110.000VNĐ</div>
-									</div>
+									<%}%>
 								</div>
 								<div class="order-col">
 									<div>Phí giao hàng</div>
@@ -211,7 +212,7 @@
 								</div>
 								<div class="order-col">
 									<div><strong>Tổng tiền</strong></div>
-									<div><strong class="order-total">320.000VND</strong></div>
+									<div><strong class="order-total"><%= cart.total()%></strong></div>
 								</div>
 							</div>
 							<div class="payment-method">
@@ -222,7 +223,7 @@
 										Thanh toán bằng tiền mặt khi nhận hàng
 									</label>
 									<div class="caption">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>Chọn phương thức thành công.</p>
 									</div>
 								</div>
 								<div class="input-radio">
@@ -232,7 +233,7 @@
 										Thanh toán bằng thẻ ATM
 									</label>
 									<div class="caption">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>Chọn phương thức thành công.</p>
 									</div>
 								</div>
 								<div class="input-radio">
@@ -242,7 +243,7 @@
 										Chuyển tiền qua ngân hàng
 									</label>
 									<div class="caption">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>Chọn phương thức thành công.</p>
 									</div>
 								</div>
 							</div>

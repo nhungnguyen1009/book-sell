@@ -27,9 +27,11 @@ public class AccountRepo {
                 int id = rss.getInt(1);
                 String name = rss.getString("username");
                 String fullname = rss.getString("fullname");
+                String email = rss.getString("email");
                 user.setId(id);
                 user.setUsername(name);
                 user.setFullname(fullname);
+                user.setEmail(email);
                 return user;
             }
             return null;

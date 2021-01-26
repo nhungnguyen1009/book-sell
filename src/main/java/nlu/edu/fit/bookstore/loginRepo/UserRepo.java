@@ -91,15 +91,17 @@ public class UserRepo {
 
     }
 
-    public static int resetPass(User u, String sql) {
+    public static int resetPass(User u) {
         int i=0;
         Connection conn = DBconnection.getMySQLConnection();
-
+        String sql="update user set password=? where username=?";
         try {
             PreparedStatement pr = conn.prepareStatement(sql);
             pr.setString(1,u.getPassword());
             pr.setString(2,u.getUsername());
             i=pr.executeUpdate();
+            System.out.println(i);
+            System.out.println("ssss");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

@@ -12,7 +12,7 @@
     <title>Trang quản lý Admin</title>
 
     <%--ckfinder--%>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/Libraries/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
     <script type="text/javascript" src="<%=request.getContextPath()%>/ckfinder/ckfinder.js"></script>
 </head>
 

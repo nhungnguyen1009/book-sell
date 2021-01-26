@@ -45,8 +45,8 @@ public class ResetPass extends HttpServlet {
             u.setUsername(username);
             u.setPassword(newPass);
             //call sql
-            String sql="update user set password=? where username=?";
-            int i= UserRepo.resetPass(u,sql);
+
+            int i= UserRepo.resetPass(u);
             if (i!=0){
                 req.setAttribute("msg","Password update success");
                 getServletContext().getRequestDispatcher("/account").forward(req,resp);

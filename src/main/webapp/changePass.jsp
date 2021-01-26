@@ -71,7 +71,7 @@
                 <form action="/resetPass" method="post">
                     <div class="flex">
                         <div>
-                            <div><label>Tên truy cập</label></div>
+
                             <div><label>Mật khẩu cũ</label></div>
                             <div><label>Mật khẩu mới</label></div>
                             <div><label>Nhắc lại mật khẩu mới</label></div>
@@ -79,7 +79,7 @@
                         </div>
                         <div>
 
-                            <div><input type="text" name="name"></div>
+
                             <div><input type="password" name="oldPass"></div>
                             <div><input type="password" name="newPass"></div>
                             <div><input type="password" name="reenterPass"></div>

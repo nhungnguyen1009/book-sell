@@ -71,16 +71,16 @@
                 <form action="#">
                     <div class="flex">
                         <div>
-                            <div><label for="">Tên truy cập</label></div>
-                            <div><label for="">Mật khẩu cũ</label></div>
-                            <div><label for="">Mật khẩu mới</label></div>
-                            <div><label for="">Nhắc lại mật khẩu mới</label></div>
+                            <div><label>Tên truy cập</label></div>
+                            <div><label>Mật khẩu cũ</label></div>
+                            <div><label>Mật khẩu mới</label></div>
+                            <div><label>Nhắc lại mật khẩu mới</label></div>
 
                         </div>
                         <div>
 
                             <div><input type="text"></div>
-                            <div><input type="text"></div>
+                            <div><input type="password"></div>
                             <div><input type="text"></div>
                             <div><input type="text"></div>
                         </div>

@@ -74,7 +74,8 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label>Mã sản phẩm</label>
-                                <input type="number" name="id" class="form-control"placeholder="Mã" required>
+                                <input type="number" name="id" class="form-control"eg
+                                       placeholder="Mã" required>
                             </div>
                             <div class="form-group ">
                                 <label for="exampleInputPassword1 ">Tên sản phẩm</label>

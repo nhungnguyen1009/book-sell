@@ -42,6 +42,10 @@
 </head>
 
 <body>
+<%
+    HttpSession httpSession = request.getSession();
+    User userInfo = (User) httpSession.getAttribute("user");
+%>
 <div>
 <%@include file="parts/header.jsp" %>
 
@@ -66,20 +70,23 @@
             <!-- /BREADCRUMB -->
             <div class="row over">
                 <div class="col-sm-3 lablClass">
-                    <div><label for="">Họ*</label></div>
+<%--                    <div><label for="">Họ*</label></div>--%>
                     <div><label for="">Tên*</label></div>
                     <div><label for="">Số điện thoại</label></div>
+                    <div><label for="">Username</label></div>
                     <div><label for="">Email</label></div>
                     <div><label for="">Giới tính</label></div>
                     <div><label for="">Ngày sinh</label></div>
                 </div>
                 <div class="col-sm-4 inputClass">
-                    <div><input type="text" disabled placeholder="Trần"></div>
-                    <div><input type="text" disabled placeholder="Phương Anh"></div>
-                    <div><input type="text" disabled placeholder="012648699"></div>
-                    <div><input type="email" disabled placeholder="tranpa232@gmail.com"></div>
-                    <div class="radioClass" disabled><input type="radio">Nam<input type="radio">Nữ
-                    </div>
+<%--                    <div><input type="text" disabled placeholder="Trần"></div>--%>
+                    <div><input type="text"  value="<%=userInfo.getFullname()%>" disabled></div>
+                    <div><input type="text" value="<%=userInfo.getPhone()%>" disabled></div>
+                    <div><input type="text" value="<%=userInfo.getUsername()%>" disabled></div>
+                    <div><input type="email" value="<%=userInfo.getEmail()%>" disabled></div>
+<%--                    <div class="radioClass" disabled><input type="radio">Nam<input type="radio">Nữ--%>
+<%--                    </div>--%>
+                    <div><input type="text" value="<%=userInfo.getSex()%>" disabled></div>
                     <div class="date">
                         <input type="date">
                     </div>

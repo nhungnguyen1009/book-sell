@@ -12,7 +12,7 @@
     <title>Trang quản lý Admin</title>
 
     <%--ckfinder--%>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/Libraries/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
     <script type="text/javascript" src="<%=request.getContextPath()%>/ckfinder/ckfinder.js"></script>
 </head>
 
@@ -74,7 +74,8 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label>Mã sản phẩm</label>
-                                <input type="number" name="id" class="form-control"placeholder="Mã" required>
+                                <input type="number" name="id" class="form-control"eg
+                                       placeholder="Mã" required>
                             </div>
                             <div class="form-group ">
                                 <label for="exampleInputPassword1 ">Tên sản phẩm</label>

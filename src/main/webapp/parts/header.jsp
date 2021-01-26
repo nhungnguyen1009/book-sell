@@ -51,7 +51,7 @@
 
 <%
     User user = (User) session.getAttribute("user");
-    if (user != null) System.out.println("user" + user.getUsername());
+    if (user != null) System.out.println("userInfo" + user.getUsername());
 %>
 <%
     Cart cartItems = Cart.getCart(session);
@@ -190,7 +190,7 @@
         <div class="container">
             <ul class="header-links pull-left">
                 <li><a href="#"><i class="fa fa-phone"></i> +963-49-46-74</a></li>
-                <li><a href="#`"><i class="fa fa-envelope-o"></i> JB_bookstore@gmail.com</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> JB_bookstore@gmail.com</a></li>
                 <li><a href="#"><i class="fa fa-map-marker"></i> Quận Thủ Đức, TPHCM</a></li>
             </ul>
             <ul id="topLinks" class="header-links pull-right">
@@ -201,7 +201,7 @@
                 <li><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user-o"></i>Đăng
                     nhập</a></li>
                 <%} else {%>
-                <li><a href=""><i class="fa fa-user-o"></i>
+                <li><a href="<%=Utils.fullPath("account")%>"><i class="fa fa-user-o"></i>
                         <%=user.getFullname()%>
                 <li><a href="<%=Utils.fullPath("logout")%>"><i class="fa fa-user-o"></i>Đăng xuất
                 </a></li>

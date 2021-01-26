@@ -68,26 +68,26 @@
             <!-- /BREADCRUMB -->
             <div class="change">
                 <h1>Đổi lại mật khẩu</h1>
-                <form action="#">
+                <form action="/resetPass" method="post">
                     <div class="flex">
                         <div>
-                            <div><label for="">Tên truy cập</label></div>
-                            <div><label for="">Mật khẩu cũ</label></div>
-                            <div><label for="">Mật khẩu mới</label></div>
-                            <div><label for="">Nhắc lại mật khẩu mới</label></div>
+
+                            <div><label>Mật khẩu cũ</label></div>
+                            <div><label>Mật khẩu mới</label></div>
+                            <div><label>Nhắc lại mật khẩu mới</label></div>
 
                         </div>
                         <div>
 
-                            <div><input type="text"></div>
-                            <div><input type="text"></div>
-                            <div><input type="text"></div>
-                            <div><input type="text"></div>
+
+                            <div><input type="password" name="oldPass"></div>
+                            <div><input type="password" name="newPass"></div>
+                            <div><input type="password" name="reenterPass"></div>
                         </div>
 
                     </div>
 
-                    <button>Thay đổi</button>
+                    <button type="submit" value="reset">Thay đổi</button>
 
                 </form>
             </div>

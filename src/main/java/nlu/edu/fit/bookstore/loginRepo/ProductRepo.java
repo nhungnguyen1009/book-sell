@@ -26,7 +26,7 @@ public class ProductRepo {
             pr.setDouble(5, product.getPrice());
             pr.setInt(6, product.getQuantity());
             pr.setString(7, product.getCategory());
-            pr.setInt(8, product.getIdAuthor());
+            pr.setString(8, null);
 
             int rs = pr.executeUpdate();
             System.out.println(rs);

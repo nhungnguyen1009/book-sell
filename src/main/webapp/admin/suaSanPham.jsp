@@ -10,7 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <%@include file="css.jsp"%>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/Libraries/ckeditor/ckeditor.js"></script>
+    <%--ckfinder--%>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/ckfinder/ckfinder.js"></script>
     <title>Trang quản lý Admin</title>
 </head>
 
@@ -163,8 +165,9 @@
 <!-- dashboard sales js-->
 <script src="assets/libs/js/dashboard-sales.js "></script>
 
-<script>
-    CKEDITOR.replace('editor');
+<script type="text/javascript">
+    var editor1 = CKEDITOR.replace('editor');
+    CKFinder.setupCKEditor(editor1, '../../ckfinder');
 </script>
 </body>
 

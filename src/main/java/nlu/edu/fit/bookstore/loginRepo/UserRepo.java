@@ -90,4 +90,20 @@ public class UserRepo {
         }
 
     }
+
+    public static int resetPass(User u, String sql) {
+        int i=0;
+        Connection conn = DBconnection.getMySQLConnection();
+
+        try {
+            PreparedStatement pr = conn.prepareStatement(sql);
+            pr.setString(1,u.getPassword());
+            pr.setString(2,u.getUsername());
+            i=pr.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        return 0;
+    }
 }
